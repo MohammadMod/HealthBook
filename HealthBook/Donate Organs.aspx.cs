@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HealthBook
 {
-    public partial class About : Page
+    public partial class Donate_Organs : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
