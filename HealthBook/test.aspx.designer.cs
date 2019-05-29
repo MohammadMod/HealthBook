@@ -11,7 +11,7 @@ namespace HealthBook
 {
 
 
-    public partial class About
+    public partial class test
     {
     }
 }
