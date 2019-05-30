@@ -175,6 +175,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\app.css" />
     <Content Include="Default.aspx" />
     <Content Include="Donate Money.aspx" />
     <Content Include="Donate Organs.aspx" />
