@@ -22,6 +22,8 @@
             <asp:ListItem>Sponsor a Child</asp:ListItem>
             <asp:ListItem>Zakat Money</asp:ListItem>
             <asp:ListItem>Monthly Dontion</asp:ListItem>
+            <asp:ListItem>Patient Sponsor</asp:ListItem>
+
         </asp:DropDownList>
         </span></b>
     </p>
@@ -39,15 +41,21 @@
     </p>
     <p class="MsoNormal">
         <b><span>Email address<o:p>:<asp:TextBox ID="EmailTextBox" runat="server" required="true" type="email"></asp:TextBox>
-        </o:p></span></b>
+        </o:p>
+        </span></b>
     </p>
     <p class="MsoNormal">
-        <b><span>Phone<o:p>:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="number"></asp:TextBox>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
+        <o:p>
         <b><span>Country<o:p>:<asp:TextBox ID="CountryTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p></span></b>
+        </o:p>
+        </span></b>
+        </o:p>
+    </p>
+    <p class="MsoNormal">
+        <o:p>
+        <o:p>
+        </o:p>
+        </o:p>
     </p>
     <p class="MsoNormal">
         <b><span>City</span></b><strong><span><o:p>:<b><asp:TextBox ID="CityTextBox" runat="server" required="true" type="text"></asp:TextBox>
@@ -55,6 +63,10 @@
     </p>
     <p class="MsoNormal">
         <b><span>Address<o:p>:<asp:TextBox ID="AddressTextBox" runat="server" required="true" type="text"></asp:TextBox>
+        </o:p></span></b>
+    </p>
+    <p class="MsoNormal">
+        <b><span>Phone<o:p>:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="number"></asp:TextBox>
         </o:p></span></b>
     </p>
     <p class="MsoNormal">

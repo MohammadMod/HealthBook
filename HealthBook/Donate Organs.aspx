@@ -54,6 +54,49 @@
     </p>
     <p>
         &nbsp;</p>
+    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>
+    <p>
+        <asp:DropDownList ID="OrgansDropDownList" runat="server">
+            <asp:ListItem>All</asp:ListItem>
+            <asp:ListItem>Heart</asp:ListItem>
+            <asp:ListItem>Lungs</asp:ListItem>
+            <asp:ListItem>Kidneys</asp:ListItem>
+            <asp:ListItem>Liver</asp:ListItem>
+            <asp:ListItem>Corneas</asp:ListItem>
+            <asp:ListItem>Pancreas</asp:ListItem>
+            <asp:ListItem>Tissue</asp:ListItem>
+            <asp:ListItem>Small bowel</asp:ListItem>
+            <asp:ListItem>Eyes</asp:ListItem>
+        </asp:DropDownList>
+    </p>
+
+
+    <p>
+        Do you want to donate blood too?</p>
+    <p>
+        <asp:DropDownList ID="BloodAnswerDropDownList" runat="server">
+            <asp:ListItem>Yes</asp:ListItem>
+            <asp:ListItem>No</asp:ListItem>
+        </asp:DropDownList>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p class="MsoNormal">
+        <span>I authorize you to use my organs/tissues for:</span><o:p></o:p></p>
+    <p>
+        <asp:DropDownList ID="BloodAnswerDropDownList0" runat="server">
+            <asp:ListItem>Research</asp:ListItem>
+            <asp:ListItem>Transplant</asp:ListItem>
+            <asp:ListItem>Research &amp; Transplant</asp:ListItem>
+        </asp:DropDownList>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p class="MsoNormal">
+        <u>Write your name</u> <span>&nbsp;<asp:TextBox ID="SignatureTextBox" runat="server"></asp:TextBox>
+&nbsp; </span>Signature<o:p></o:p></p>
+    <p>
+        &nbsp;</p>
     <p>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </p>
