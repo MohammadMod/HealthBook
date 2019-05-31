@@ -176,6 +176,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="log in.aspx" />
+    <Content Include="Log out.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -208,6 +210,7 @@
     <Content Include="Site.Master" />
     <Content Include="test.aspx" />
     <Content Include="View Hospitals.aspx" />
+    <Content Include="View Organ Doners.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -256,6 +259,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="log in.aspx.cs">
+      <DependentUpon>log in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log in.aspx.designer.cs">
+      <DependentUpon>log in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log out.aspx.cs">
+      <DependentUpon>Log out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log out.aspx.designer.cs">
+      <DependentUpon>Log out.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Money Doners.aspx.cs">
       <DependentUpon>Money Doners.aspx</DependentUpon>
@@ -293,6 +310,13 @@
     </Compile>
     <Compile Include="View Hospitals.aspx.designer.cs">
       <DependentUpon>View Hospitals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Organ Doners.aspx.cs">
+      <DependentUpon>View Organ Doners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Organ Doners.aspx.designer.cs">
+      <DependentUpon>View Organ Doners.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

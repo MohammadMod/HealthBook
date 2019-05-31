@@ -84,7 +84,7 @@
     <p class="MsoNormal">
         <span>I authorize you to use my organs/tissues for:</span><o:p></o:p></p>
     <p>
-        <asp:DropDownList ID="BloodAnswerDropDownList0" runat="server">
+        <asp:DropDownList ID="UseOrgansForDropDownList0" runat="server">
             <asp:ListItem>Research</asp:ListItem>
             <asp:ListItem>Transplant</asp:ListItem>
             <asp:ListItem>Research &amp; Transplant</asp:ListItem>

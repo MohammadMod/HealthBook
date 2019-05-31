@@ -10,42 +10,42 @@
 namespace HealthBook {
     
     
-    public partial class Log_In {
+    public partial class View_Organ_Doners {
         
         /// <summary>
-        /// EmailTextBox control.
+        /// SelectOrganDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList SelectOrganDropDownList;
         
         /// <summary>
-        /// PasswordTextBox control.
+        /// BloodGroupDropDownList0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList BloodGroupDropDownList0;
         
         /// <summary>
-        /// ReminderCheck control.
+        /// OrganForDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ReminderCheck;
+        protected global::System.Web.UI.WebControls.DropDownList OrganForDropDownList;
         
         /// <summary>
-        /// LogInButton control.
+        /// ViewOrganDonersGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogInButton;
+        protected global::System.Web.UI.WebControls.GridView ViewOrganDonersGridView;
     }
 }
