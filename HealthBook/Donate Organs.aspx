@@ -81,10 +81,25 @@
     </p>
     <p>
         &nbsp;</p>
-    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>
+<%--    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>--%>
+
+    <h2>Are you sure want to donate?</h2>
+    <asp:DropDownList ID="AllOrganDonerDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
+            <asp:ListItem>Yes</asp:ListItem>
+            <asp:ListItem>No</asp:ListItem>
+     </asp:DropDownList>
+
+    <h2>Do you want to donate with all your organs?</h2>
+    <asp:DropDownList ID="AllOrSomeDropDownList" runat="server">
+            <asp:ListItem>All</asp:ListItem>
+            <asp:ListItem>Some</asp:ListItem>
+    </asp:DropDownList>
+
+        <div id="viewOrgansForm" runat="server">
+
+    Please Chose the organ you want to donate:
     <p>
         <asp:DropDownList ID="OrgansDropDownList" runat="server">
-            <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>Heart</asp:ListItem>
             <asp:ListItem>Lungs</asp:ListItem>
             <asp:ListItem>Kidneys</asp:ListItem>
@@ -96,7 +111,7 @@
             <asp:ListItem>Eyes</asp:ListItem>
         </asp:DropDownList>
     </p>
-
+        </div>
 
     <p>
         Do you want to donate blood too?</p>
@@ -124,7 +139,11 @@
 &nbsp; </span>Signature<o:p></o:p></p>
     <p>
         &nbsp;</p>
-    <p>
+    
+        
+
+        <p>
+
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </p>
     <p>

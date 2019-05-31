@@ -19,6 +19,7 @@ namespace HealthBook
             if (!IsPostBack)
             {
                 Label1.Visible = true;
+                viewOrgansForm.Visible = false;
             }
         }
 
@@ -71,6 +72,18 @@ namespace HealthBook
                 Label1.Visible = true;
             }
 
+        }
+
+        protected void AllOrganDonerDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (AllOrganDonerDropDownList.SelectedIndex!=0)
+            {
+                viewOrgansForm.Visible = true;
+            }
+            else
+            {
+                viewOrgansForm.Visible = false;
+            }
         }
     }
 }
