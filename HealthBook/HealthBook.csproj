@@ -167,16 +167,22 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\line-awesome.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Account\Web.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\line-awesome.eot" />
+    <Content Include="fonts\line-awesome.ttf" />
+    <Content Include="fonts\line-awesome.woff" />
+    <Content Include="fonts\line-awesome.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\healthbook-10.png" />
+    <Content Include="js\app.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\forms.js" />
+    <Content Include="log in.aspx" />
+    <Content Include="Log out.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -209,7 +215,6 @@
     <Content Include="Site.Master" />
     <Content Include="test.aspx" />
     <Content Include="View Hospitals.aspx" />
-    <Content Include="View Organ Doners.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -309,13 +314,6 @@
     </Compile>
     <Compile Include="View Hospitals.aspx.designer.cs">
       <DependentUpon>View Hospitals.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View Organ Doners.aspx.cs">
-      <DependentUpon>View Organ Doners.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View Organ Doners.aspx.designer.cs">
-      <DependentUpon>View Organ Doners.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
