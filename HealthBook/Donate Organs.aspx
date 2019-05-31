@@ -1,9 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Donate Organs.aspx.cs" Inherits="HealthBook.Donate_Organs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
+    	<div class="col-12 col-lg-6">
+								<div id="smartwizard-arrows-success" class="wizard wizard-success mb-4">
+									<ul>
+										<li><a href="#arrows-success-step-1">Step One<br><small>ID yourslef</small></a></li>
+										<li><a href="#arrows-success-step-2">Step two<br><small>donate body</small></a></li>
+									</ul>
 
+									<div>
+										<div id="arrows-success-step-1" class="">
+											<input type="text" class="form-control" name="" value="">
+										</div>
+										<div id="arrows-success-step-2" class="">
+											Step Content 2
+										</div>
+										<div id="arrows-success-step-3" class="">
+											Step Content 3
+										</div>
+										<div id="arrows-success-step-4" class="">
+											Step Content 4
+										</div>
+									</div>
+								</div>
 
+							</div>
 
     <p>
         <br />
