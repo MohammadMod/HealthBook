@@ -59,6 +59,24 @@
     </p>
 
 
+     <script>
 
+         function ChangeHeader() {
+            var grid = document.getElementById('<%= ViewOrganDonersGridView.ClientID %>');
+            //grid.rows[0].cells[0].innerText = '';
+           // grid.rows[0].cells[1].innerText = 'Donated Amount';
+            grid.rows[0].cells[2].innerText = 'First Name';
+            grid.rows[0].cells[3].innerText = 'Last Name';
+            grid.rows[0].cells[4].innerText = 'Phone Number';
+            grid.rows[0].cells[8].innerText = 'Date of Birth';
+            grid.rows[0].cells[9].innerText = 'Blood Group';
+            grid.rows[0].cells[13].innerText = 'Blood Donner ?';
+            grid.rows[0].cells[14].innerText = 'Organs For ?';
+
+
+            return false;
+        };
+
+    </script>
 
 </asp:Content>

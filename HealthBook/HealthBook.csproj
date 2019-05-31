@@ -176,6 +176,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="js\myScripts.js" />
     <Content Include="log in.aspx" />
     <Content Include="Log out.aspx" />
     <Content Include="Money Doners.aspx" />

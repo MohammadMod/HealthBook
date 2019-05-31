@@ -6,8 +6,9 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %>Health Book</title>
 
+    <title><%: Page.Title %>Health Book</title>
+    <script src="js/myScripts.js"></script>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -15,7 +16,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body onload="ChangeHeader();">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <%--<Scripts>
