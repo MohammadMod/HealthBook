@@ -6,82 +6,138 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title><%: Page.Title %>Health Book</title>
-    <script src="js/myScripts.js"></script>
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="~/img/healthbook-10.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/line-awesome.min.css" rel="stylesheet" />
+    <link href="css/myCss.css" rel="stylesheet" />
 </head>
-<body onload="ChangeHeader();">
+<body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
-            <%--<Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884
-                <%--Framework Scripts 
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts
-            </Scripts>--%>
-        </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse " style="background-color: #319db5;">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Health Book </a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Donate Organs">Donate Organ</a></li>
-                        <li><a runat="server" href="~/Donate Money">Donate Money</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled" ID="loginv">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" id="loginvalue" href="~/Log in">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" id="WelcomeUser" href="" title="Manage your account">Hello, !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
+                <a href="#" class="navbar-brand mr-auto">Health Book</a>
+                <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Donate Organme  </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Donate Money</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Register </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="la la-user"></i>Login </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: 2017 %> - HealthBook</p>
-            </footer>
-        </div>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/forms.js"></script>
+
+    <script>
+							document.addEventListener("DOMContentLoaded", function(event) {
+								$('#smartwizard-default-primary').smartWizard({
+									theme: 'default',
+									showStepURLhash: false
+								});
+								$('#smartwizard-default-success').smartWizard({
+									theme: 'default',
+									showStepURLhash: false
+								});
+								$('#smartwizard-default-danger').smartWizard({
+									theme: 'default',
+									showStepURLhash: false
+								});
+								$('#smartwizard-default-warning').smartWizard({
+									theme: 'default',
+									showStepURLhash: false
+								});
+								$('#smartwizard-arrows-primary').smartWizard({
+									theme: 'arrows',
+									showStepURLhash: false
+								});
+								$('#smartwizard-arrows-success').smartWizard({
+									theme: 'arrows',
+									showStepURLhash: false
+								});
+								$('#smartwizard-arrows-danger').smartWizard({
+									theme: 'arrows',
+									showStepURLhash: false
+								});
+								$('#smartwizard-arrows-warning').smartWizard({
+									theme: 'arrows',
+									showStepURLhash: false
+								});
+								// Validation
+								var $validationForm = $('#smartwizard-validation');
+								$validationForm.validate({
+									errorPlacement: function errorPlacement(error, element) {
+										$(element).parents('.form-group').append(
+											error.addClass('invalid-feedback small d-block')
+										)
+									},
+									highlight: function(element) {
+										$(element).addClass('is-invalid');
+									},
+									unhighlight: function(element) {
+										$(element).removeClass('is-invalid');
+									},
+									rules: {
+										'wizard-confirm': {
+											equalTo: 'input[name="wizard-password"]'
+										}
+									}
+								});
+								$validationForm
+									.smartWizard({
+										autoAdjustHeight: false,
+										backButtonSupport: false,
+										useURLhash: false,
+										showStepURLhash: false,
+										toolbarSettings: {
+											toolbarExtraButtons: [$('<button class="btn btn-submit btn-primary" type="button">Finish</button>')]
+										}
+									})
+									.on('leaveStep', function(e, anchorObject, stepNumber, stepDirection) {
+										if (stepDirection === 'forward') {
+											return $validationForm.valid();
+										}
+										return true;
+									});
+								$validationForm.find('.btn-submit').on('click', function() {
+									if (!$validationForm.valid()) {
+										return;
+									}
+									alert("Great! The form is valid and ready to submit.");
+									return false;
+								});
+							});
+						</script>
 </body>
 </html>
