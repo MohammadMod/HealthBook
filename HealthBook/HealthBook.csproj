@@ -181,6 +181,8 @@
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
+    <Content Include="log in.aspx" />
+    <Content Include="Log out.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -260,6 +262,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="log in.aspx.cs">
+      <DependentUpon>log in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log in.aspx.designer.cs">
+      <DependentUpon>log in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log out.aspx.cs">
+      <DependentUpon>Log out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log out.aspx.designer.cs">
+      <DependentUpon>Log out.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Money Doners.aspx.cs">
