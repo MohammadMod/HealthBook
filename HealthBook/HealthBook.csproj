@@ -167,6 +167,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\line-awesome.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Account\Web.config" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -181,8 +182,6 @@
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
-    <Content Include="log in.aspx" />
-    <Content Include="Log out.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
