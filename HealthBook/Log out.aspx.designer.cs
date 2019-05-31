@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HealthBook.Account
+namespace HealthBook
 {
 
 
-    public partial class Lockout
+    public partial class Log_out
     {
     }
 }

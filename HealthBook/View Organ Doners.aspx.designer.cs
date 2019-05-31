@@ -7,37 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HealthBook.Account {
+namespace HealthBook {
     
     
-    public partial class Confirm {
+    public partial class View_Organ_Doners {
         
         /// <summary>
-        /// successPanel control.
+        /// SelectOrganDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder successPanel;
+        protected global::System.Web.UI.WebControls.DropDownList SelectOrganDropDownList;
         
         /// <summary>
-        /// login control.
+        /// BloodGroupDropDownList0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink login;
+        protected global::System.Web.UI.WebControls.DropDownList BloodGroupDropDownList0;
         
         /// <summary>
-        /// errorPanel control.
+        /// OrganForDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder errorPanel;
-
+        protected global::System.Web.UI.WebControls.DropDownList OrganForDropDownList;
+        
+        /// <summary>
+        /// ViewOrganDonersGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView ViewOrganDonersGridView;
     }
 }

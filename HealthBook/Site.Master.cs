@@ -15,9 +15,11 @@ namespace HealthBook
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
-
+        public string loggedUser = "";
         protected void Page_Init(object sender, EventArgs e)
         {
+            
+           
             // The code below helps to protect against XSRF attacks
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
             Guid requestCookieGuidValue;
@@ -70,6 +72,31 @@ namespace HealthBook
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            //try
+            //{
+            //    if (Application["LoggedUserName"].ToString() != "")
+            //    {
+            //        Label1.Visible = true;
+            //        loginv.Visible = false;
+            //        loggedUser = "Welcome: " + Application["LoggedUserName"].ToString();
+            //        Label1.Text = loggedUser;
+
+            //    }
+            //    else
+            //    {
+            //        loggedUser = "";
+            //        loginv.Visible = true;
+            //        Label1.Visible = false;
+            //        Label1.Text = "";
+            //        Label1.Text = loggedUser;
+
+            //    }
+            //}
+            //catch (Exception)
+            //{
+
+            //}
+            
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
