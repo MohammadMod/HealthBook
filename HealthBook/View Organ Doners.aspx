@@ -63,8 +63,6 @@
 
          function ChangeHeader() {
             var grid = document.getElementById('<%= ViewOrganDonersGridView.ClientID %>');
-            //grid.rows[0].cells[0].innerText = '';
-           // grid.rows[0].cells[1].innerText = 'Donated Amount';
             grid.rows[0].cells[2].innerText = 'First Name';
             grid.rows[0].cells[3].innerText = 'Last Name';
             grid.rows[0].cells[4].innerText = 'Phone Number';
