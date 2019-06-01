@@ -7,7 +7,7 @@
     <br />
     <br />
     <div class="container">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-10">
         <div id="smartwizard-arrows-success" class="wizard wizard-success mb-4">
             <ul>
                 <li><a href="#arrows-success-step-1">Step One<br>
@@ -20,7 +20,7 @@
 
             <div>
                 <%-- Add Item on step one --%>
-                <div id="arrows-success-step-1" class="">
+                <div id="arrows-success-step-1" class="col-6">
 
 
                     <div id="validation-step-1">
@@ -44,7 +44,11 @@
                             </asp:DropDownList>
                         </div>
 
-
+                        
+						<div class="form-group mb-xl-0">
+							<label class="form-label">Date of Birth<span class="text-danger">*</span></label>
+							<input class="form-control" type="text" name="DateOfBirthTextBox">
+						</div>
 
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Blood Group</label>
@@ -84,22 +88,74 @@
                             <label class="form-label">Phone Number<span class="text-danger">*</span></label>
                             <asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="Number"></asp:TextBox>
                         </div>
+
+
+                        
+					    
+                    </div>
+                </div>
+
+                <%-- Add Item on step two --%>
+                <div id="arrows-success-step-2" class="col-6">
+                    <div class="form-group ">
+                        <h4 class="font_oswald">Are you sure want to donate?</h4>
+
+                        <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
+                            <asp:ListItem>No</asp:ListItem>
+                            <asp:ListItem>Yes</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
 
-                    
-                    Date of Birth:<asp:TextBox ID="DateOfBirthTextBox" runat="server" required="true" type="date"></asp:TextBox>
+                    <div class="form-group">
+                        <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
+                        <asp:DropDownList CssClass="form-control" ID="AllOrSomeDropDownList" runat="server">
+                            <asp:ListItem>All</asp:ListItem>
+                            <asp:ListItem>Some</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+
+                    <div id="viewOrgansForm" runat="server">
+                        Please Chose the organ you want to donate:
+                        
+                            <asp:DropDownList ID="OrgansDropDownList" runat="server">
+                                <asp:ListItem>Heart</asp:ListItem>
+                                <asp:ListItem>Lungs</asp:ListItem>
+                                <asp:ListItem>Kidneys</asp:ListItem>
+                                <asp:ListItem>Liver</asp:ListItem>
+                                <asp:ListItem>Corneas</asp:ListItem>
+                                <asp:ListItem>Pancreas</asp:ListItem>
+                                <asp:ListItem>Tissue</asp:ListItem>
+                                <asp:ListItem>Small bowel</asp:ListItem>
+                                <asp:ListItem>Eyes</asp:ListItem>
+                            </asp:DropDownList>
+                       
+                   </div>
 
                     
+                    <p>Do you want to donate blood too?</p>
 
-                    
-                    
+                    <asp:DropDownList ID="BloodAnswerDropDownList" runat="server">
+                        <asp:ListItem>Yes</asp:ListItem>
+                        <asp:ListItem>No</asp:ListItem>
+                    </asp:DropDownList>
+
+                    <p class="MsoNormal">
+                        <span>I authorize you to use my organs/tissues for:</span><o:p></o:p></p>
+                    <p>
+
+
+                        <asp:DropDownList ID="UseOrgansForDropDownList0" runat="server">
+            <asp:ListItem>Research</asp:ListItem>
+            <asp:ListItem>Transplant</asp:ListItem>
+            <asp:ListItem>Research &amp; Transplant</asp:ListItem>
+        </asp:DropDownList>
+
+
+                        <p class="MsoNormal">
+        <u>Write your name</u> <span>&nbsp;<asp:TextBox ID="SignatureTextBox" runat="server"></asp:TextBox>
+&nbsp; </span>Signature<o:p></o:p></p>
 
                 </div>
-
-                <div id="arrows-success-step-2" class="">
-                    <%-- Add Item on step two --%>
-                </div>
-
             </div>
         </div>
     </div>
@@ -107,78 +163,18 @@
     </div>
     
     
-    <p>
-        &nbsp;</p>
+    
 <%--    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>--%>
 
-    <h2>Are you sure want to donate?</h2>
-    <asp:DropDownList ID="AllOrganDonerDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
-            <asp:ListItem>Yes</asp:ListItem>
-            <asp:ListItem>No</asp:ListItem>
-     </asp:DropDownList>
-
-    <h2>Do you want to donate with all your organs?</h2>
-    <asp:DropDownList ID="AllOrSomeDropDownList" runat="server">
-            <asp:ListItem>All</asp:ListItem>
-            <asp:ListItem>Some</asp:ListItem>
-    </asp:DropDownList>
-
-        <div id="viewOrgansForm" runat="server">
-
-    Please Chose the organ you want to donate:
-    <p>
-        <asp:DropDownList ID="OrgansDropDownList" runat="server">
-            <asp:ListItem>Heart</asp:ListItem>
-            <asp:ListItem>Lungs</asp:ListItem>
-            <asp:ListItem>Kidneys</asp:ListItem>
-            <asp:ListItem>Liver</asp:ListItem>
-            <asp:ListItem>Corneas</asp:ListItem>
-            <asp:ListItem>Pancreas</asp:ListItem>
-            <asp:ListItem>Tissue</asp:ListItem>
-            <asp:ListItem>Small bowel</asp:ListItem>
-            <asp:ListItem>Eyes</asp:ListItem>
-        </asp:DropDownList>
-    </p>
-        </div>
-
-    <p>
-        Do you want to donate blood too?</p>
-    <p>
-        <asp:DropDownList ID="BloodAnswerDropDownList" runat="server">
-            <asp:ListItem>Yes</asp:ListItem>
-            <asp:ListItem>No</asp:ListItem>
-        </asp:DropDownList>
-    </p>
-    <p>
-        &nbsp;</p>
-    <p class="MsoNormal">
-        <span>I authorize you to use my organs/tissues for:</span><o:p></o:p></p>
-    <p>
-        <asp:DropDownList ID="UseOrgansForDropDownList0" runat="server">
-            <asp:ListItem>Research</asp:ListItem>
-            <asp:ListItem>Transplant</asp:ListItem>
-            <asp:ListItem>Research &amp; Transplant</asp:ListItem>
-        </asp:DropDownList>
-    </p>
-    <p>
-        &nbsp;</p>
-    <p class="MsoNormal">
-        <u>Write your name</u> <span>&nbsp;<asp:TextBox ID="SignatureTextBox" runat="server"></asp:TextBox>
-&nbsp; </span>Signature<o:p></o:p></p>
-    <p>
-        &nbsp;</p>
     
-        
-
-        <p>
+    
+    
 
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-    </p>
-    <p>
+    
         <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
-    </p>
-    <p>
-    </p>
+    
+    
 
 
 
