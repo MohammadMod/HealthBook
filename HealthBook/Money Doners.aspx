@@ -24,14 +24,13 @@
 
          function ChangeHeader() {
             var grid = document.getElementById('<%= MoneyDonersGridView.ClientID %>');
-            //grid.rows[0].cells[0].innerText = '';
             grid.rows[0].cells[1].innerText = 'Donated Amount';
             grid.rows[0].cells[2].innerText = 'Currency';
             grid.rows[0].cells[3].innerText = 'Donation Program';
             grid.rows[0].cells[4].innerText = 'First Name';
             grid.rows[0].cells[5].innerText = 'Last Name';
-            grid.rows[0].cells[6].innerText = 'Phone Number';
-            grid.rows[0].cells[11].innerText = 'Date of Birth';
+            grid.rows[0].cells[7].innerText = 'Phone Number';
+            grid.rows[0].cells[12].innerText = 'Date of Birth';
 
             return false;
         };
