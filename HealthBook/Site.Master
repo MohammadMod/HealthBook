@@ -63,35 +63,7 @@
 
     <script>
 							document.addEventListener("DOMContentLoaded", function(event) {
-								$('#smartwizard-default-primary').smartWizard({
-									theme: 'default',
-									showStepURLhash: false
-								});
-								$('#smartwizard-default-success').smartWizard({
-									theme: 'default',
-									showStepURLhash: false
-								});
-								$('#smartwizard-default-danger').smartWizard({
-									theme: 'default',
-									showStepURLhash: false
-								});
-								$('#smartwizard-default-warning').smartWizard({
-									theme: 'default',
-									showStepURLhash: false
-								});
-								$('#smartwizard-arrows-primary').smartWizard({
-									theme: 'arrows',
-									showStepURLhash: false
-								});
 								$('#smartwizard-arrows-success').smartWizard({
-									theme: 'arrows',
-									showStepURLhash: false
-								});
-								$('#smartwizard-arrows-danger').smartWizard({
-									theme: 'arrows',
-									showStepURLhash: false
-								});
-								$('#smartwizard-arrows-warning').smartWizard({
 									theme: 'arrows',
 									showStepURLhash: false
 								});
