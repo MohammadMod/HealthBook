@@ -18,6 +18,10 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/line-awesome.min.css" rel="stylesheet" />
     <link href="css/myCss.css" rel="stylesheet" />
+    <%-- Fond Owsald --%>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+
 </head>
 <body onload="ChangeHeader();">
     <form runat="server">
@@ -66,7 +70,22 @@
 								$('#smartwizard-arrows-success').smartWizard({
 									theme: 'arrows',
 									showStepURLhash: false
-								});
+                                });
+
+                                // Data Single
+
+                                $('input[name="datesingle"]').daterangepicker({
+									singleDatePicker: true,
+									showDropdowns: true
+                                });
+
+                                $('input[name="DateOfBirthTextBox"]').daterangepicker({
+									singleDatePicker: true,
+									showDropdowns: true
+                                });
+
+                                
+
 								// Validation
 								var $validationForm = $('#smartwizard-validation');
 								$validationForm.validate({
