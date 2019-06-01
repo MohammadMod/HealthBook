@@ -19,6 +19,7 @@ namespace HealthBook
             if (!IsPostBack)
             {
                 Label1.Visible = true;
+                //viewOrgansForm.Visible = false;
             }
         }
 
@@ -43,7 +44,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
 
 
-                cmd.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar).Value = DateOfBirthTextBox.Text;
+                //cmd.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar).Value = DateOfBirthTextBox.Text;
                 cmd.Parameters.Add("@bloodGroup", SqlDbType.VarChar).Value = BloodTypeDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@city", SqlDbType.VarChar).Value = CityTextBox.Text;
@@ -71,6 +72,18 @@ namespace HealthBook
                 Label1.Visible = true;
             }
 
+        }
+
+        protected void AllOrganDonerDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //if (AllOrganDonerDropDownList.SelectedIndex!=0)
+            //{
+            //    viewOrgansForm.Visible = true;
+            //}
+            //else
+            //{
+            //    viewOrgansForm.Visible = false;
+            //}
         }
     }
 }

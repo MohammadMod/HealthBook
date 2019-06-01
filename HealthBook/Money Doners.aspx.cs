@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessageBird;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -51,6 +52,32 @@ namespace HealthBook
                 throw;
             }
         }
+        }
+
+        protected void MoneyDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                GridViewRow row = MoneyDonersGridView.SelectedRow;
+                string PhoneNumberIngrid = row.Cells[7].Text;
+                long PhoneNumber = long.Parse(PhoneNumberIngrid);
+
+
+                const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+                Client client = Client.CreateDefault(YourAccessKey);
+                long Msisdn = PhoneNumber; // your phone number here
+                MessageBird.Objects.Message message =
+                client.SendMessage("HealthBook", "We Need Your Help", new[] { Msisdn });
+
+                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
         }
     }
 }
