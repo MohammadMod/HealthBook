@@ -31,15 +31,6 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
         
         /// <summary>
-        /// DateOfBirthTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DateOfBirthTextBox;
-        
-        /// <summary>
         /// GenderDropDownList control.
         /// </summary>
         /// <remarks>
@@ -94,31 +85,13 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox PhoneNumberTextBox;
         
         /// <summary>
-        /// AllOrganDonerDropDownList control.
+        /// DateOfBirthTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AllOrganDonerDropDownList;
-        
-        /// <summary>
-        /// AllOrSomeDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AllOrSomeDropDownList;
-        
-        /// <summary>
-        /// viewOrgansForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl viewOrgansForm;
+        protected global::System.Web.UI.WebControls.TextBox DateOfBirthTextBox;
         
         /// <summary>
         /// OrgansDropDownList control.

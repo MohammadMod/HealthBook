@@ -6,79 +6,107 @@
     <br />
     <br />
     <br />
+    <div class="container">
+    <div class="col-12 col-lg-6">
+        <div id="smartwizard-arrows-success" class="wizard wizard-success mb-4">
+            <ul>
+                <li><a href="#arrows-success-step-1">Step One<br>
+                        <small>ID yourslef</small></a>
+                </li>
+                <li><a href="#arrows-success-step-2">Step two<br>
+                    <small>donate body</small></a>
+                </li>
+            </ul>
 
-    	<div class="col-12 col-lg-6">
-								<div id="smartwizard-arrows-success" class="wizard wizard-success mb-4">
-									<ul>
-										<li><a href="#arrows-success-step-1">Step One<br><small>ID yourslef</small></a></li>
-										<li><a href="#arrows-success-step-2">Step two<br><small>donate body</small></a></li>
-									</ul>
+            <div>
+                <%-- Add Item on step one --%>
+                <div id="arrows-success-step-1" class="">
 
-									<div>
-										<div id="arrows-success-step-1" class="">
-											<input type="text" class="form-control" name="" value="">
-										</div>
-										<div id="arrows-success-step-2" class="">
-											Step Content 2
-										</div>
-										<div id="arrows-success-step-3" class="">
-											Step Content 3
-										</div>
-										<div id="arrows-success-step-4" class="">
-											Step Content 4
-										</div>
-									</div>
-								</div>
 
-							</div>
+                    <div id="validation-step-1">
+                        <div class="form-group">
+                            <label class="form-label">First Name<span class="text-danger">*</span></label>
+                            <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" required="true" type="text"></asp:TextBox>
+                        </div>
 
-    <p>
-        <br />
-        First Name:<asp:TextBox ID="FirstNameTextBox" runat="server" required="true" type="text"></asp:TextBox>
-    </p>
-    <p>
-        Last Name:<asp:TextBox ID="LastNameTextBox" runat="server" required="true" type="text"></asp:TextBox>
-    </p>
-    <p>
-        Date of Birth:<asp:TextBox ID="DateOfBirthTextBox" runat="server" required="true" type="date"></asp:TextBox>
-    </p>
-    <p>
-        Gender:<asp:DropDownList ID="GenderDropDownList" runat="server">
-            <asp:ListItem Selected="True">Select</asp:ListItem>
-            <asp:ListItem>Male</asp:ListItem>
-            <asp:ListItem>Female</asp:ListItem>
-        </asp:DropDownList>
-    </p>
-    <p>
-        Blood Group:<asp:DropDownList ID="BloodTypeDropDownList" runat="server">
+                        <div class="form-group">
+                            <label class="form-label">Last Name<span class="text-danger">*</span></label>
+                            <asp:TextBox ID="LastNameTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                        </div>
 
-      <asp:listitem text="A+" value="A+">A+</asp:listitem>
-      <asp:listitem text="A-" value="A-">A-</asp:listitem>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Gender</label>
 
-     <asp:listitem text="B+" value="B+">B+</asp:listitem>
-     <asp:listitem text="B-" value="B-">B-</asp:listitem>
+                            <asp:DropDownList ID="GenderDropDownList" runat="server" CssClass="form-control">
+                                <asp:ListItem Selected="True">Select</asp:ListItem>
+                                <asp:ListItem>Male</asp:ListItem>
+                                <asp:ListItem>Female</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
 
-     <asp:listitem text="AB+" value="AB+">AB+</asp:listitem>
-     <asp:listitem text="AB-" value="5">AB-</asp:listitem>
 
-      <asp:listitem text="O+" value="O-">O+</asp:listitem>
-     <asp:listitem text="O-" value="O-">O-</asp:listitem>
 
-     
-        </asp:DropDownList>
-    </p>
-    <p>
-        Address:<asp:TextBox ID="AddressTextBox" runat="server" required="true" type="text"></asp:TextBox>
-    </p>
-    <p>
-        City:<asp:TextBox ID="CityTextBox" runat="server" required="true" type="text"></asp:TextBox>
-    </p>
-    <p>
-        Email:<asp:TextBox ID="EmailTextBox" runat="server" required="true" type="email"></asp:TextBox>
-    </p>
-    <p>
-        Phone Number:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="Number"></asp:TextBox>
-    </p>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Blood Group</label>
+
+                            <asp:DropDownList ID="BloodTypeDropDownList" CssClass="form-control" runat="server">
+
+                                <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
+                                <asp:ListItem Text="A-" Value="A-">A-</asp:ListItem>
+
+                                <asp:ListItem Text="B+" Value="B+">B+</asp:ListItem>
+                                <asp:ListItem Text="B-" Value="B-">B-</asp:ListItem>
+
+                                <asp:ListItem Text="AB+" Value="AB+">AB+</asp:ListItem>
+                                <asp:ListItem Text="AB-" Value="AB-">AB-</asp:ListItem>
+                                <asp:ListItem Text="O+" Value="O+">O+</asp:ListItem>
+                                <asp:ListItem Text="O-" Value="O-">O-</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Address<span class="text-danger">*</span></label>
+                            
+                            <asp:TextBox ID="AddressTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">City<span class="text-danger">*</span></label>
+                            <asp:TextBox ID="CityTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email<span class="text-danger">*</span></label>
+                            <asp:TextBox ID="EmailTextBox" CssClass="form-control" runat="server" required="true" type="email"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number<span class="text-danger">*</span></label>
+                            <asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="Number"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    
+                    Date of Birth:<asp:TextBox ID="DateOfBirthTextBox" runat="server" required="true" type="date"></asp:TextBox>
+
+                    
+
+                    
+                    
+
+                </div>
+
+                <div id="arrows-success-step-2" class="">
+                    <%-- Add Item on step two --%>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+    
     <p>
         &nbsp;</p>
 <%--    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>--%>
