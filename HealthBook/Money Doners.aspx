@@ -13,7 +13,10 @@
 
        </div>
 
-    <asp:GridView ID="MoneyDonersGridView" runat="server">
+    <asp:GridView ID="MoneyDonersGridView" runat="server" OnSelectedIndexChanged="MoneyDonersGridView_SelectedIndexChanged">
+        <Columns>
+            <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
+        </Columns>
        
     </asp:GridView>
 
