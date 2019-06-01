@@ -66,7 +66,7 @@
         </o:p></span></b>
     </p>
     <p class="MsoNormal">
-        <b><span>Phone<o:p>:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="number"></asp:TextBox>
+        <b><span>Phone<o:p>:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="text"></asp:TextBox>
         </o:p></span></b>
     </p>
     <p class="MsoNormal">
