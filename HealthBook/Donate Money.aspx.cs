@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessageBird;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -7,13 +8,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading;
 
 namespace HealthBook
 {
     public partial class Donate_Money : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
-
+        Code_Generator g = new Code_Generator();
+        static string myCode = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,8 +25,33 @@ namespace HealthBook
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            try
+            g.generator();
+             myCode = g.code;
+
+            long PhoneNumber = long.Parse(PhoneNumberTextBox.Text);
+
+
+            const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+            Client client = Client.CreateDefault(YourAccessKey);
+            long Msisdn = PhoneNumber; // your phone number here
+            MessageBird.Objects.Message message =
+            client.SendMessage("HealthBook", myCode, new[] { Msisdn });
+
+            //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('We Sent you a verify code please check your phone');", true);
+
+
+
+
+
+
+        }
+
+        protected void verificationCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (verificationCodeTextBox.Text == myCode)
             {
+                #region insert to database
+
                 SqlCommand cmd = new SqlCommand("Insert_Donation_Money", con);
 
                 con.Open();
@@ -53,21 +81,24 @@ namespace HealthBook
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                string phoneNum = PhoneNumberTextBox.Text;
-                Response.Write("before: "+phoneNum);
-                string FirstDigit = phoneNum.Substring(0, 1);
 
-                if (FirstDigit=="0")
-                {
-                    phoneNum = phoneNum.Remove(0, 1);
-                }
 
-                Response.Write("After: " + phoneNum);
+                //string phoneNum = PhoneNumberTextBox.Text;
+                //Response.Write("before: " + phoneNum);
+                //string FirstDigit = phoneNum.Substring(0, 1);
+
+                //if (FirstDigit == "0")
+                //{
+                //    phoneNum = phoneNum.Remove(0, 1);
+                //}
+
+                //Response.Write("After: " + phoneNum);
+                #endregion
             }
-            catch (Exception)
-            {
 
-                throw;
+            else
+            {
+                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Invalid code the code is: ');" + myCode, true);
             }
         }
     }

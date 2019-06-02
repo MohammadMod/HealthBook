@@ -139,6 +139,15 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox CompanyTextBox;
         
         /// <summary>
+        /// verificationCodeTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox verificationCodeTextBox;
+        
+        /// <summary>
         /// SubmitButton control.
         /// </summary>
         /// <remarks>
