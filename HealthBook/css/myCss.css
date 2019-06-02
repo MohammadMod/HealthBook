@@ -4,3 +4,108 @@
 .font_oswald{
     font-family: 'Oswald', sans-serif;
 }
+
+/* Design Check box start*/
+.checkb {
+    display: inline-flex;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .checkb input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+   
+    background-color: #DEE2E6;
+    border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkb:hover input ~ .checkmark {
+    background-color: #DEE2E6;
+    
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkb input:checked ~ .checkmark {
+    background-color: #2196F3;
+    box-shadow: 0 0 0 1px #f0f0f0, 0 0 0 .2rem rgba(33, 150, 243,.7);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+}
+
+/* Show the checkmark when checked */
+.checkb input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkb .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+/* design check box ended*/
+
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    height: calc(1.8125rem + 2px);
+    padding: .25rem .7rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+    .form-control2:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #59f5e0;
+        outline: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 0 0 .2rem rgba(12, 194, 170, .25);
+        border-radius: .2rem;
+    }

@@ -48,7 +48,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@bloodGroup", SqlDbType.VarChar).Value = BloodTypeDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@city", SqlDbType.VarChar).Value = CityTextBox.Text;
-                cmd.Parameters.Add("@organs", SqlDbType.NVarChar).Value = OrgansDropDownList.SelectedItem.Text;
+                //cmd.Parameters.Add("@organs", SqlDbType.NVarChar).Value = OrgansDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@signature", SqlDbType.VarChar).Value = SignatureTextBox.Text;
                 cmd.Parameters.Add("@bloodDoner", SqlDbType.NVarChar).Value = BloodAnswerDropDownList.SelectedItem.Text;
