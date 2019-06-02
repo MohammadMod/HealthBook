@@ -15,7 +15,20 @@ namespace HealthBook
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                try
+                {
+                    if (Session["username"] == null) // has user logged in?
+                    {
+                        Response.Redirect("Log in.aspx");
+                    }
+                }
+                catch
+                {
+                    Response.Redirect("Log in.aspx");
+                }
+            }
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)

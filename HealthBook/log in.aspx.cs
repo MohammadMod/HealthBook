@@ -67,9 +67,8 @@ namespace HealthBook
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    FormsAuthentication.RedirectFromLoginPage(PasswordTextBox.Text, true);
+                    FormsAuthentication.RedirectFromLoginPage(EmailTextBox.Text, true);
                     Application["LoggedUserName"] = EmailTextBox.Text;
-                    //Application.Add()
                     Response.Redirect("/");
 
                 }

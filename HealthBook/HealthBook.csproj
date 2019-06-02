@@ -170,7 +170,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\line-awesome.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Account\Web.config" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -185,6 +184,7 @@
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
+    <Content Include="log in.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -235,6 +235,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Code Generator.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -280,6 +281,7 @@
     <Compile Include="Log out.aspx.designer.cs">
       <DependentUpon>Log out.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MessageSender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Money Doners.aspx.cs">
       <DependentUpon>Money Doners.aspx</DependentUpon>

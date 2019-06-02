@@ -71,32 +71,27 @@ namespace HealthBook
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // a simple way to not let all users see some pages.
             //try
             //{
-            //    if (Application["LoggedUserName"].ToString() != "")
-            //    {
-            //        Label1.Visible = true;
-            //        loginv.Visible = false;
-            //        loggedUser = "Welcome: " + Application["LoggedUserName"].ToString();
-            //        Label1.Text = loggedUser;
-
-            //    }
+            //    if (Session["username"] != null)  // has user logged in?
+                   
+            //    ;
             //    else
             //    {
-            //        loggedUser = "";
-            //        loginv.Visible = true;
-            //        Label1.Visible = false;
-            //        Label1.Text = "";
-            //        Label1.Text = loggedUser;
+            //        Response.Redirect("log in.aspx");
 
             //    }
-            //}
-            //catch (Exception)
-            //{
+
+
 
             //}
-            
+            //catch
+            //{
+            //    Response.Redirect("log in.aspx");
+            //}
+
+
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
