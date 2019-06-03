@@ -17,17 +17,17 @@ namespace HealthBook
         {
             if (!IsPostBack)
             {
-                try
-                {
-                    if (Session["username"] == null) // has user logged in?
-                    {
-                        Response.Redirect("Log in.aspx");
-                    }
-                }
-                catch
-                {
-                    Response.Redirect("Log in.aspx");
-                }
+                //try
+                //{
+                //    if (Session["username"] == null) // has user logged in?
+                //    {
+                //        Response.Redirect("Log in.aspx");
+                //    }
+                //}
+                //catch
+                //{
+                //    Response.Redirect("Log in.aspx");
+                //}
             }
         }
 
