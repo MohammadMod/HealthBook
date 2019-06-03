@@ -48,6 +48,11 @@ namespace HealthBook
 
         protected void verificationCodeTextBox_TextChanged(object sender, EventArgs e)
         {
+         
+        }
+
+        protected void VerifyButton_Click(object sender, EventArgs e)
+        {
             if (verificationCodeTextBox.Text == myCode)
             {
                 #region insert to database

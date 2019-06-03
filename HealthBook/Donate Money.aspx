@@ -97,13 +97,14 @@
     <p class="MsoNormal">
         Veryfication Code:
         <b><span>
-        <asp:TextBox ID="verificationCodeTextBox" runat="server" AutoPostBack="True" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
+        <asp:TextBox ID="verificationCodeTextBox" runat="server" AutoPostBack="False" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
         </span></b>
     </p>
     <p class="MsoNormal">
         <b><span>
         <o:p></o:p>
         <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Submit" />
+        <asp:Button ID="VerifyButton" runat="server" OnClick="VerifyButton_Click" Text="Verify" />
         </span></b>
     </p>
     <p class="MsoNormal">
