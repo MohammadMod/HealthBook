@@ -26,7 +26,7 @@
 <body onload="ChangeHeader();">
     <form runat="server">
 
-        <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse " style="background-color: #319db5;">
+        <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse mb--5" style="background-color: #319db5;">
             <div class="container">
                 <a href="#" class="navbar-brand mr-auto">HealthBook</a>
                 <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNav">
@@ -58,90 +58,82 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 
     <script src="js/forms.js"></script>
 
-    <script>
-							document.addEventListener("DOMContentLoaded", function(event) {
-								$('#smartwizard-arrows-success').smartWizard({
-									theme: 'arrows',
-									showStepURLhash: false
-                                });
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                $('#smartwizard-arrows-success').smartWizard({
+                    theme: 'arrows',
+                    showStepURLhash: false
+                });
 
-                                $('#smartwizard-arrows-danger').smartWizard({
-									theme: 'arrows',
-									showStepURLhash: false
-                                });
+                $('#smartwizard-arrows-danger').smartWizard({
+                    theme: 'arrows',
+                    showStepURLhash: false
+                });
 
-                                // Data Single
+                // Data Single
 
-                                $('input[name="datesingle"]').daterangepicker({
-									singleDatePicker: true,
-									showDropdowns: true
-                                });
+                $('input[name="datesingle"]').daterangepicker({
+                    singleDatePicker: true,
+                    showDropdowns: true
+                });
 
-                                $('input[name="DateOfBirthTextBox"]').daterangepicker({
-									singleDatePicker: true,
-									showDropdowns: true
-                                });
+                $('input[name="DateOfBirthTextBox"]').daterangepicker({
+                    singleDatePicker: true,
+                    showDropdowns: true
+                });
 
-                                
 
-								// Validation
-								var $validationForm = $('#smartwizard-validation');
-								$validationForm.validate({
-									errorPlacement: function errorPlacement(error, element) {
-										$(element).parents('.form-group').append(
-											error.addClass('invalid-feedback small d-block')
-										)
-									},
-									highlight: function(element) {
-										$(element).addClass('is-invalid');
-									},
-									unhighlight: function(element) {
-										$(element).removeClass('is-invalid');
-									},
-									rules: {
-										'wizard-confirm': {
-											equalTo: 'input[name="wizard-password"]'
-										}
-									}
-								});
-								$validationForm
-									.smartWizard({
-										autoAdjustHeight: false,
-										backButtonSupport: false,
-										useURLhash: false,
-										showStepURLhash: false,
-										toolbarSettings: {
-											toolbarExtraButtons: [$('<button class="btn btn-submit btn-primary" type="button">Finish</button>')]
-										}
-									})
-									.on('leaveStep', function(e, anchorObject, stepNumber, stepDirection) {
-										if (stepDirection === 'forward') {
-											return $validationForm.valid();
-										}
-										return true;
-									});
-								$validationForm.find('.btn-submit').on('click', function() {
-									if (!$validationForm.valid()) {
-										return;
-									}
-									alert("Great! The form is valid and ready to submit.");
-									return false;
-								});
-							});
-						</script>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+                // Validation
+                var $validationForm = $('#smartwizard-validation');
+                $validationForm.validate({
+                    errorPlacement: function errorPlacement(error, element) {
+                        $(element).parents('.form-group').append(
+                            error.addClass('invalid-feedback small d-block')
+                        )
+                    },
+                    highlight: function (element) {
+                        $(element).addClass('is-invalid');
+                    },
+                    unhighlight: function (element) {
+                        $(element).removeClass('is-invalid');
+                    },
+                    rules: {
+                        'wizard-confirm': {
+                            equalTo: 'input[name="wizard-password"]'
+                        }
+                    }
+                });
+                $validationForm
+                    .smartWizard({
+                        autoAdjustHeight: false,
+                        backButtonSupport: false,
+                        useURLhash: false,
+                        showStepURLhash: false,
+                        toolbarSettings: {
+                            toolbarExtraButtons: [$('<button class="btn btn-submit btn-primary" type="button">Finish</button>')]
+                        }
+                    })
+                    .on('leaveStep', function (e, anchorObject, stepNumber, stepDirection) {
+                        if (stepDirection === 'forward') {
+                            return $validationForm.valid();
+                        }
+                        return true;
+                    });
+                $validationForm.find('.btn-submit').on('click', function () {
+                    if (!$validationForm.valid()) {
+                        return;
+                    }
+                    alert("Great! The form is valid and ready to submit.");
+                    return false;
+                });
+            });
+        </script>
     </form>
-
     </body>
 </html>

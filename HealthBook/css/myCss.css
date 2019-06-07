@@ -1,5 +1,36 @@
-﻿.la{
-    font-size : 1.1rem;
+﻿.mt-6 {
+    margin-top: 4rem !important;
+}
+
+.mt-7 {
+    margin-top: 5rem !important;
+}
+
+.mt-8 {
+    margin-top: 6rem !important;
+}
+
+
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+.mb-7 {
+    margin-bottom: 5rem !important;
+}
+
+.mt-8 {
+    margin-bottom: 6rem !important;
+}
+
+.THDM {
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-size:32px;
+}
+
+.la {
+    font-size: 1.1rem;
 }
 .font_oswald{
     font-family: 'Oswald', sans-serif;

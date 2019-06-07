@@ -1,117 +1,161 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Donate Money.aspx.cs" Inherits="HealthBook.Donate_Money" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <div class="mt-5"></div>
+    <div class="container">
+        <div class="text-center THDM">Donation Info</div>
+        
+        <div class="border py-3 pr-1">
+            <div class="form-group row ">
+                <label for="AmountTextBox" class="col-sm-3 col-form-label text-right">Amount of donation </label>
+                <div class="col-sm-6">
+                    <asp:TextBox ID="AmountTextBox" runat="server" CssClass="form-control" type="number"></asp:TextBox>
+                </div>
+                <div class="col-sm-2">
+                    <asp:TextBox ID="CurrenceyTextBox" CssClass="custom-select" runat="server" required="true" type="text"></asp:TextBox>
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="FirstNameTextBox" class="col-sm-3 col-form-label text-right">First Name</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
 
 
 
 
 
-    <p align="center" class="MsoNormal">
-        <strong><span>Donation Info</span></strong><b><span><o:p></o:p></span></b></p>
-    <br />
-    <br />
-    <b><span>Amount of donation :&nbsp;
-    <asp:TextBox ID="AmountTextBox" runat="server" required="true" type="number"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Currencey:<asp:TextBox ID="CurrenceyTextBox" runat="server" required="true" type="text"></asp:TextBox>
-    <br />
-    <br />
-    </span></b>
-    <p class="MsoNormal">
-        <b><span>Donation Program<asp:DropDownList ID="DonationProgramDropDownList" runat="server">
-            <asp:ListItem>Select</asp:ListItem>
-            <asp:ListItem>Naming Opportunity </asp:ListItem>
-            <asp:ListItem>Sponsor a Child</asp:ListItem>
-            <asp:ListItem>Zakat Money</asp:ListItem>
-            <asp:ListItem>Monthly Dontion</asp:ListItem>
-            <asp:ListItem>Patient Sponsor</asp:ListItem>
+            <div class="form-group row">
+                <label for="FirstNameTextBox" class="col-sm-3 col-form-label text-right">Donation Program</label>
+                <div class="col-sm-6 col-md-7">
+                    <asp:DropDownList ID="DonationProgramDropDownList" CssClass="custom-select" runat="server">
+                        <asp:ListItem>Select</asp:ListItem>
+                        <asp:ListItem>Naming Opportunity </asp:ListItem>
+                        <asp:ListItem>Sponsor a Child</asp:ListItem>
+                        <asp:ListItem>Zakat Money</asp:ListItem>
+                        <asp:ListItem>Monthly Dontion</asp:ListItem>
+                        <asp:ListItem>Patient Sponsor</asp:ListItem>
 
-        </asp:DropDownList>
-        </span></b>
-    </p>
-    <p class="MsoNormal">
-        &nbsp;</p>
-    <p class="MsoNormal">
-        &nbsp;</p>
-    <p class="MsoNormal">
-        <b><span>First Name</span></b><span class="required"><b><span><o:p>:<asp:TextBox ID="FirstNameTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p></span></b></span>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Last Name<o:p>:<asp:TextBox ID="LastNameTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Email address<o:p>:<asp:TextBox ID="EmailTextBox" runat="server" required="true" type="email"></asp:TextBox>
-        </o:p>
-        </span></b>
-    </p>
-    <p class="MsoNormal">
-        <o:p>
-        <b><span>Country<o:p>:<asp:TextBox ID="CountryTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p>
-        </span></b>
-        </o:p>
-    </p>
-    <p class="MsoNormal">
-        <o:p>
-        <o:p>
-        </o:p>
-        </o:p>
-    </p>
-    <p class="MsoNormal">
-        <b><span>City</span></b><strong><span><o:p>:<b><asp:TextBox ID="CityTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </b></o:p></span></strong>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Address<o:p>:<asp:TextBox ID="AddressTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Phone<o:p>:<asp:TextBox ID="PhoneNumberTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Day Of Birth<o:p>:<asp:TextBox ID="DateOfBirthTextBox" runat="server" required="true" type="date"></asp:TextBox>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Gender<o:p>:<asp:DropDownList ID="GenderDropDownList" runat="server">
-            <asp:ListItem>Select</asp:ListItem>
-            <asp:ListItem>Male</asp:ListItem>
-            <asp:ListItem>Female</asp:ListItem>
-        </asp:DropDownList>
-        </o:p></span></b>
-    </p>
-    <p class="MsoNormal">
-        <br />
-        <b><span>Job<o:p>:<asp:TextBox ID="JobTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p>
-        </span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>Company<o:p>:<asp:TextBox ID="CompanyTextBox" runat="server" required="true" type="text"></asp:TextBox>
-        </o:p>
-        </span></b>
-    </p>
-    <p class="MsoNormal">
-        &nbsp;</p>
-    <p class="MsoNormal">
-        Veryfication Code:
+                    </asp:DropDownList>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <label for="LastNameTextBox" class="col-sm-3 col-form-label text-right">Last Name</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="LastNameTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="EmailTextBox" class="col-sm-3 col-form-label text-right">Email address</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="EmailTextBox" CssClass="form-control" runat="server" required="true" type="email"></asp:TextBox>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <label for="CountryTextBox" class="col-sm-3 col-form-label text-right">Country</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="CityTextBox" class="col-sm-3 col-form-label text-right">City</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="CityTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="AddressTextBox" class="col-sm-3 col-form-label text-right">Address</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="AddressTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="PhoneNumberTextBox" class="col-sm-3 col-form-label text-right">Phone</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="DateOfBirthTextBox" class="col-sm-3 col-form-label text-right">Day Of Birth</label>
+                <div class="col-sm-7">
+                    <input class="form-control" type="text" name="DateOfBirthTextBox">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="GenderDropDownList" class="col-sm-3 col-form-label text-right">Gender</label>
+                <div class="col-sm-7">
+                    <asp:DropDownList ID="GenderDropDownList" CssClass="custom-select" runat="server">
+                        <asp:ListItem>Select</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Female</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="JobTextBox" class="col-sm-3 col-form-label text-right">Job</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="JobTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="CompanyTextBox" class="col-sm-3 col-form-label text-right">Company</label>
+                <div class="col-sm-7">
+                    <asp:TextBox ID="CompanyTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6 offset-3">
+                    <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" OnClick="SubmitButton_Click" Text="Submit" />
+                </div>
+            </div>
+        </div>
+        
+
+
+        <p class="MsoNormal">
+            Veryfication Code:
         <b><span>
-        <asp:TextBox ID="verificationCodeTextBox" runat="server" AutoPostBack="False" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
+            <asp:TextBox ID="verificationCodeTextBox" runat="server" AutoPostBack="False" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
         </span></b>
-    </p>
-    <p class="MsoNormal">
-        <b><span>
-        <o:p></o:p>
-        <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Submit" />
-        <asp:Button ID="VerifyButton" runat="server" OnClick="VerifyButton_Click" Text="Verify" />
-        </span></b>
-    </p>
-    <p class="MsoNormal">
-        &nbsp;</p>
+        </p>
+        <p class="MsoNormal">
+            <b><span>
+                <o:p></o:p>
+                
+                <asp:Button ID="VerifyButton" runat="server" OnClick="VerifyButton_Click" Text="Verify" />
+            </span></b>
+        </p>
+        <p class="MsoNormal">
+            &nbsp;
+        </p>
 
 
-
+    </div>
 
 
 </asp:Content>

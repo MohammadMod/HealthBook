@@ -1,12 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Donate Organs.aspx.cs" Inherits="HealthBook.Donate_Organs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="container">
+    <div class="container mt-8">
     <div class="col-12 col-lg-12">
         <div id="smartwizard-arrows-danger" class="wizard wizard-primary mb-4">
             <ul>
@@ -26,7 +21,7 @@
                     <div id="validation-step-1" class="col-10 offset-1">
                         <div class="form-group">
                             <label class="form-label">First Name<span class="text-danger">*</span></label>
-                            <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" required="true" type="text"></asp:TextBox>
+                            <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" type="text"></asp:TextBox>
                         </div>
 
                         <div class="form-group">

@@ -76,7 +76,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
                 cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = CityTextBox.Text;
 
-                cmd.Parameters.Add("@dateOfBirth", SqlDbType.Date).Value = DateOfBirthTextBox.Text;
+                //cmd.Parameters.Add("@dateOfBirth", SqlDbType.Date).Value = DateOfBirthTextBox.Text;
                 cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = GenderDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@job", SqlDbType.NVarChar).Value = JobTextBox.Text;

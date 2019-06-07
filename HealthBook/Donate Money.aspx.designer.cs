@@ -31,15 +31,6 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox CurrenceyTextBox;
         
         /// <summary>
-        /// DonationProgramDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DonationProgramDropDownList;
-        
-        /// <summary>
         /// FirstNameTextBox control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace HealthBook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
+        
+        /// <summary>
+        /// DonationProgramDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DonationProgramDropDownList;
         
         /// <summary>
         /// LastNameTextBox control.
@@ -103,15 +103,6 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox PhoneNumberTextBox;
         
         /// <summary>
-        /// DateOfBirthTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DateOfBirthTextBox;
-        
-        /// <summary>
         /// GenderDropDownList control.
         /// </summary>
         /// <remarks>
@@ -139,15 +130,6 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox CompanyTextBox;
         
         /// <summary>
-        /// verificationCodeTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox verificationCodeTextBox;
-        
-        /// <summary>
         /// SubmitButton control.
         /// </summary>
         /// <remarks>
@@ -155,6 +137,15 @@ namespace HealthBook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitButton;
+        
+        /// <summary>
+        /// verificationCodeTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox verificationCodeTextBox;
         
         /// <summary>
         /// VerifyButton control.
