@@ -11,9 +11,12 @@
                 <div class="col-sm-6">
                     <asp:TextBox ID="AmountTextBox" runat="server" CssClass="form-control" type="number"></asp:TextBox>
                 </div>
+                
                 <div class="col-sm-2">
-                    <asp:TextBox ID="CurrenceyTextBox" CssClass="custom-select" runat="server" required="true" type="text"></asp:TextBox>
 
+                    <%--<asp:TextBox ID="CurrenceyTextBox" CssClass="custom-select" runat="server" required="true" type="text"></asp:TextBox>--%>
+
+                    <asp:DropDownList ID="CurrenceyTextBox" CssClass="custom-select" runat="server"></asp:DropDownList>
                 </div>
             </div>
 
@@ -130,30 +133,41 @@
 
             <div class="form-group row">
                 <div class="col-sm-6 offset-3">
-                    <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" OnClick="SubmitButton_Click" Text="Submit" />
+                    <asp:Button ID="SubmitButton" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
+                        runat="server" OnClick="SubmitButton_Click" Text="Submit" />
                 </div>
             </div>
         </div>
         
 
 
-        <p class="MsoNormal">
-            Veryfication Code:
-        <b><span>
-            <asp:TextBox ID="verificationCodeTextBox" runat="server" AutoPostBack="False" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
-        </span></b>
-        </p>
-        <p class="MsoNormal">
-            <b><span>
-                <o:p></o:p>
-                
-                <asp:Button ID="VerifyButton" runat="server" OnClick="VerifyButton_Click" Text="Verify" />
-            </span></b>
-        </p>
-        <p class="MsoNormal">
-            &nbsp;
-        </p>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Veryfication Code:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <asp:TextBox ID="verificationCodeTextBox" CssClass="form-control" runat="server" AutoPostBack="False" OnTextChanged="verificationCodeTextBox_TextChanged" type="number" MaxLength="6"></asp:TextBox>
+                    
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <asp:Button ID="VerifyButton" runat="server" CssClass="btn btn-success" OnClick="VerifyButton_Click" Text="Verify" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+                
+        
 
     </div>
 

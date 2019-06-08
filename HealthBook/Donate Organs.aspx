@@ -9,7 +9,8 @@
                         <small>ID yourslef</small></a>
                 </li>
                 <li><a href="#arrows-success-step-2">Step two<br>
-                    <small>donate body</small></a>
+                    <small id="dawd">donate body</small></a>
+                    
                 </li>
             </ul>
 
@@ -17,12 +18,12 @@
                 <%-- Add Item on step one --%>
                 <div id="arrows-success-step-1" >
 
-
                     <div id="validation-step-1" class="col-10 offset-1">
                         <div class="form-group">
                             <label class="form-label">First Name<span class="text-danger">*</span></label>
-                            <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" type="text"></asp:TextBox>
+                            <asp:TextBox ID="FirstNameTextBox" name="wizard-userName" runat="server" CssClass="form-control required"  type="text"></asp:TextBox>
                         </div>
+                        <p>dawd</p>
 
                         <div class="form-group">
                             <label class="form-label">Last Name<span class="text-danger">*</span></label>
@@ -32,7 +33,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Gender</label>
 
-                            <asp:DropDownList ID="GenderDropDownList" runat="server" CssClass="form-control">
+                            <asp:DropDownList ID="GenderDropDownList" runat="server" CssClass="custom-select">
                                 <asp:ListItem Selected="True">Select</asp:ListItem>
                                 <asp:ListItem>Male</asp:ListItem>
                                 <asp:ListItem>Female</asp:ListItem>
@@ -48,7 +49,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Blood Group</label>
 
-                            <asp:DropDownList ID="BloodTypeDropDownList" CssClass="form-control" runat="server">
+                            <asp:DropDownList ID="BloodTypeDropDownList" CssClass="custom-select" runat="server">
 
                                 <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
                                 <asp:ListItem Text="A-" Value="A-">A-</asp:ListItem>
@@ -98,7 +99,7 @@
                         <div class="form-group ">
                             <h4 class="font_oswald">Are you sure want to donate?</h4>
 
-                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
+                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
                                 <asp:ListItem>No</asp:ListItem>
                                 <asp:ListItem>Yes</asp:ListItem>
                             </asp:DropDownList>
@@ -106,7 +107,7 @@
 
                         <div class="form-group">
                             <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
-                            <asp:DropDownList CssClass="form-control" ID="AllOrSomeDropDownList" runat="server">
+                            <asp:DropDownList CssClass="custom-select" ID="AllOrSomeDropDownList" runat="server">
                                 <asp:ListItem>All</asp:ListItem>
                                 <asp:ListItem>Some</asp:ListItem>
                             </asp:DropDownList>
@@ -205,7 +206,7 @@
 
                         <div class="form-group ">
                             <h4 class="font_oswald">Do you want to donate blood too?</h4>
-                            <asp:DropDownList CssClass="form-control" ID="BloodAnswerDropDownList" runat="server">
+                            <asp:DropDownList CssClass="custom-select" ID="BloodAnswerDropDownList" runat="server">
                                 <asp:ListItem>Yes</asp:ListItem>
                                 <asp:ListItem>No</asp:ListItem>
                             </asp:DropDownList>
@@ -214,7 +215,7 @@
 
                         <div class="form-group ">
                             <p class="font_oswald">I authorize you to use my organs/tissues for:</p>
-                            <asp:DropDownList CssClass="form-control" ID="UseOrgansForDropDownList0" runat="server">
+                            <asp:DropDownList CssClass="custom-select" ID="UseOrgansForDropDownList0" runat="server">
                                 <asp:ListItem>Research</asp:ListItem>
                                 <asp:ListItem>Transplant</asp:ListItem>
                                 <asp:ListItem>Research &amp; Transplant</asp:ListItem>

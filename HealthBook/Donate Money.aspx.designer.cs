@@ -28,7 +28,7 @@ namespace HealthBook {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CurrenceyTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList CurrenceyTextBox;
         
         /// <summary>
         /// FirstNameTextBox control.
