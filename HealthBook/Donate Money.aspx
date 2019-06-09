@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Donate Money.aspx.cs" Inherits="HealthBook.Donate_Money" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
+    <div id="main" runat="server">
     <div class="mt-5"></div>
     <div class="container">
         <div class="text-center THDM">Donation Info</div>
@@ -16,7 +17,13 @@
 
                     <%--<asp:TextBox ID="CurrenceyTextBox" CssClass="custom-select" runat="server" required="true" type="text"></asp:TextBox>--%>
 
-                    <asp:DropDownList ID="CurrenceyTextBox" CssClass="custom-select" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="CurrenceyTextBox" CssClass="custom-select" runat="server">
+                         <asp:ListItem>Select</asp:ListItem>
+                        <asp:ListItem>USD</asp:ListItem>
+                        <asp:ListItem>EUR</asp:ListItem>
+                        <asp:ListItem>IQD</asp:ListItem>
+                        <asp:ListItem>TRY</asp:ListItem>
+                    </asp:DropDownList>
                 </div>
             </div>
 
@@ -133,8 +140,23 @@
 
             <div class="form-group row">
                 <div class="col-sm-6 offset-3">
-                    <asp:Button ID="SubmitButton" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
+                    
+                    </div>
+
+
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="up1" runat="server">
+    <ContentTemplate>
+   
+
+         <asp:Button ID="SubmitButton" CssClass="btn btn-info"  data-toggle="modal" data-target="#exampleModalCenter" 
                         runat="server" OnClick="SubmitButton_Click" Text="Submit" />
+
+    </ContentTemplate>
+    </asp:UpdatePanel>
+
+                   
+
                 </div>
             </div>
         </div>
@@ -143,11 +165,12 @@
 
 
         <!-- Modal -->
+        <div id="Div1">
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Veryfication Code:</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Please check your phone for veryfication Code:</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -164,12 +187,28 @@
             </div>
           </div>
         </div>
-
+        </div>
         
                 
         
 
     </div>
+    <script>
+ function CheckStatus()
+   {
+    var divLayer = document.getElementById('Div1');
 
+    if(divLayer.style.display == 'block')
+    {
+     divLayer.style.display = 'none';
+    }
+    else
+    {
+    divLayer.style.display = 'block';
+    }
+    
+    return false;
+   }
+    </script>
 
 </asp:Content>

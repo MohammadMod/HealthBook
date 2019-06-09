@@ -25,11 +25,11 @@ namespace HealthBook
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            g.generator();
-             myCode = g.code;
+            
+                g.generator();
+                myCode = g.code;
 
-            long PhoneNumber = long.Parse(PhoneNumberTextBox.Text);
-
+                long PhoneNumber = long.Parse(PhoneNumberTextBox.Text);
 
             const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
             Client client = Client.CreateDefault(YourAccessKey);
@@ -38,6 +38,10 @@ namespace HealthBook
             client.SendMessage("HealthBook", myCode, new[] { Msisdn });
 
             //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('We Sent you a verify code please check your phone');", true);
+
+            SubmitButton.Attributes.Add("onclick", "return false;");
+            
+          
 
 
 
@@ -53,6 +57,7 @@ namespace HealthBook
 
         protected void VerifyButton_Click(object sender, EventArgs e)
         {
+            string n = String.Format("{0}", Request.Form["DateOfBirthTextBox"]);
             if (verificationCodeTextBox.Text == myCode)
             {
                 #region insert to database
@@ -76,7 +81,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
                 cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = CityTextBox.Text;
 
-                //cmd.Parameters.Add("@dateOfBirth", SqlDbType.Date).Value = DateOfBirthTextBox.Text;
+                cmd.Parameters.Add("@dateOfBirth", SqlDbType.Date).Value = Convert.ToDateTime(n);
                 cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = GenderDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@job", SqlDbType.NVarChar).Value = JobTextBox.Text;
