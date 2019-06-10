@@ -31,13 +31,13 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox AmountTextBox;
         
         /// <summary>
-        /// CurrenceyTextBox control.
+        /// currencylist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CurrenceyTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect currencylist;
         
         /// <summary>
         /// FirstNameTextBox control.

@@ -58,6 +58,8 @@ namespace HealthBook
         protected void VerifyButton_Click(object sender, EventArgs e)
         {
             string n = String.Format("{0}", Request.Form["DateOfBirthTextBox"]);
+            string val = currencylist.Value;
+
             if (verificationCodeTextBox.Text == myCode)
             {
                 #region insert to database
@@ -67,7 +69,7 @@ namespace HealthBook
                 con.Open();
 
                 cmd.Parameters.Add("@amount", SqlDbType.NVarChar).Value = AmountTextBox.Text;
-                cmd.Parameters.Add("@Currencey", SqlDbType.VarChar).Value = CurrenceyTextBox.Text;
+                cmd.Parameters.Add("@Currencey", SqlDbType.VarChar).Value = val;
 
                 cmd.Parameters.Add("@donationProgram", SqlDbType.VarChar).Value = DonationProgramDropDownList.SelectedItem.Text;
                 cmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = FirstNameTextBox.Text;
