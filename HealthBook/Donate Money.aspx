@@ -197,8 +197,8 @@
                     <label for="CountryTextBox" class="col-sm-3 col-form-label text-right">Country</label>
                     <div class="col-sm-7">
 
-                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
-
+<%--                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>--%>
+                        <asp:TextBox ID="CountryTextBox" runat="server"></asp:TextBox>
                         
                         
                     </div>
@@ -266,16 +266,13 @@
                 <div class="form-group row">
                     <div class="col-sm-6 offset-3">
 
-
-
                         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                         <asp:UpdatePanel ID="up1" runat="server">
                             <ContentTemplate>
-
-
                                 <asp:Button ID="SubmitButton" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
                                     runat="server" OnClick="SubmitButton_Click" Text="Submit" />
-
+                                <br />
+                                <br />
                             </ContentTemplate>
                         </asp:UpdatePanel>
 
