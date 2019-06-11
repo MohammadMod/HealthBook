@@ -25,11 +25,14 @@ namespace HealthBook
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            
-                g.generator();
+
+
+            string phone = String.Format("{0}", Request.Form["phone"]);
+
+            g.generator();
                 myCode = g.code;
 
-                long PhoneNumber = long.Parse(PhoneNumberTextBox.Text);
+                long PhoneNumber = long.Parse(phone);
 
             const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
             Client client = Client.CreateDefault(YourAccessKey);
@@ -37,17 +40,9 @@ namespace HealthBook
             MessageBird.Objects.Message message =
             client.SendMessage("HealthBook", myCode, new[] { Msisdn });
 
-            //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('We Sent you a verify code please check your phone');", true);
 
             SubmitButton.Attributes.Add("onclick", "return false;");
             
-          
-
-
-
-
-
-
         }
 
         protected void verificationCodeTextBox_TextChanged(object sender, EventArgs e)
@@ -58,6 +53,8 @@ namespace HealthBook
         protected void VerifyButton_Click(object sender, EventArgs e)
         {
             string n = String.Format("{0}", Request.Form["DateOfBirthTextBox"]);
+            string p = String.Format("{0}", Request.Form["phone"]);
+
             string val = currencylist.Value;
 
             if (verificationCodeTextBox.Text == myCode)
@@ -75,7 +72,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = FirstNameTextBox.Text;
 
                 cmd.Parameters.Add("@lastName", SqlDbType.NVarChar).Value = LastNameTextBox.Text;
-                cmd.Parameters.Add("@phoneNumber", SqlDbType.NVarChar).Value = PhoneNumberTextBox.Text;
+                cmd.Parameters.Add("@phoneNumber", SqlDbType.NVarChar).Value = p;
 
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = EmailTextBox.Text;
                 cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = CountryTextBox.Text;
@@ -112,6 +109,11 @@ namespace HealthBook
             {
                 System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Invalid code the code is: ');" + myCode, true);
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
