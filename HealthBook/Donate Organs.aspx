@@ -23,7 +23,6 @@
                             <label class="form-label">First Name<span class="text-danger">*</span></label>
                             <asp:TextBox ID="FirstNameTextBox" name="wizard-userName" runat="server" CssClass="form-control required"  type="text"></asp:TextBox>
                         </div>
-                        <p>dawd</p>
 
                         <div class="form-group">
                             <label class="form-label">Last Name<span class="text-danger">*</span></label>
@@ -99,13 +98,13 @@
                         <div class="form-group ">
                             <h4 class="font_oswald">Are you sure want to donate?</h4>
 
-                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server" AutoPostBack="false" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
-                                <asp:ListItem>No</asp:ListItem>
-                                <asp:ListItem>Yes</asp:ListItem>
+                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server">
+                                <asp:ListItem Value="ISNO">No</asp:ListItem>
+                                <asp:ListItem Value="ISYES">Yes</asp:ListItem>
                             </asp:DropDownList>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group" id="DAS" style="display:none;">
                             <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
                             <asp:DropDownList CssClass="custom-select" ID="AllOrSomeDropDownList" runat="server">
                                 <asp:ListItem>All</asp:ListItem>

@@ -63,6 +63,32 @@
     <script src="js/app.js"></script>
 
     <script src="js/forms.js"></script>
+        <script>
+
+            $(document).ready(function () {
+                $('#DAS').show();
+
+                
+
+            //    var DIVDAS = $('#DAS');
+            //    $(DIVDAS).hide();
+            //        console.log("hello1");
+
+            //    $("#AllOrganDonerDropDownList").change(function () {
+            //        console.log("hello");
+            //        var value = $("#AllOrganDonerDropDownList option:selected").val();
+            //        var theDiv = $(".IS" + value);
+
+            //        if (theDiv == "ISYES") {
+            //            DIVDAS.slideDown();
+            //        }
+                    
+            
+
+
+
+            });
+        </script>
         <script src="js/intlTelInput.js"></script>
         <script>
             var input = document.querySelector("#phone");
@@ -90,7 +116,9 @@
                 utilsScript: "js/utils.js",
             });
           </script>
-
+        
+                
+                
         <script>
             
             document.addEventListener("DOMContentLoaded", function (event) {

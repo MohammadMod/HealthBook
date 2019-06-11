@@ -73,17 +73,5 @@ namespace HealthBook
             }
 
         }
-
-        protected void AllOrganDonerDropDownList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (AllOrganDonerDropDownList.SelectedIndex!=0)
-            //{
-            //    viewOrgansForm.Visible = true;
-            //}
-            //else
-            //{
-            //    viewOrgansForm.Visible = false;
-            //}
-        }
     }
 }
