@@ -78,7 +78,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@phoneNumber", SqlDbType.NVarChar).Value = PhoneNumberTextBox.Text;
 
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = EmailTextBox.Text;
-                //cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = CountryTextBox.Text;
+                cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = CountryTextBox.Text;
 
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
                 cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = CityTextBox.Text;

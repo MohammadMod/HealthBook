@@ -197,7 +197,10 @@
                     <label for="CountryTextBox" class="col-sm-3 col-form-label text-right">Country</label>
                     <div class="col-sm-7">
 
-                        <input id="phone" class="form-control" name="phone" type="tel">
+                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+
+                        
+                        
                     </div>
                 </div>
 
@@ -219,7 +222,9 @@
                 <div class="form-group row">
                     <label for="PhoneNumberTextBox" class="col-sm-3 col-form-label text-right">Phone</label>
                     <div class="col-sm-7">
-                        <asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                        <%--<asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>--%>
+                        <input id="phone" class="form-control" name="phone" type="tel">
+
                     </div>
                 </div>
 
