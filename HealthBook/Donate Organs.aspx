@@ -99,7 +99,7 @@
                         <div class="form-group ">
                             <h4 class="font_oswald">Are you sure want to donate?</h4>
 
-                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server" AutoPostBack="True" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
+                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server" AutoPostBack="false" OnSelectedIndexChanged="AllOrganDonerDropDownList_SelectedIndexChanged">
                                 <asp:ListItem>No</asp:ListItem>
                                 <asp:ListItem>Yes</asp:ListItem>
                             </asp:DropDownList>

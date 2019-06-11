@@ -160,7 +160,9 @@
     <Content Include="Contact.aspx" />
     <Content Include="css\app.css" />
     <Content Include="css\bootstrap.css" />
+    <Content Include="css\demo.css" />
     <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\intlTelInput.css" />
     <Content Include="css\line-awesome.min.css" />
     <Content Include="css\myCss.css" />
     <Content Include="Default.aspx" />
@@ -180,10 +182,14 @@
     <Content Include="fonts\line-awesome.woff" />
     <Content Include="fonts\line-awesome.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\flags%402x.png" />
+    <Content Include="img\flags.png" />
     <Content Include="img\healthbook-10.png" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
+    <Content Include="js\intlTelInput.js" />
+    <Content Include="js\utils.js" />
     <Content Include="log in.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />

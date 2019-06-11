@@ -18,6 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/line-awesome.min.css" rel="stylesheet" />
     <link href="css/myCss.css" rel="stylesheet" />
+    <link href="css/intlTelInput.css" rel="stylesheet" />
     <%-- Fond Owsald --%>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
@@ -62,6 +63,33 @@
     <script src="js/app.js"></script>
 
     <script src="js/forms.js"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+              // allowDropdown: false,
+              autoHideDialCode: false,
+              // autoPlaceholder: "off",
+              // dropdownContainer: document.body,
+              // excludeCountries: ["us"],
+              formatOnDisplay: false,
+              // geoIpLookup: function(callback) {
+              //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+              //     var countryCode = (resp && resp.country) ? resp.country : "";
+              //     callback(countryCode);
+              //   });
+              // },
+              // hiddenInput: "full_number",
+              initialCountry: "iq",
+              // localizedCountries: { 'de': 'Deutschland' },
+              nationalMode: false,
+              // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+              // placeholderNumberType: "MOBILE",
+              // preferredCountries: ['cn', 'jp'],
+              // separateDialCode: true,
+                utilsScript: "js/utils.js",
+            });
+          </script>
 
         <script>
             
