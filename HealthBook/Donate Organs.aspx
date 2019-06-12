@@ -81,7 +81,9 @@
 
                         <div class="form-group">
                             <label class="form-label">Phone Number<span class="text-danger">*</span></label>
-                            <asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="Number"></asp:TextBox>
+                            
+                            <input id="phone" class="form-control" name="phone" type="tel">
+
                         </div>
 
 
@@ -98,24 +100,23 @@
                         <div class="form-group ">
                             <h4 class="font_oswald">Are you sure want to donate?</h4>
 
-                            <asp:DropDownList ID="AllOrganDonerDropDownList" CssClass="custom-select" runat="server">
-                                <asp:ListItem Value="ISNO">No</asp:ListItem>
-                                <asp:ListItem Value="ISYES">Yes</asp:ListItem>
-                            </asp:DropDownList>
+                            <select class="form-control" id="Donate">
+                                <option value="NO">No</option>
+                                <option value="YES">Yes</option>
+                            </select>
                         </div>
 
-                        <div class="form-group" id="DAS" style="display:none;">
+                        <div class="form-group" id="DAS" style="display:none;" >
                             <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
-                            <asp:DropDownList CssClass="custom-select" ID="AllOrSomeDropDownList" runat="server">
-                                <asp:ListItem>All</asp:ListItem>
-                                <asp:ListItem>Some</asp:ListItem>
-                            </asp:DropDownList>
+                            
+                            <select class="form-control" id="Donatestate">
+                                <option value="All">All</option>
+                                <option value="Some">Some</option>
+                            </select>
                         </div>
 
-                        <div id="viewOrgansForm" runat="server">
-
+                        <div id="viewOrgansForm" style="display:none;">
                             <p class="font_oswald">Please Chose the organ you want to donate:</p>
-
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
@@ -197,9 +198,6 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-
-
-
                         </div>
 
 
