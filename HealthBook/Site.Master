@@ -66,28 +66,27 @@
         <script>
 
             $(document).ready(function () {
-                $('#DAS').show();
+                $('#Donate').change(function () {
+                    if (this.value == 'YES') {
+                        $("#DAS").show();
+                    }
+                    else {
+                        $("#DAS").hide();
+                    }
+                });
 
-                
+                $('#Donatestate').change(function () {
+                    console.log(this.value);
 
-            //    var DIVDAS = $('#DAS');
-            //    $(DIVDAS).hide();
-            //        console.log("hello1");
-
-            //    $("#AllOrganDonerDropDownList").change(function () {
-            //        console.log("hello");
-            //        var value = $("#AllOrganDonerDropDownList option:selected").val();
-            //        var theDiv = $(".IS" + value);
-
-            //        if (theDiv == "ISYES") {
-            //            DIVDAS.slideDown();
-            //        }
-                    
-            
-
-
-
+                    if (this.value == 'Some') {
+                        $("#viewOrgansForm").show();
+                    }
+                    else {
+                        $("#viewOrgansForm").hide();
+                    }
+                });
             });
+
         </script>
         <script src="js/intlTelInput.js"></script>
         <script>

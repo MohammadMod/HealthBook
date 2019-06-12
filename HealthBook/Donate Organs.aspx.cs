@@ -37,7 +37,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = FirstNameTextBox.Text;
                 cmd.Parameters.Add("@lastName", SqlDbType.VarChar).Value = LastNameTextBox.Text;
 
-                cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
+                //cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = EmailTextBox.Text;
 
                 cmd.Parameters.Add("@gender", SqlDbType.VarChar).Value = GenderDropDownList.SelectedItem.Text;

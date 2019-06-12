@@ -1789,8 +1789,8 @@ fieldset[disabled] a.btn {
     border-color: #01549b; }
 .btn-secondary {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: #0CC2AA;
+    border-color: #0CC2AA;
 }
 
     .btn-secondary:hover {
@@ -1807,8 +1807,8 @@ fieldset[disabled] a.btn {
     .btn-secondary.disabled,
     .btn-secondary:disabled {
         color: #fff;
-        background-color: #a180da;
-        border-color: #a180da
+        background-color: #0CC2AA;
+        border-color: #0CC2AA
     }
 
     .btn-secondary:not(:disabled):not(.disabled).active,
