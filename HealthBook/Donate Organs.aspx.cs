@@ -18,7 +18,6 @@ namespace HealthBook
         {
             if (!IsPostBack)
             {
-                Label1.Visible = true;
                 //viewOrgansForm.Visible = false;
             }
         }
@@ -28,6 +27,31 @@ namespace HealthBook
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
+            string phone = String.Format("{0}", Request.Form["phone"]);
+            long PhoneNumber = long.Parse(phone);
+            string n = String.Format("{0}", Request.Form["DateOfBirthTextBox"]);
+
+            string selectOrganList = Request.Form["Donatestate"];
+            string selectedOrgan = "";
+
+            if (selectOrganList == "All")
+            {
+                selectedOrgan = "All";
+            }
+            else
+            {
+
+                foreach (ListItem lst in CheckBoxList1.Items)
+                {
+                    if (lst.Selected == true)
+                    {
+                        selectedOrgan += lst.Text + " , ";
+                    }
+                }
+            }
+          
+          
+
             try
             {
                 SqlCommand cmd = new SqlCommand("Insert_Organs", con);
@@ -37,24 +61,26 @@ namespace HealthBook
                 cmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = FirstNameTextBox.Text;
                 cmd.Parameters.Add("@lastName", SqlDbType.VarChar).Value = LastNameTextBox.Text;
 
-                //cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
+                cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumber;
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = EmailTextBox.Text;
 
                 cmd.Parameters.Add("@gender", SqlDbType.VarChar).Value = GenderDropDownList.SelectedItem.Text;
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
 
 
-                //cmd.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar).Value = DateOfBirthTextBox.Text;
+                cmd.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar).Value = Convert.ToDateTime(n);
                 cmd.Parameters.Add("@bloodGroup", SqlDbType.VarChar).Value = BloodTypeDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@city", SqlDbType.VarChar).Value = CityTextBox.Text;
-                //cmd.Parameters.Add("@organs", SqlDbType.NVarChar).Value = OrgansDropDownList.SelectedItem.Text;
+                cmd.Parameters.Add("@organs", SqlDbType.NVarChar).Value = selectedOrgan;
 
                 cmd.Parameters.Add("@signature", SqlDbType.VarChar).Value = SignatureTextBox.Text;
                 cmd.Parameters.Add("@bloodDoner", SqlDbType.NVarChar).Value = BloodAnswerDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@usedOrgansFor", SqlDbType.VarChar).Value = UseOrgansForDropDownList0.SelectedItem.Text;
+                cmd.Parameters.Add("@date", SqlDbType.Date).Value = DateTime.Now;
 
+                
 
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.ExecuteNonQuery();
@@ -67,9 +93,7 @@ namespace HealthBook
             }
             if (GenderDropDownList.SelectedIndex == 0)
             {
-                Label1.Text = "Please select your gender";
-                Label1.ForeColor = System.Drawing.Color.Red;
-                Label1.Visible = true;
+             
             }
 
         }
