@@ -6,10 +6,10 @@
         <div id="smartwizard-arrows-danger" class="wizard wizard-primary mb-4">
             <ul>
                 <li><a href="#arrows-success-step-1">Step One<br>
-                        <small>ID yourslef</small></a>
+                        <small>Info</small></a>
                 </li>
                 <li><a href="#arrows-success-step-2">Step two<br>
-                    <small id="dawd">donate body</small></a>
+                    <small id="dawd">Body Parts</small></a>
                     
                 </li>
             </ul>
