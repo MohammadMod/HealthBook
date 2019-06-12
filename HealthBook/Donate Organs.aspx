@@ -6,10 +6,10 @@
         <div id="smartwizard-arrows-danger" class="wizard wizard-primary mb-4">
             <ul>
                 <li><a href="#arrows-success-step-1">Step One<br>
-                        <small>ID yourslef</small></a>
+                        <small>Info</small></a>
                 </li>
                 <li><a href="#arrows-success-step-2">Step two<br>
-                    <small id="dawd">donate body</small></a>
+                    <small id="dawd">Body Parts</small></a>
                     
                 </li>
             </ul>
@@ -109,96 +109,110 @@
                         <div class="form-group" id="DAS" style="display:none;" >
                             <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
                             
-                            <select class="form-control" id="Donatestate">
+                            <select class="form-control" id="Donatestate" name="Donatestate">
                                 <option value="All">All</option>
                                 <option value="Some">Some</option>
                             </select>
                         </div>
 
-                        <div id="viewOrgansForm" style="display:none;">
+
+
+ <div id="viewOrgansForm" style="display:none;">
                             <p class="font_oswald">Please Chose the organ you want to donate:</p>
 
-                            <div class="form-group d-inline pr-3">
+
+                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+
+                         <asp:ListItem Text="Heart">Heart</asp:ListItem>  
+                         <asp:ListItem Text="Lungs">Lungs</asp:ListItem>  
+                         <asp:ListItem Text="Kidneys">Kidneys</asp:ListItem>  
+                         <asp:ListItem Text="Liver">Liver</asp:ListItem>  
+                         <asp:ListItem Text="Corneas">Corneas</asp:ListItem>  
+                         <asp:ListItem Text="l bowel">l bowel</asp:ListItem>  
+                         <asp:ListItem Text="Smal">Smal</asp:ListItem>  
+                         <asp:ListItem Text="Eyes">Eyes</asp:ListItem>  
+
+                        </asp:CheckBoxList>
+                       
+
+                               <%--  <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Heart
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox2" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_2" runat="server" Text="Heart" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Lungs
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox1" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_1" runat="server" Text="Lungs" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Kidneys
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox3" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_3" runat="server" Text="Kidneys" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Liver
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox4" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_4" runat="server" Text="Liver"/>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Corneas
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox5" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_5" runat="server" Text="Corneas" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Pancreas
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox6" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_6" runat="server" Text="Pancreas" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    l bowel
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox7" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_7" runat="server" Text="l bowel" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Smal
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox8" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_8" runat="server" Text="Smal"/>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
 
                             <div class="form-group d-inline pr-3">
                                 <label class="checkb">
-                                    Eyes
+                                    
                                 <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox9" runat="server" />
+                                    <asp:CheckBox ID="CheckBox_9" runat="server" Text="Eyes"/>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                        </div>
+                        </div>--%>
 
 
                         <div class="form-group ">
@@ -246,7 +260,6 @@
 
     
 
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
 
 
