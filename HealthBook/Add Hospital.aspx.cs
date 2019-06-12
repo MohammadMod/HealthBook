@@ -42,7 +42,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@hospitalName", SqlDbType.NVarChar).Value = HospitalNameTextBox.Text;
                 cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = EmailTextBox.Text;
 
-                cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
+                //cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
                 cmd.Parameters.Add("@password", SqlDbType.NVarChar).Value = PasswordTextBox.Text;
 
                 cmd.Parameters.Add("@userName", SqlDbType.VarChar).Value = UserNameTextBox.Text;

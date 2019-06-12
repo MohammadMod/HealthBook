@@ -121,7 +121,7 @@
         <script>
             
             document.addEventListener("DOMContentLoaded", function (event) {
-                $(function () { $('p').click(function () { $(this).hide(3000); }) });
+                
                 
                 $('#smartwizard-arrows-success').smartWizard({
                     theme: 'arrows',
