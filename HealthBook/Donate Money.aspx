@@ -281,10 +281,6 @@
                 </div>
             </div>
         </div>
-        
-
-
-
         <!-- Modal -->
         <div id="Div1">
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
