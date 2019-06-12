@@ -1,8 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View Hospitals.aspx.cs" Inherits="HealthBook.View_Hospitals" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container mt-8">
-        <div class="border">
+    <div class="container text-center mt-7">
+        <div>
+            <h4 class="text-center my-3 THDM">View Hospitals</h4>
+
+        </div>
+        <div class="border p-3">
             <asp:GridView ID="ViewHospitalsGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-md text-center" runat="server"></asp:GridView>
         </div>
     </div>

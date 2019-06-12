@@ -117,23 +117,23 @@
 
 
 
- <div id="viewOrgansForm" style="display:none;">
+                        <div id="viewOrgansForm" style="display: none;">
                             <p class="font_oswald">Please Chose the organ you want to donate:</p>
 
 
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                            <asp:CheckBoxList ID="CheckBoxList1" runat="server">
 
-                         <asp:ListItem Text="Heart">Heart</asp:ListItem>  
-                         <asp:ListItem Text="Lungs">Lungs</asp:ListItem>  
-                         <asp:ListItem Text="Kidneys">Kidneys</asp:ListItem>  
-                         <asp:ListItem Text="Liver">Liver</asp:ListItem>  
-                         <asp:ListItem Text="Corneas">Corneas</asp:ListItem>  
-                         <asp:ListItem Text="l bowel">l bowel</asp:ListItem>  
-                         <asp:ListItem Text="Smal">Smal</asp:ListItem>  
-                         <asp:ListItem Text="Eyes">Eyes</asp:ListItem>  
+                                <asp:ListItem Text="Heart">Heart</asp:ListItem>
+                                <asp:ListItem Text="Lungs">Lungs</asp:ListItem>
+                                <asp:ListItem Text="Kidneys">Kidneys</asp:ListItem>
+                                <asp:ListItem Text="Liver">Liver</asp:ListItem>
+                                <asp:ListItem Text="Corneas">Corneas</asp:ListItem>
+                                <asp:ListItem Text="l bowel">l bowel</asp:ListItem>
+                                <asp:ListItem Text="Smal">Smal</asp:ListItem>
+                                <asp:ListItem Text="Eyes">Eyes</asp:ListItem>
 
-                        </asp:CheckBoxList>
-                       
+                            </asp:CheckBoxList>
+                        </div>
 
                                <%--  <div class="form-group d-inline pr-3">
                                 <label class="checkb">
@@ -252,6 +252,7 @@
             </div>
         </div>
     </div>
+        
 </div>
 
     

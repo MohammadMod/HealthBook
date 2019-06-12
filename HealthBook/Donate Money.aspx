@@ -198,7 +198,7 @@
                     <div class="col-sm-7">
 
 <%--                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>--%>
-                        <asp:TextBox ID="CountryTextBox" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server"></asp:TextBox>
                         
                         
                     </div>

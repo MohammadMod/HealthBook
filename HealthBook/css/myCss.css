@@ -1,4 +1,40 @@
-﻿.mt-6 {
+﻿
+/* Container 2 start*/
+.container2 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container2 {
+        max-width: 680px
+    }
+}
+
+@media (min-width:768px) {
+    .container2 {
+        max-width: 860px
+    }
+}
+
+@media (min-width:992px) {
+    .container2 {
+        max-width: 1080px
+    }
+}
+
+@media (min-width:1200px) {
+    .container2 {
+        max-width: 1300px
+    }
+}
+/*Container 2 end*/
+
+
+.mt-6 {
     margin-top: 4rem !important;
 }
 
@@ -23,6 +59,9 @@
     margin-bottom: 6rem !important;
 }
 
+th{
+    text-align:center !important;
+}
 .THDM {
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
