@@ -1,32 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Configuration;
-using System.Web.Security;
-using System.Data;
-using System.Drawing;
 
 namespace HealthBook
 {
-	public partial class Log_In : System.Web.UI.Page
-	{
+    public partial class login : System.Web.UI.Page
+    {
+        public static string email = "";
+        public static string username = "";
+        public static string password = "";
 
-       public static string email = "";
-       public static string username = "";
-       public static string password = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
-        protected void LogInButton_Click(object sender, EventArgs e)
+        protected void SubmitButton_Click(object sender, EventArgs e)
         {
-           
-
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
 
             SqlCommand cmd = new SqlCommand("login_search", con);
@@ -46,14 +42,17 @@ namespace HealthBook
                 password = dr[1].ToString();
                 username = dr[2].ToString();
 
-                Session["username"] = dr[2].ToString();
 
-                Label1.Text = dr[2].ToString();
+                Session["usernameses"] = dr[2].ToString();
+                Application["usernameapp"] = dr[2].ToString();
 
-                if (ReminderCheck.Checked)
+
+                if (Reminder.Checked)
                 {
                     SaveCookie();
                 }
+
+                Response.Redirect("Default.aspx");
             }
             else
             {
@@ -63,9 +62,8 @@ namespace HealthBook
 
             dr.Close();
             con.Close();
-
         }
-        private void SaveCookie()
+            private void SaveCookie()
         {
             //Create a Cookie with a suitable Key.
             HttpCookie loginCookie = new HttpCookie("Login");
