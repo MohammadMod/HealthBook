@@ -10,7 +10,16 @@
 namespace HealthBook {
     
     
-    public partial class Log_In {
+    public partial class login {
+        
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// EmailTextBox control.
@@ -31,13 +40,13 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
         
         /// <summary>
-        /// ReminderCheck control.
+        /// Reminder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ReminderCheck;
+        protected global::System.Web.UI.WebControls.CheckBox Reminder;
         
         /// <summary>
         /// Label1 control.
@@ -49,12 +58,12 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// LogInButton control.
+        /// SubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogInButton;
+        protected global::System.Web.UI.WebControls.Button SubmitButton;
     }
 }

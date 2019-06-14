@@ -11,7 +11,6 @@ namespace HealthBook
     public partial class test : System.Web.UI.Page
     {
         string loged_user = "";
-        Log_In Log_In = new Log_In();
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -31,7 +30,7 @@ namespace HealthBook
                 }
                 else
                 {
-                    Response.Redirect("log in.aspx");
+                    Response.Redirect("login.aspx");
                 }
             }
         }
