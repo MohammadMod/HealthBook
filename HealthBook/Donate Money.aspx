@@ -6,14 +6,14 @@
         <div class="container">
             <div class="text-center my-3 THDM">Donation Info</div>
 
-            <div class="border py-3 pl-1">
+            <div class="border py-3 px-3 pl-1">
                 <div class="form-group row ">
-                    <label for="AmountTextBox" class="col-md-3 col-sm-12 col-form-label text-right">Amount of donation </label>
-                    <div class="col-md-6 col-sm-8">
+                    <label for="AmountTextBox" class=" col-md-3 col-sm-12 col-form-label text-sm-left text-md-right">Amount of donation </label>
+                    <div class="col-md-6 col-sm-8 col-8">
                         <asp:TextBox ID="AmountTextBox" runat="server" CssClass="form-control" type="number"></asp:TextBox>
                     </div>
 
-                    <div class="col-md-2 col-sm-4">
+                    <div class="col-md-2 col-sm-4 col-4">
                         <%--Currency list--%>
                         <select name="currencies" class="custom-select" id="currencylist" runat="server">
                             <option selected value="">Select currency</option>
@@ -147,8 +147,8 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="FirstNameTextBox" class="col-sm-3 col-form-label text-right">First Name</label>
-                    <div class="col-sm-7">
+                    <label for="FirstNameTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">First Name</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>
@@ -158,8 +158,8 @@
 
 
                 <div class="form-group row">
-                    <label for="FirstNameTextBox" class="col-sm-3 col-form-label text-right">Donation Program</label>
-                    <div class="col-sm-6 col-md-7">
+                    <label for="FirstNameTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Donation Program</label>
+                    <div class="col-sm-12 col-md-7">
                         <asp:DropDownList ID="DonationProgramDropDownList" CssClass="custom-select" runat="server">
                             <asp:ListItem>Select</asp:ListItem>
                             <asp:ListItem>Naming Opportunity </asp:ListItem>
@@ -176,16 +176,16 @@
 
 
                 <div class="form-group row">
-                    <label for="LastNameTextBox" class="col-sm-3 col-form-label text-right">Last Name</label>
-                    <div class="col-sm-7">
+                    <label for="LastNameTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Last Name</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="LastNameTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>
 
 
                 <div class="form-group row">
-                    <label for="EmailTextBox" class="col-sm-3 col-form-label text-right">Email address</label>
-                    <div class="col-sm-7">
+                    <label for="EmailTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Email address</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="EmailTextBox" CssClass="form-control" runat="server" required="true" type="email"></asp:TextBox>
                     </div>
                 </div>
@@ -194,52 +194,46 @@
 
 
                 <div class="form-group row">
-                    <label for="CountryTextBox" class="col-sm-3 col-form-label text-right">Country</label>
-                    <div class="col-sm-7">
-
-<%--                        <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>--%>
+                    <label for="CountryTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Country</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="CountryTextBox" CssClass="form-control" runat="server"></asp:TextBox>
-                        
-                        
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="CityTextBox" class="col-sm-3 col-form-label text-right">City</label>
-                    <div class="col-sm-7">
+                    <label for="CityTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">City</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="CityTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="AddressTextBox" class="col-sm-3 col-form-label text-right">Address</label>
-                    <div class="col-sm-7">
+                    <label for="AddressTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Address</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="AddressTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>
 
 
                 <div class="form-group row">
-                    <label for="PhoneNumberTextBox" class="col-sm-3 col-form-label text-right">Phone</label>
-                    <div class="col-sm-7">
-                        <%--<asp:TextBox ID="PhoneNumberTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>--%>
+                    <label for="PhoneNumberTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Phone</label>
+                    <div class="col-md-7 col-sm-12">
                         <input id="phone" class="form-control" name="phone" type="tel">
-
                     </div>
                 </div>
 
 
                 <div class="form-group row">
-                    <label for="DateOfBirthTextBox" class="col-sm-3 col-form-label text-right">Day Of Birth</label>
-                    <div class="col-sm-7">
+                    <label for="DateOfBirthTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Day Of Birth</label>
+                    <div class="col-md-7 col-sm-12">
                         <input class="form-control" type="text" name="DateOfBirthTextBox">
                     </div>
                 </div>
 
 
                 <div class="form-group row">
-                    <label for="GenderDropDownList" class="col-sm-3 col-form-label text-right">Gender</label>
-                    <div class="col-sm-7">
+                    <label for="GenderDropDownList" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Gender</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:DropDownList ID="GenderDropDownList" CssClass="custom-select" runat="server">
                             <asp:ListItem>Select</asp:ListItem>
                             <asp:ListItem>Male</asp:ListItem>
@@ -250,15 +244,15 @@
 
 
                 <div class="form-group row">
-                    <label for="JobTextBox" class="col-sm-3 col-form-label text-right">Job</label>
-                    <div class="col-sm-7">
+                    <label for="JobTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Job</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="JobTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="CompanyTextBox" class="col-sm-3 col-form-label text-right">Company</label>
-                    <div class="col-sm-7">
+                    <label for="CompanyTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Company</label>
+                    <div class="col-md-7 col-sm-12">
                         <asp:TextBox ID="CompanyTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                     </div>
                 </div>

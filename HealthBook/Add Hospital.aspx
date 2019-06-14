@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add Hospital.aspx.cs" Inherits="HealthBook.Add_Hospital" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+
+
+
     <div class="container mt-8">
         <div class="border py-3 pl-1">
 
