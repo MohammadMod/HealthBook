@@ -48,17 +48,29 @@
 
     </div>
 
+    
     <div class="container2">
-        <div class="border p-3">
 
-            <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive text-center"
-                runat="server" >
-                <Columns>
-                    <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
-                </Columns>
-            </asp:GridView>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title text-center">View Organe Donate</h5>
+                    
+                </div>
+                <div class="table-responsive">
+                    <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
+                        runat="server">
+                        <Columns>
+                            <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
+                        </Columns>
+                    </asp:GridView>
 
+                </div>
+            </div>
         </div>
+
+
+
     </div>
 
      <script>
