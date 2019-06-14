@@ -19,6 +19,7 @@ namespace HealthBook
         protected void Page_Init(object sender, EventArgs e)
         {
             
+
            
             // The code below helps to protect against XSRF attacks
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
@@ -71,26 +72,10 @@ namespace HealthBook
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // a simple way to not let all users see some pages.
-            //try
-            //{
-            //    if (Session["username"] != null)  // has user logged in?
-                   
-            //    ;
-            //    else
-            //    {
-            //        Response.Redirect("log in.aspx");
+          
 
-            //    }
-
-
-
-            //}
-            //catch
-            //{
-            //    Response.Redirect("log in.aspx");
-            //}
-
+           
+            
 
         }
 

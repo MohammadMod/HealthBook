@@ -4,4 +4,9 @@
 
     <h1>Hello Mr. Halkawt</h1>
     <asp:Button ID="Button1" runat="server" Text="Button" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 </asp:Content>
