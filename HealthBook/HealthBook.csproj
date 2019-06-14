@@ -181,6 +181,7 @@
     <Content Include="fonts\line-awesome.ttf" />
     <Content Include="fonts\line-awesome.woff" />
     <Content Include="fonts\line-awesome.woff2" />
+    <Content Include="Admin Panel\AdminMaster.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="img\flags%402x.png" />
     <Content Include="img\flags.png" />
@@ -236,6 +237,13 @@
     </Compile>
     <Compile Include="Add Hospital.aspx.designer.cs">
       <DependentUpon>Add Hospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Panel\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
