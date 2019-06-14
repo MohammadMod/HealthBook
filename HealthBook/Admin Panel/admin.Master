@@ -56,24 +56,7 @@
                                     <li class="sidebar-item"><a class="sidebar-link" href="tables-datatables.html">DataTables</a></li>
                                 </ul>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="#icons" data-toggle="collapse" class="sidebar-link collapsed">
-                                    <i class="align-middle" data-feather="heart"></i><span class="align-middle">Icons</span>
-                                </a>
-                                <ul id="icons" class="sidebar-dropdown list-unstyled collapse ">
-                                    <li class="sidebar-item"><a class="sidebar-link" href="icons-feather.html">Feather</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link" href="icons-font-awesome.html">Font Awesome</a></li>
-                                </ul>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#maps" data-toggle="collapse" class="sidebar-link collapsed">
-                                    <i class="align-middle" data-feather="map-pin"></i><span class="align-middle">Maps</span>
-                                </a>
-                                <ul id="maps" class="sidebar-dropdown list-unstyled collapse ">
-                                    <li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">Google Maps</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">Vector Maps</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
 
 
@@ -90,12 +73,11 @@
                         <div class="navbar-collapse collapse">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown">
+                                    
                                         <span class="d-none d-sm-inline-block">
-                                            <img src="img\avatar.jpeg" class="avatar img-fluid rounded-circle mr-1" alt="Chris Wood">
-                                            <span class="text-dark">Chris Wood</span>
+                                            <asp:Label ID="User_name" runat="server" Text="Label"></asp:Label>
                                         </span>
-                                    </a>
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -125,30 +107,30 @@
     <script src="../js/intlTelInput.js"></script>
     <script src="../js/intlTelInput.js"></script>
     <script>
-            var input = document.querySelector("#phone");
-            window.intlTelInput(input, {
-              // allowDropdown: false,
-              autoHideDialCode: false,
-              // autoPlaceholder: "off",
-              // dropdownContainer: document.body,
-              // excludeCountries: ["us"],
-              formatOnDisplay: false,
-              // geoIpLookup: function(callback) {
-              //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-              //     var countryCode = (resp && resp.country) ? resp.country : "";
-              //     callback(countryCode);
-              //   });
-              // },
-              // hiddenInput: "full_number",
-              initialCountry: "iq",
-              // localizedCountries: { 'de': 'Deutschland' },
-              nationalMode: false,
-              // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-               placeholdernumbertype: "mobile",
-              // preferredCountries: ['cn', 'jp'],
-              // separateDialCode: true,
-                utilsScript: "../js/utils.js"
-            });
-          </script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // allowDropdown: false,
+            autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            initialCountry: "iq",
+            // localizedCountries: { 'de': 'Deutschland' },
+            nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            placeholdernumbertype: "mobile",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "../js/utils.js"
+        });
+    </script>
 </body>
 </html>
