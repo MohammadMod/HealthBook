@@ -184,7 +184,9 @@
     <Content Include="fonts\line-awesome.woff" />
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
+    <Content Include="HospitalPanel\HostPanel.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="HospitalPanel\View Organe Doners.aspx" />
     <Content Include="img\flags%402x.png" />
     <Content Include="img\flags.png" />
     <Content Include="img\healthbook-10.png" />
@@ -289,6 +291,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\HostPanel.Master.cs">
+      <DependentUpon>HostPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\HostPanel.Master.designer.cs">
+      <DependentUpon>HostPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\View Organe Doners.aspx.cs">
+      <DependentUpon>View Organe Doners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\View Organe Doners.aspx.designer.cs">
+      <DependentUpon>View Organe Doners.aspx</DependentUpon>
     </Compile>
     <Compile Include="log in.aspx.cs">
       <DependentUpon>log in.aspx</DependentUpon>
