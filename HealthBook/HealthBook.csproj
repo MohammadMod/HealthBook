@@ -165,7 +165,7 @@
     <Content Include="css\intlTelInput.css" />
     <Content Include="css\line-awesome.min.css" />
     <Content Include="css\myCss.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Default.aspxDefault.aspx" />
     <Content Include="Donate Money.aspx" />
     <Content Include="Donate Organs.aspx" />
     <Content Include="favicon.ico" />
@@ -249,12 +249,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default.aspxDefault.aspx.cs">
+      <DependentUpon>Default.aspxDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default.aspxDefault.aspx.designer.cs">
+      <DependentUpon>Default.aspxDefault.aspx</DependentUpon>
     </Compile>
     <Compile Include="Donate Money.aspx.cs">
       <DependentUpon>Donate Money.aspx</DependentUpon>
