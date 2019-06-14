@@ -167,7 +167,6 @@
     <Content Include="css\intlTelInput.css" />
     <Content Include="css\line-awesome.min.css" />
     <Content Include="css\myCss.css" />
-    <Content Include="Default.aspxDefault.aspx" />
     <Content Include="Donate Money.aspx" />
     <Content Include="Donate Organs.aspx" />
     <Content Include="favicon.ico" />
@@ -195,7 +194,6 @@
     <Content Include="js\forms.js" />
     <Content Include="js\intlTelInput.js" />
     <Content Include="js\utils.js" />
-    <Content Include="log in.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -268,13 +266,6 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspxDefault.aspx.cs">
-      <DependentUpon>Default.aspxDefault.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspxDefault.aspx.designer.cs">
-      <DependentUpon>Default.aspxDefault.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Donate Money.aspx.cs">
       <DependentUpon>Donate Money.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,13 +296,6 @@
     </Compile>
     <Compile Include="HospitalPanel\View Organe Doners.aspx.designer.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="log in.aspx.cs">
-      <DependentUpon>log in.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="log in.aspx.designer.cs">
-      <DependentUpon>log in.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log out.aspx.cs">
       <DependentUpon>Log out.aspx</DependentUpon>
