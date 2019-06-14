@@ -167,6 +167,7 @@
     <Content Include="css\intlTelInput.css" />
     <Content Include="css\line-awesome.min.css" />
     <Content Include="css\myCss.css" />
+    <Content Include="Default.aspx" />
     <Content Include="Donate Money.aspx" />
     <Content Include="Donate Organs.aspx" />
     <Content Include="favicon.ico" />
@@ -194,6 +195,7 @@
     <Content Include="js\forms.js" />
     <Content Include="js\intlTelInput.js" />
     <Content Include="js\utils.js" />
+    <Content Include="Login.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -266,6 +268,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Donate Money.aspx.cs">
       <DependentUpon>Donate Money.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -303,6 +312,13 @@
     </Compile>
     <Compile Include="Log out.aspx.designer.cs">
       <DependentUpon>Log out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageSender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
