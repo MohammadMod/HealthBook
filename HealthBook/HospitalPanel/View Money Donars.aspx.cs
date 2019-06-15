@@ -8,26 +8,24 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
-namespace HealthBook
+namespace HealthBook.HospitalPanel
 {
-    public partial class Money_Doners : System.Web.UI.Page
+    public partial class View_Money_Donars : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 try
-                { 
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("Show_Donation_Money", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                conn.Close();
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("Show_Donation_Money", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    conn.Close();
                     if (ds.Tables[0].Rows.Count > 0)
                     {
                         MoneyDonersGridView.DataSource = ds;
@@ -44,7 +42,7 @@ namespace HealthBook
                         MoneyDonersGridView.Rows[0].Cells[0].ColumnSpan = columncount;
                         MoneyDonersGridView.Rows[0].Cells[0].Text = "No Records Found";
                     }
-                } 
+                }
                 catch (Exception)
                 {
 
@@ -53,7 +51,7 @@ namespace HealthBook
             }
         }
 
-        protected void MoneyDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
+        protected void MoneyDonersGridView_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
             try
             {
@@ -76,7 +74,7 @@ namespace HealthBook
 
                 throw;
             }
-           
+
         }
     }
 }

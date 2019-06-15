@@ -73,33 +73,33 @@ namespace HealthBook
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string userincookies = "";
-            string passwordincookies = "";
-            string loged_user = "";
+            //string userincookies = "";
+            //string passwordincookies = "";
+            //string loged_user = "";
            
 
-            if (!IsPostBack)
-            {
-                try
-                {
-                    loged_user = Application["usernameapp"].ToString();
-                    userincookies = Request.Cookies["Name"].ToString();
-                    passwordincookies = Request.Cookies["Passwrd"].ToString();
-                }
-                catch (Exception)
-                {
+            //if (!IsPostBack)
+            //{
+            //    try
+            //    {
+            //        loged_user = Application["usernameapp"].ToString();
+            //        userincookies = Request.Cookies["Name"].ToString();
+            //        passwordincookies = Request.Cookies["Passwrd"].ToString();
+            //    }
+            //    catch (Exception)
+            //    {
 
-                }
+            //    }
 
-                if (loged_user != "" || (userincookies != "" && passwordincookies != ""))
-                {
-                    logindiv.Visible = false;
-                }
-                else
-                {
-                    Response.Redirect("Login.aspx");
-                }
-            }
+            //    if (loged_user != "" || (userincookies != "" && passwordincookies != ""))
+            //    {
+            //        logindiv.Visible = false;
+            //    }
+            //    else
+            //    {
+            //        Response.Redirect("Login.aspx");
+            //    }
+            //}
 
         }
 

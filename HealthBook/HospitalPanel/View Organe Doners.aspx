@@ -9,7 +9,7 @@
                 <div class="form-group">
                     <label for="SelectOrganDropDownList">Select Organ</label>
 
-                    <asp:DropDownList ID="SelectOrganDropDownList" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectOrganDropDownList_SelectedIndexChanged" >
+                    <asp:DropDownList ID="SelectOrganDropDownList" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectOrganDropDownList_SelectedIndexChanged">
                         <asp:ListItem>All</asp:ListItem>
                         <asp:ListItem>Heart</asp:ListItem>
                         <asp:ListItem>Lungs</asp:ListItem>
@@ -68,7 +68,7 @@
     </div>
 
     
-    <div class="">
+    
 
         <div class="col-12">
             <div class="card">
@@ -87,7 +87,7 @@
 
 
 
-    </div>
+    
 
      <script>
 
