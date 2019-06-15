@@ -4,7 +4,8 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Hostpital</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../css/app.css" rel="stylesheet" />

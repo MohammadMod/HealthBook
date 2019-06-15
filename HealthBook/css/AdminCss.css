@@ -21,3 +21,12 @@
 
     text-align: right !important;
 }
+tr{
+    font-size:12px;
+}
+td{
+    padding:0 5px !important;
+}
+th{
+    padding:.750rem 4px !important;
+}

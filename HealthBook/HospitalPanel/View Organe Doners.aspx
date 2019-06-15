@@ -2,54 +2,73 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container text-center mt-7">
+    <div class=" container-fluid mt-7">
 
-        <p>
-            Select Organ:
-        <asp:DropDownList ID="SelectOrganDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectOrganDropDownList_SelectedIndexChanged" >
-            <asp:ListItem>All</asp:ListItem>
-            <asp:ListItem>Heart</asp:ListItem>
-            <asp:ListItem>Lungs</asp:ListItem>
-            <asp:ListItem>Kidneys</asp:ListItem>
-            <asp:ListItem>Liver</asp:ListItem>
-            <asp:ListItem>Corneas</asp:ListItem>
-            <asp:ListItem>Pancreas</asp:ListItem>
-            <asp:ListItem>Tissue</asp:ListItem>
-            <asp:ListItem>Small bowel</asp:ListItem>
-            <asp:ListItem>Eyes</asp:ListItem>
-        </asp:DropDownList>
+        <div class="form-row">
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="SelectOrganDropDownList">Select Organ</label>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blood Group:
-        <asp:DropDownList ID="BloodGroupDropDownList0" runat="server" AutoPostBack="True" OnSelectedIndexChanged="BloodGroupDropDownList0_SelectedIndexChanged">
+                    <asp:DropDownList ID="SelectOrganDropDownList" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectOrganDropDownList_SelectedIndexChanged" >
+                        <asp:ListItem>All</asp:ListItem>
+                        <asp:ListItem>Heart</asp:ListItem>
+                        <asp:ListItem>Lungs</asp:ListItem>
+                        <asp:ListItem>Kidneys</asp:ListItem>
+                        <asp:ListItem>Liver</asp:ListItem>
+                        <asp:ListItem>Corneas</asp:ListItem>
+                        <asp:ListItem>Pancreas</asp:ListItem>
+                        <asp:ListItem>Tissue</asp:ListItem>
+                        <asp:ListItem>Small bowel</asp:ListItem>
+                        <asp:ListItem>Eyes</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
+            <div class="col-4">
 
-            <asp:ListItem>All</asp:ListItem>
-            <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
-            <asp:ListItem Text="A-" Value="A-">A-</asp:ListItem>
+                <div class="form-group">
+                    <label for="SelectOrganDropDownList">Blood Group</label>
 
-            <asp:ListItem Text="B+" Value="B+">B+</asp:ListItem>
-            <asp:ListItem Text="B-" Value="B-">B-</asp:ListItem>
+                    <asp:DropDownList ID="BloodGroupDropDownList0" CssClass="form-control"
+                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="BloodGroupDropDownList0_SelectedIndexChanged">
 
-            <asp:ListItem Text="AB+" Value="AB+">AB+</asp:ListItem>
-            <asp:ListItem Text="AB-" Value="5">AB-</asp:ListItem>
+                        <asp:ListItem>All</asp:ListItem>
+                        <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
+                        <asp:ListItem Text="A-" Value="A-">A-</asp:ListItem>
 
-            <asp:ListItem Text="O+" Value="O-">O+</asp:ListItem>
-            <asp:ListItem Text="O-" Value="O-">O-</asp:ListItem>
-        </asp:DropDownList>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Organ For:
-        <asp:DropDownList ID="OrganForDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="OrganForDropDownList_SelectedIndexChanged">
+                        <asp:ListItem Text="B+" Value="B+">B+</asp:ListItem>
+                        <asp:ListItem Text="B-" Value="B-">B-</asp:ListItem>
 
-            <asp:ListItem>All</asp:ListItem>
-            <asp:ListItem>Research</asp:ListItem>
-            <asp:ListItem>Transplant</asp:ListItem>
-            <asp:ListItem>Research &amp; Transplant</asp:ListItem>
+                        <asp:ListItem Text="AB+" Value="AB+">AB+</asp:ListItem>
+                        <asp:ListItem Text="AB-" Value="5">AB-</asp:ListItem>
 
-        </asp:DropDownList>
-       
+                        <asp:ListItem Text="O+" Value="O-">O+</asp:ListItem>
+                        <asp:ListItem Text="O-" Value="O-">O-</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
 
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="SelectOrganDropDownList">Organ For</label>
+
+                    <asp:DropDownList ID="OrganForDropDownList" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="OrganForDropDownList_SelectedIndexChanged">
+                        <asp:ListItem>All</asp:ListItem>
+                        <asp:ListItem>Research</asp:ListItem>
+                        <asp:ListItem>Transplant</asp:ListItem>
+                        <asp:ListItem>Research &amp; Transplant</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
+        </div>
+        <div class="form-row mb-3">
+            <div class="col-6">
+                <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Search .." runat="server"></asp:TextBox>
+            </div>
+        </div>
     </div>
 
     
-    <div class="container2">
+    <div class="">
 
         <div class="col-12">
             <div class="card">
@@ -57,15 +76,12 @@
                     <h5 class="card-title text-center">View Organe Donate</h5>
                     
                 </div>
-                <div class="table-responsive">
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
                         runat="server">
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                         </Columns>
                     </asp:GridView>
-
-                </div>
             </div>
         </div>
 
