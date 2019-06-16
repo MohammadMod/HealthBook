@@ -158,6 +158,7 @@
   <ItemGroup>
     <Content Include="Add Hospital.aspx" />
     <Content Include="Admin Panel\AddHospital.aspx" />
+    <Content Include="Admin Panel\View Hospitals.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\AdminCss.css" />
     <Content Include="css\app.css" />
@@ -256,6 +257,13 @@
     </Compile>
     <Compile Include="Admin Panel\AddHospital.aspx.designer.cs">
       <DependentUpon>AddHospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel\View Hospitals.aspx.cs">
+      <DependentUpon>View Hospitals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Panel\View Hospitals.aspx.designer.cs">
+      <DependentUpon>View Hospitals.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
