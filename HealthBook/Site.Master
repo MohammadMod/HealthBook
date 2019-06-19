@@ -37,20 +37,17 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Donate Organme  </a>
+                            <a href="Donate%20Organs.aspx" class="nav-link">Donate Organme  </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Donate Money</a>
+                            <a href="Donate%20Money.aspx" class="nav-link">Donate Money</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Register </a>
-                        </li>
-
+                        
                         <li class="nav-item" runat="server" id="logindiv">
-                            <a href="#" class="nav-link"><i class="la la-user"></i>Login </a>
+                            <a href="Login.aspx" class="nav-link"><i class="la la-user"></i>Login </a>
                         </li>
                     </ul>
                 </div>
@@ -93,26 +90,10 @@
         <script>
             var input = document.querySelector("#phone");
             window.intlTelInput(input, {
-              // allowDropdown: false,
               autoHideDialCode: false,
-              // autoPlaceholder: "off",
-              // dropdownContainer: document.body,
-              // excludeCountries: ["us"],
               formatOnDisplay: false,
-              // geoIpLookup: function(callback) {
-              //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-              //     var countryCode = (resp && resp.country) ? resp.country : "";
-              //     callback(countryCode);
-              //   });
-              // },
-              // hiddenInput: "full_number",
               initialCountry: "iq",
-              // localizedCountries: { 'de': 'Deutschland' },
               nationalMode: false,
-              // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-              // placeholderNumberType: "MOBILE",
-              // preferredCountries: ['cn', 'jp'],
-              // separateDialCode: true,
                 utilsScript: "js/utils.js",
             });
           </script>
