@@ -242,7 +242,11 @@
                         </div>
 
                         <hr />
+
                         <div class="form-group mt-2">
+                            <asp:Button ID="Button1" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
+                                    runat="server" OnClick="SubmitButton_Click" Text="modal" />
+
                             <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
                         </div>
                     </div>
@@ -255,6 +259,30 @@
         
 </div>
 
-<%--    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>--%>
+<!-- Modal -->
+    <div id="Div1">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Please check your phone for veryfication Code:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            test
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button ID="VerifyButton" runat="server" CssClass="btn btn-success" Text="Verify" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
 
 </asp:Content>
