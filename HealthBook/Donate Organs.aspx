@@ -255,19 +255,6 @@
         
 </div>
 
-    
-    
 <%--    <h2><span>Do you want to donate all your organs and tissue? You can save up to 8 lives after you die.<o:p></o:p></span></h2>--%>
-
-    
-
-
-
-
-
-
-
-
-
 
 </asp:Content>
