@@ -35,19 +35,24 @@
             <div class="form">
               <div class="input-group1">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Email or Phone ">
+<%--                <input type="text" placeholder="Email or Phone " id="email" runat="server">--%>
+                  <asp:TextBox ID="emailTextBox" runat="server" placeholder="Email or Phone "></asp:TextBox>
                 <span class="bar"></span>
               </div>
 
               <div class="input-group1">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="password">
+<%--                <input type="password" placeholder="password" id="passwrd" runat="server">--%>
+                  <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password"></asp:TextBox>
+
                 <span class="bar"></span>
               </div>
               <div class="btnlogin">
                 <div class="row">
                   <div class="col">
-                    <a href="#" class="btn btn--gray btn--animated">Sign in</a>
+                      <asp:Button Text="Sign in" runat="server" class="btn btn--gray btn--animated" id="submit" OnClick="submit_Click"/>
+<%--                    <a href="#" class="btn btn--gray btn--animated" runat="server" id="submit" onlick="">Sign in</a>--%>
+                      <asp:CheckBox ID="Reminder" runat="server" Text="Remember me!" />
                   </div>
                   <div class="col text-right">
                     <a href="#" class="forgot">Forgot Password</a>
