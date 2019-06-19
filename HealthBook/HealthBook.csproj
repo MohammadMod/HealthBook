@@ -232,7 +232,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="test.aspx" />
-    <Content Include="View Hospitals.aspx" />
     <Content Include="View Organ Doners.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -370,13 +369,6 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View Hospitals.aspx.cs">
-      <DependentUpon>View Hospitals.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View Hospitals.aspx.designer.cs">
-      <DependentUpon>View Hospitals.aspx</DependentUpon>
     </Compile>
     <Compile Include="View Organ Doners.aspx.cs">
       <DependentUpon>View Organ Doners.aspx</DependentUpon>
