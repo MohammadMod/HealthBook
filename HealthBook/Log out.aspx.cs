@@ -20,6 +20,7 @@ namespace HealthBook
                 Response.Redirect("log in.aspx");
                 Application["LoggedUserName"] = "";
                 Session.Abandon();
+                Session["username"] = "";
                 Response.Cookies.Clear();
             }
             catch

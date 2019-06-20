@@ -9,8 +9,21 @@ namespace HealthBook.HospitalPanel
 {
     public partial class HostPanel : System.Web.UI.MasterPage
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                try
+                {
+                    User_namelabel.Text = "Welcome: " + Session["username"].ToString();
+
+                }
+                catch (Exception)
+                {
+
+                }
+            }
 
         }
     }

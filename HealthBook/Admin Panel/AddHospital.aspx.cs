@@ -15,14 +15,15 @@ namespace HealthBook.Admin_Panel
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
+            string p = String.Format("{0}", Request.Form["phone"]);
 
             try
-                {
+            {
                     SqlCommand cmd = new SqlCommand("Insert_Hospitals", con);
 
                     con.Open();
@@ -30,7 +31,7 @@ namespace HealthBook.Admin_Panel
                     cmd.Parameters.Add("@hospitalName", SqlDbType.NVarChar).Value = HospitalNameTextBox.Text;
                     cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = EmailTextBox.Text;
 
-                    //cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = PhoneNumberTextBox.Text;
+                    cmd.Parameters.Add("@phoneNumber", SqlDbType.VarChar).Value = p;
                     cmd.Parameters.Add("@password", SqlDbType.NVarChar).Value = PasswordTextBox.Text;
 
                     cmd.Parameters.Add("@userName", SqlDbType.VarChar).Value = UserNameTextBox.Text;
@@ -44,7 +45,6 @@ namespace HealthBook.Admin_Panel
                 catch (Exception)
                 {
 
-                    throw;
                 }
 
         }

@@ -15,7 +15,7 @@ namespace HealthBook
         public static string emaila = "";
         public static string username = "";
         public static string password = "";
-
+        steps_permition steps_Permition = new steps_permition();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -41,7 +41,17 @@ namespace HealthBook
                 emaila = dr[0].ToString();
                 password = dr[1].ToString();
                 username = dr[2].ToString();
+                Session["username"] = dr[2].ToString();
 
+                if (emaila == "admin@healthbook.me")
+                {
+                    Response.Redirect("Admin Panel/addhospital.aspx");
+                }
+                else
+                {
+                    Response.Redirect("HospitalPanel/View Organe Doners.aspx");
+                }
+                Application["username"] = dr[2].ToString();
                 Session["username"] = dr[2].ToString();
 
                 if (Reminder.Checked)
@@ -51,6 +61,7 @@ namespace HealthBook
             }
             else
             {
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Wrong username or Password');", true);
             }
 
             dr.Close();
@@ -59,14 +70,15 @@ namespace HealthBook
         }
         private void SaveCookie()
         {
+            Response.Cookies["username"].Value = username;
             //Create a Cookie with a suitable Key.
             HttpCookie loginCookie = new HttpCookie("Login");
             //Set the Cookie value.
-            loginCookie.Values["Name"] = emaila;
+            loginCookie.Values["Name"] = username;
             loginCookie.Values["Password"] = password;
             loginCookie.Path = Request.ApplicationPath;
             //Set the Expiry date.
-            loginCookie.Expires = DateTime.Now.AddDays(10);
+            loginCookie.Expires = DateTime.Now.AddDays(30);
             //Add the Cookie to Browser.
             Response.Cookies.Add(loginCookie);
 

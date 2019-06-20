@@ -71,7 +71,7 @@
                                 <li class="nav-item dropdown">
 
                                     <span class="d-none d-sm-inline-block">
-                                        <asp:Label ID="User_name" runat="server" Text="Label"></asp:Label>
+                                        <asp:Label ID="User_namelabel" runat="server" Text="Label"></asp:Label>
                                     </span>
 
                                 </li>
