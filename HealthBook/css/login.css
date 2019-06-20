@@ -154,17 +154,17 @@ html {
     color: gray !important;
     text-decoration: none !important;
 }
-.btn:hover {
+.btn1:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2) !important;
 }
 
-    .btn:hover::after {
+    .btn1:hover::after {
         transform: scaleX(1.4) scaleY(1.6) !important;
         opacity: 0 !important;
     }
 
-.btn, .btn:link, .btn:visited {
+.btn1, .btn1:link, .btn1:visited {
     text-decoration: none !important;
     padding: .5rem 2rem !important;
     /* display: inline-block; */
@@ -176,7 +176,7 @@ html {
     cursor: pointer !important;
 }
 
-    .btn:active, .btn:focus {
+    .btn1:active, .btn1:focus {
         outline: none !important;
         transform: translateY(-1px) !important;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
@@ -210,7 +210,7 @@ html {
     }
 
 
-.btn::after {
+.btn1::after {
     content: "";
     /* display: inline-block; */
     height: 100% !important;

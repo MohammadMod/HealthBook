@@ -191,6 +191,7 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
+    <Content Include="img\D_organe.jpg" />
     <Content Include="img\flags%402x.png" />
     <Content Include="img\flags.png" />
     <Content Include="img\heal.jpg" />
@@ -202,6 +203,7 @@
     <Content Include="js\utils.js" />
     <Content Include="login.aspx" />
     <Content Include="Money Doners.aspx" />
+    <Content Include="Organe Donation.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -346,6 +348,13 @@
     </Compile>
     <Compile Include="Money Doners.aspx.designer.cs">
       <DependentUpon>Money Doners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organe Donation.aspx.cs">
+      <DependentUpon>Organe Donation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organe Donation.aspx.designer.cs">
+      <DependentUpon>Organe Donation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

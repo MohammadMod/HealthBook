@@ -1,4 +1,116 @@
-﻿
+﻿/* Banner Area start Organe Donation*/
+.banner-area {
+    background: url('../img/D_organe.jpg') center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 767.98px) {
+    .banner-area .fullscreen {
+        height: 700px !important
+    }
+}
+.banner-area .fullscreen{
+    height:100vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.banner-content {
+    text-align: center
+}
+
+    .banner-content h1 {
+        color: #80cbc4;
+        font-size: 62px;
+        font-weight: 600;
+        line-height: 1em;
+        margin-top: 20px;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d1ab7f;
+        border-top: 1px solid #d1ab7f
+    }
+
+@media (max-width: 1200px) {
+    .banner-content h1 {
+        font-size: 54px
+    }
+}
+    @media (max-width: 1024px) {
+        .banner-content h1 {
+            font-size: 48px
+        }
+    }
+
+    @media (max-width: 991px) {
+        .banner-content h1 {
+            font-size: 42px
+        }
+    }
+
+    @media (max-width: 414px) {
+        .banner-content h1 {
+            font-size: 20px
+        }
+    }
+
+    .banner-content p {
+        max-width: 900px
+    }
+
+    .banner-content h6 {
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 14px
+    }
+
+    /* Banner Area end*/
+
+/*section about start*/
+
+.home-about-area .primary-btn:hover {
+    color: #d1ab7f;
+    border-color: #d1ab7f
+}
+
+.home-about-area h6 {
+    padding: 20px 0px
+}
+
+.home-about-area h3 {
+    color: #d1ab7f;
+    font-weight: 400
+}
+
+.home-about-area p span {
+    color: #222
+}
+
+.home-about-area .text_deceased {
+    color: #777 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 1.625em !important;
+}
+
+.section-gap {
+    padding: 120px 0
+}
+/*section about end*/
+
 /* Container 2 start*/
 .container2 {
     width: 100%;
@@ -8,174 +120,172 @@
     margin-left: auto
 }
 
-@media (min-width:576px) {
-    .container2 {
-        max-width: 680px
+    @media (min-width:576px) {
+        .container2 {
+            max-width: 680px
+        }
     }
-}
 
-@media (min-width:768px) {
-    .container2 {
-        max-width: 860px
+    @media (min-width:768px) {
+        .container2 {
+            max-width: 860px
+        }
     }
-}
 
-@media (min-width:992px) {
-    .container2 {
-        max-width: 1080px
+    @media (min-width:992px) {
+        .container2 {
+            max-width: 1080px
+        }
     }
-}
 
-@media (min-width:1200px) {
-    .container2 {
-        max-width: 1300px
+    @media (min-width:1200px) {
+        .container2 {
+            max-width: 1300px
+        }
     }
-}
-/*Container 2 end*/
+    /*Container 2 end*/
 
 
-.mt-6 {
-    margin-top: 4rem !important;
-}
+    .mt-6 {
+        margin-top: 4rem !important;
+    }
 
-.mt-7 {
-    margin-top: 5rem !important;
-}
+    .mt-7 {
+        margin-top: 5rem !important;
+    }
 
-.mt-8 {
-    margin-top: 6rem !important;
-}
+    .mt-8 {
+        margin-top: 6rem !important;
+    }
 
 
-.mb-6 {
-    margin-bottom: 4rem !important;
-}
+    .mb-6 {
+        margin-bottom: 4rem !important;
+    }
 
-.mb-7 {
-    margin-bottom: 5rem !important;
-}
+    .mb-7 {
+        margin-bottom: 5rem !important;
+    }
 
-.mt-8 {
-    margin-bottom: 6rem !important;
-}
+    .mt-8 {
+        margin-bottom: 6rem !important;
+    }
 
-th{
-    text-align:center !important;
-}
-.THDM {
-    font-weight: 400;
-    font-family: 'Oswald', sans-serif;
-    font-size:32px;
-}
+    th {
+        text-align: center !important;
+    }
 
-.la {
-    font-size: 1.1rem;
-}
-.font_oswald{
-    font-family: 'Oswald', sans-serif;
-}
+    .THDM {
+        font-weight: 400;
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+    }
 
-/* Design Check box start*/
-.checkb {
-    display: inline-flex;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+    .la {
+        font-size: 1.1rem;
+    }
 
-    /* Hide the browser's default checkbox */
-    .checkb input {
-        position: absolute;
-        opacity: 0;
+    .font_oswald {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    /* Design Check box start*/
+    .checkb {
+        display: inline-flex;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
         cursor: pointer;
-        height: 0;
-        width: 0;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 1rem;
-    height: 1rem;
-   
-    background-color: #DEE2E6;
-    border-radius: 2px;
-}
+        /* Hide the browser's default checkbox */
+        .checkb input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
 
-/* On mouse-over, add a grey background color */
-.checkb:hover input ~ .checkmark {
-    background-color: #DEE2E6;
-    
-}
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+        background-color: #DEE2E6;
+        border-radius: 2px;
+    }
 
-/* When the checkbox is checked, add a blue background */
-.checkb input:checked ~ .checkmark {
-    background-color: #2196F3;
-    box-shadow: 0 0 0 1px #f0f0f0, 0 0 0 .2rem rgba(33, 150, 243,.7);
-}
+    /* On mouse-over, add a grey background color */
+    .checkb:hover input ~ .checkmark {
+        background-color: #DEE2E6;
+    }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    
-}
+    /* When the checkbox is checked, add a blue background */
+    .checkb input:checked ~ .checkmark {
+        background-color: #2196F3;
+        box-shadow: 0 0 0 1px #f0f0f0, 0 0 0 .2rem rgba(33, 150, 243,.7);
+    }
 
-/* Show the checkmark when checked */
-.checkb input:checked ~ .checkmark:after {
-    display: block;
-}
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
 
-/* Style the checkmark/indicator */
-.checkb .checkmark:after {
-    left: 6px;
-    top: 3px;
-    width: 5px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg)
-}
-/* design check box ended*/
+    /* Show the checkmark when checked */
+    .checkb input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkb .checkmark:after {
+        left: 6px;
+        top: 3px;
+        width: 5px;
+        height: 9px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    /* design check box ended*/
 
 
-.form-control2 {
-    display: block;
-    width: 100%;
-    height: calc(1.8125rem + 2px);
-    padding: .25rem .7rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border-bottom: 1px solid black;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
-}
-
-    .form-control2:focus {
+    .form-control2 {
+        display: block;
+        width: 100%;
+        height: calc(1.8125rem + 2px);
+        padding: .25rem .7rem;
+        font-size: .875rem;
+        line-height: 1.5;
         color: #495057;
         background-color: #fff;
-        border-color: #59f5e0;
-        outline: 0;
+        background-clip: padding-box;
+        border-bottom: 1px solid black;
         border-top: none;
         border-left: none;
         border-right: none;
-        box-shadow: 0 0 0 .2rem rgba(12, 194, 170, .25);
-        border-radius: .2rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
     }
+
+        .form-control2:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #59f5e0;
+            outline: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            box-shadow: 0 0 0 .2rem rgba(12, 194, 170, .25);
+            border-radius: .2rem;
+        }

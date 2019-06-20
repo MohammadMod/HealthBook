@@ -50,8 +50,8 @@
               <div class="btnlogin">
                 <div class="row">
                   <div class="col">
-                      <asp:Button Text="Sign in" runat="server" class="btn btn--gray btn--animated" id="submit" OnClick="submit_Click"/>
-<%--                    <a href="#" class="btn btn--gray btn--animated" runat="server" id="submit" onlick="">Sign in</a>--%>
+                      <asp:Button Text="Sign in" runat="server" CssClass="btn1 btn--gray btn--animated" id="submit" OnClick="submit_Click"/>
+                    
                       <asp:CheckBox ID="Reminder" runat="server" Text="Remember me!" />
                   </div>
                   <div class="col text-right">
