@@ -189,6 +189,7 @@
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
     <Content Include="img\flags%402x.png" />

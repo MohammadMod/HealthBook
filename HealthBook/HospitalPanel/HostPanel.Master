@@ -8,6 +8,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script src="searchingrids.js"></script>
     <link href="../css/app.css" rel="stylesheet" />
     <link href="../css/AdminCss.css" rel="stylesheet" />
     <link href="../css/intlTelInput.css" rel="stylesheet" />
@@ -125,6 +126,9 @@
             // separateDialCode: true,
             utilsScript: "../js/utils.js"
         });
+
+       
     </script>
+
 </body>
 </html>

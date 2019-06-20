@@ -62,7 +62,7 @@
         </div>
         <div class="form-row mb-3">
             <div class="col-6">
-                <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Search .." runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Search .." runat="server" onkeyup="Search_Gridview(this, 'ViewOrganDonersGridView')"></asp:TextBox>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
                     
                 </div>
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
-                        runat="server">
+                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged">
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                         </Columns>
@@ -103,8 +103,11 @@
 
 
             return false;
-        };
+         };
 
+         
     </script>
+
+  
 
 </asp:Content>
