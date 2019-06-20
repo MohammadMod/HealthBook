@@ -36,14 +36,14 @@
               <div class="input-group1">
                 <i class="fas fa-user"></i>
 <%--                <input type="text" placeholder="Email or Phone " id="email" runat="server">--%>
-                  <asp:TextBox ID="emailTextBox" runat="server" placeholder="Email or Phone "></asp:TextBox>
+                  <asp:TextBox ID="emailTextBox" runat="server" placeholder="Email or Phone " Type="email" required="true"></asp:TextBox>
                 <span class="bar"></span>
               </div>
 
               <div class="input-group1">
                 <i class="fas fa-lock"></i>
 <%--                <input type="password" placeholder="password" id="passwrd" runat="server">--%>
-                  <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password"></asp:TextBox>
+                  <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password" Type="password" required="true"></asp:TextBox>
 
                 <span class="bar"></span>
               </div>

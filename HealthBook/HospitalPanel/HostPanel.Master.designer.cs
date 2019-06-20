@@ -31,13 +31,13 @@ namespace HealthBook.HospitalPanel {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// User_name control.
+        /// User_namelabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label User_name;
+        protected global::System.Web.UI.WebControls.Label User_namelabel;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

@@ -15,8 +15,17 @@ namespace HealthBook.HospitalPanel
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["username"] != null)
+                                ;// has user logged in?
+            else
+                Response.Redirect("..//login.aspx");
+
             if (!IsPostBack)
             {
+               
+                //Response.Redirect("..//login.aspx");
+
                 try
                 {
                     conn.Open();

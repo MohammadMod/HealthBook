@@ -244,10 +244,20 @@
                         <hr />
 
                         <div class="form-group mt-2">
-                            <asp:Button ID="Button1" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
-                                    runat="server" OnClick="SubmitButton_Click" Text="modal" />
 
-                            <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
+
+                            
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                        <asp:UpdatePanel ID="up1" runat="server">
+                            <ContentTemplate>
+                            <asp:Button ID="SendCodeButton1" CssClass="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"
+                                    runat="server" OnClick="SendCodeButton1_Click" Text="Submit" />
+                                <br />
+                                <br />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+
                         </div>
                     </div>
                 </div>
@@ -272,12 +282,14 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            test
-
+                            A code sent to your phone number Please verify:
+                            <br />
+                            <asp:TextBox ID="CodeTextBox" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:Button ID="VerifyButton" runat="server" CssClass="btn btn-success" Text="Verify" />
+                       <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
+<%--                        <asp:Button ID="VerifyButton" runat="server" CssClass="btn btn-success" Text="Verify" />--%>
                     </div>
                 </div>
             </div>
