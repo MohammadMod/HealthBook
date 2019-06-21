@@ -12,19 +12,19 @@
               </div>
               <div class="text">
                 <i class="la la-thumbs-up"></i>
-                <h3>Fully customizable</h3>
+                <h5>Fully customizable</h5>
               </div>
               <div class="text">
                 <i class="la la-reorder"></i>
-                <h4>Various sibebars look</h4>
+                <h5>Various sibebars look</h5>
               </div>
               <div class="text">
                 <i class="la la-arrow-circle-o-right"></i>
-                <h4>RTL direction supports</h4>
+                <h5>RTL direction supports</h5>
               </div>
               <div class="text">
                 <i class="la la-tint"></i>
-                <h4>Color options</h4>
+                <h5>Color options</h5>
               </div>
           </div>
 
@@ -32,37 +32,39 @@
             <div class="header">
                 <p><span>SIGN IN</span> TO YOUR ACCOUNT</p>
             </div>
-            <div class="form">
-              <div class="input-group1">
-                <i class="fas fa-user"></i>
-<%--                <input type="text" placeholder="Email or Phone " id="email" runat="server">--%>
-                  <asp:TextBox ID="emailTextBox" runat="server" placeholder="Email or Phone " Type="email" required="true"></asp:TextBox>
-                <span class="bar"></span>
-              </div>
-
-              <div class="input-group1">
-                <i class="fas fa-lock"></i>
-<%--                <input type="password" placeholder="password" id="passwrd" runat="server">--%>
-                  <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password" Type="password" required="true"></asp:TextBox>
-
-                <span class="bar"></span>
-              </div>
-              <div class="btnlogin">
-                <div class="row">
-                  <div class="col">
-                      <asp:Button Text="Sign in" runat="server" CssClass="btn1 btn--gray btn--animated" id="submit" OnClick="submit_Click"/>
-                    
-                      <asp:CheckBox ID="Reminder" runat="server" Text="Remember me!" />
+              <div class="form">
+                  <div class="input-group1">
+                      <i class="fas fa-user"></i>
+                      <asp:TextBox ID="emailTextBox" runat="server" placeholder="Email or Phone " Type="email" required="true"></asp:TextBox>
+                      <span class="bar"></span>
                   </div>
-                  <div class="col text-right">
-                    <a href="#" class="forgot">Forgot Password</a>
+
+                  <div class="input-group1">
+                      <i class="fas fa-lock"></i>
+                      <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password" Type="password" required="true"></asp:TextBox>
+                      <span class="bar"></span>
                   </div>
-                </div>
+
+                    <div class="form-group ml-35 mt-4">
+                        <label class="checkb">
+                            <input type="checkbox">
+                            <asp:CheckBox ID="Reminder" runat="server" Text="Remember me!" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                 
+                  <div class="btnlogin">
+                      <div class="row">
+                          <div class="col">
+                              <asp:Button Text="Sign in" runat="server" CssClass="btn1 btn--gray btn--animated" ID="submit" OnClick="submit_Click" />
+
+                          </div>
+                          <div class="col text-right">
+                              <a href="#" class="forgot">Forgot Password</a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-
-
-
-            </div>
 
           </div>
       </div>

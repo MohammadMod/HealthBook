@@ -111,6 +111,41 @@
 }
 /*section about end*/
 
+/*Design matching Donars start*/
+#page-header {
+    height: 300px;
+    background: url("../img/D_organe.jpg") no-repeat;
+    background-size:cover;
+    background-position: 0 -270px;
+    background-attachment: fixed;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+@media (min-width:576px) {
+    #page-header {
+        background-position: -180px -270px;
+    }
+}
+
+@media (min-width:768px) {
+    #page-header {
+        background-position: 0 -270px;
+    }
+}
+
+@media (min-width:992px) {
+    #page-header {
+        background-position: 0 -270px;
+    }
+}
+
+#page-header h1{
+    color:#3a3a3a;
+}
+/*Design matching Donars end*/
+
+
+
 /* Container 2 start*/
 .container2 {
     width: 100%;
@@ -229,10 +264,10 @@
     }
 
     /* When the checkbox is checked, add a blue background */
-    .checkb input:checked ~ .checkmark {
-        background-color: #2196F3;
-        box-shadow: 0 0 0 1px #f0f0f0, 0 0 0 .2rem rgba(33, 150, 243,.7);
-    }
+.checkb input:checked ~ .checkmark {
+    background-color: #31ADB5;
+    box-shadow: 0 0 0 1px #f0f0f0, 0 0 0 .2rem rgba(49, 157, 181,.8);
+}
 
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
@@ -289,3 +324,7 @@
             box-shadow: 0 0 0 .2rem rgba(12, 194, 170, .25);
             border-radius: .2rem;
         }
+
+.ml-35 {
+    margin-left: 1.2rem !important;
+}

@@ -192,6 +192,7 @@
     <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
+    <Content Include="img\8-organ-donation-facts.jpg" />
     <Content Include="img\D_organe.jpg" />
     <Content Include="img\flags%402x.png" />
     <Content Include="img\flags.png" />
@@ -203,6 +204,7 @@
     <Content Include="js\intlTelInput.js" />
     <Content Include="js\utils.js" />
     <Content Include="login.aspx" />
+    <Content Include="Matching Donors.aspx" />
     <Content Include="Money Doners.aspx" />
     <Content Include="Organe Donation.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -340,6 +342,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Matching Donors.aspx.cs">
+      <DependentUpon>Matching Donors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matching Donors.aspx.designer.cs">
+      <DependentUpon>Matching Donors.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageSender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
