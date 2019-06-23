@@ -20582,10 +20582,11 @@ footer.footer {
     border-color: hsla(0, 0%, 100%, .33)
 }
 
+/**//**//**/
 .navbar {
     border-bottom: 1px solid #dee2e6;
     box-shadow: 0 .05rem .2rem rgba(0, 0, 0, .05)
-}
+}*/
 
 .navbar-brand {
     font-weight: 500

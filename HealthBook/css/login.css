@@ -25,7 +25,7 @@ html {
 .form-content {
     height: 500px;
     background: #fff;
-    width: 850px;
+    width: 800px;
     border-radius: 10px;
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -272,27 +272,40 @@ html {
 @media screen and (max-width: 992px) {
     .form-content {
         width: 480px;
-        height: 400px;
+        height: 450px;
+    }
+    .form-content .form-right{
+        padding: 20px 26px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .form-content {
         width: 400px;
-        height: 380px;
+        height: 460px;
+    }
+    .form-content .form-right {
+        padding: 20px 20px !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .form-content {
         width: 380px;
-        
+        height: 470px;
+    }
+    .form-content .form-right {
+        padding: 20px 18px !important;
     }
 }
 
 @media screen and (max-width: 400px) {
     .form-content {
         width: 360px;
+        height: 480px;
+    }
+    .form-content .form-right {
+        padding: 20px 16px !important;
     }
 }
 

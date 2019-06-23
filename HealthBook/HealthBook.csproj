@@ -193,6 +193,7 @@
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
     <Content Include="img\8-organ-donation-facts.jpg" />
+    <Content Include="img\Donate_img.jpg" />
     <Content Include="img\D_organe.jpg" />
     <Content Include="img\flags%402x.png" />
     <Content Include="img\flags.png" />
@@ -202,6 +203,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
     <Content Include="js\intlTelInput.js" />
+    <Content Include="js\main.js" />
     <Content Include="js\utils.js" />
     <Content Include="login.aspx" />
     <Content Include="Matching Donors.aspx" />

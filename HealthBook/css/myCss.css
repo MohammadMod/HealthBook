@@ -1,16 +1,20 @@
 ﻿/* Banner Area start Organe Donation*/
 .banner-area {
-    background: url('../img/D_organe.jpg') center;
+    background-image:  url("../img/Donate_img.jpg");
     background-size: cover;
     background-attachment: fixed;
+    
 }
-
+.banner-area .banner-content .test{
+        opacity: 1 !important;
+    }
 @media (max-width: 767.98px) {
     .banner-area .fullscreen {
         height: 700px !important
     }
 }
-.banner-area .fullscreen{
+
+    .banner-area .fullscreen{
     height:100vh;
 }
 
@@ -110,6 +114,12 @@
     padding: 120px 0
 }
 /*section about end*/
+
+  /* navbar*/
+.navbaredit {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
 
 /*Design matching Donars start*/
 #page-header {
