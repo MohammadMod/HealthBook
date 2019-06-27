@@ -159,6 +159,7 @@
     <Content Include="Add Hospital.aspx" />
     <Content Include="Admin Panel\AddHospital.aspx" />
     <Content Include="Admin Panel\View Hospitals.aspx" />
+    <Content Include="Can_Donated.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\AdminCss.css" />
     <Content Include="css\app.css" />
@@ -188,6 +189,7 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="Who Can Donate.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
@@ -280,6 +282,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Can_Donated.aspx.cs">
+      <DependentUpon>Can_Donated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Can_Donated.aspx.designer.cs">
+      <DependentUpon>Can_Donated.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Code Generator.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -414,6 +423,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Who Can Donate.aspx.cs">
+      <DependentUpon>Who Can Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Who Can Donate.aspx.designer.cs">
+      <DependentUpon>Who Can Donate.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,14 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Living Donation.aspx.cs" Inherits="HealthBook.Living_Donation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <header id="page-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-          
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
     <section id="info" class="py-5">
         <div class="container">
@@ -23,7 +22,7 @@
                         Most living donations happen among family members or between close friends.
                         Some people become altruistic living donors by choosing to donate to someone they don’t know.
                     </p>
-                        
+
                     <div id="accordion">
                         <div class="card">
                             <div class="card-header" id="headingOne">
@@ -77,7 +76,7 @@
                             </div>
                             <div id="collapseTwo" class="collapse pl-3" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body text-muted">
-                                    <h6 >Some of the tissues donated by living donors are:</h6>
+                                    <h6>Some of the tissues donated by living donors are:</h6>
                                     <ul>
                                         <li>
                                             <div class="">
@@ -106,8 +105,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <h6 class="col-8 text-muted">
-                                        A healthy body can easily replace some tissues such as blood or bone marrow.
+                                    <h6 class="col-8 text-muted">A healthy body can easily replace some tissues such as blood or bone marrow.
                                         Both blood and bone marrow can even be donated more than once since they are regenerated and replaced by the body after donation.
 
                                     </h6>
@@ -215,7 +213,8 @@
                             </div>
                             <div id="collapsesix" class="collapse pl-3" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body text-muted">
-                                    <p>The Regents of the University of Michigan (Michigan), in partnership with the American Society of Transplant Surgeons (ASTS),
+                                    <p>
+                                        The Regents of the University of Michigan (Michigan), in partnership with the American Society of Transplant Surgeons (ASTS),
                                         has been operating this Program under a cooperative agreement with HRSA since 2006. The National Living Donor Assistance Center
                                         (NLDAC) was established to increase access to transplantation, particularly for individuals of lesser financial means.
                                         The Program does not promote living organ donation and it has no performance goals for increasing the number of living organ donors.
