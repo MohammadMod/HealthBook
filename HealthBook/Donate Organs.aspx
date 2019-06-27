@@ -100,7 +100,7 @@
                         <div class="form-group ">
                             <h4 class="font_oswald">Are you sure want to donate?</h4>
 
-                            <select class="form-control" id="Donate">
+                            <select class="custom-select" id="Donate">
                                 <option value="NO">No</option>
                                 <option value="YES">Yes</option>
                             </select>
@@ -109,7 +109,7 @@
                         <div class="form-group" id="DAS" style="display:none;" >
                             <h5 class="font_oswald">Do you want to donate with all your organs?</h5>
                             
-                            <select class="form-control" id="Donatestate" name="Donatestate">
+                            <select class="custom-select" id="Donatestate" name="Donatestate">
                                 <option value="All">All</option>
                                 <option value="Some">Some</option>
                             </select>
@@ -121,9 +121,9 @@
                             <p class="font_oswald">Please Chose the organ you want to donate:</p>
 
 
-                            <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                            <asp:CheckBoxList CssClass="dawd" ID="CheckBoxList1" runat="server">
 
-                                <asp:ListItem Text="Heart">Heart</asp:ListItem>
+                                <asp:ListItem  Text="Heart">Heart</asp:ListItem>
                                 <asp:ListItem Text="Lungs">Lungs</asp:ListItem>
                                 <asp:ListItem Text="Kidneys">Kidneys</asp:ListItem>
                                 <asp:ListItem Text="Liver">Liver</asp:ListItem>
