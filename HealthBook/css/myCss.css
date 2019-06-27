@@ -14,7 +14,7 @@
     }
 }
 
-    .banner-area .fullscreen{
+.banner-area .fullscreen{
     height:100vh;
 }
 
@@ -337,4 +337,13 @@
 
 .ml-35 {
     margin-left: 1.2rem !important;
+}
+.text_header {
+    color: #D1AB7F;
+}
+.text-header2 {
+    padding-top:12px;
+    padding-bottom:12px;
+    color: #646464;
+    font-size:26px;
 }
