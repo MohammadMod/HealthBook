@@ -53,12 +53,15 @@ namespace HealthBook
             }
         }
 
+
+    
         protected void MoneyDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             try
             {
                 GridViewRow row = MoneyDonersGridView.SelectedRow;
-                string PhoneNumberIngrid = row.Cells[7].Text;
+                string PhoneNumberIngrid = row.Cells[8].Text;
                 long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
 
@@ -76,7 +79,7 @@ namespace HealthBook
 
                 throw;
             }
-           
+
         }
     }
 }
