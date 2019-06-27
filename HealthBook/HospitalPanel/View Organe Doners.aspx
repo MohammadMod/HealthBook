@@ -73,13 +73,18 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
+                    <h5 class="card-title text-center">&nbsp;</h5>
+                    <h5 class="card-title text-center">&nbsp;</h5>
+
+                    <asp:DropDownList ID="cityDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cityDropDownList_SelectedIndexChanged"></asp:DropDownList>
                     <h5 class="card-title text-center">View Organe Donate</h5>
                     
                 </div>
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
-                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged">
+                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged" OnRowCommand="ViewOrganDonersGridView_RowCommand">
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
+                            <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
                         </Columns>
                     </asp:GridView>
             </div>

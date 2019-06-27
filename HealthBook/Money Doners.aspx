@@ -16,6 +16,7 @@
     <asp:GridView ID="MoneyDonersGridView" runat="server" OnSelectedIndexChanged="MoneyDonersGridView_SelectedIndexChanged">
         <Columns>
             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
+            <asp:CommandField SelectText="Donate !" ShowSelectButton="True" />
         </Columns>
        
     </asp:GridView>

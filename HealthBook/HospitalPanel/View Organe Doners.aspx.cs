@@ -19,10 +19,26 @@ namespace HealthBook.HospitalPanel
             if (!IsPostBack)
             {
                 ViewOrganDoners();
-
+                viewCities(cityDropDownList);
             }
         }
 
+        public void viewCities(DropDownList cities)
+        {
+            DataTable subjects = new DataTable();
+
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT DISTINCT [City] FROM Organs ", conn);
+            adapter.Fill(subjects);
+
+            conn.Open();
+            cities.DataSource = subjects;
+            cities.DataTextField = "City";
+            cities.DataValueField = "City";
+            cities.DataBind();
+            cities.Items.Insert(0, new ListItem("Select", "NA"));
+
+            conn.Close();
+        }
 
         protected void SelectOrganDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -127,26 +143,54 @@ namespace HealthBook.HospitalPanel
 
         protected void ViewOrganDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+
+            GridViewRow row = ViewOrganDonersGridView.SelectedRow;
+            string PhoneNumberIngrid = row.Cells[5].Text;
+            long PhoneNumber = long.Parse(PhoneNumberIngrid);
+
+
+            const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+            Client client = Client.CreateDefault(YourAccessKey);
+            long Msisdn = PhoneNumber; // your phone number here
+            MessageBird.Objects.Message message =
+            client.SendMessage("HealthBook", "We Need Your Help", new[] { Msisdn });
+
+            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
+        }
+
+        protected void ViewOrganDonersGridView_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+          
+            if (e.CommandName == "Sendmessage")
             {
-                GridViewRow row = ViewOrganDonersGridView.SelectedRow;
-                string PhoneNumberIngrid = row.Cells[4].Text;
-                long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
-
-                const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
-                Client client = Client.CreateDefault(YourAccessKey);
-                long Msisdn = PhoneNumber; // your phone number here
-                MessageBird.Objects.Message message =
-                client.SendMessage("HealthBook", "We Need Your Help", new[] { Msisdn });
-
-                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
-
+               
             }
-            catch (Exception)
-            {
 
-                throw;
+            if (e.CommandName == "ViewProfile")
+            {
+                Response.Write("Apply.aspx");
+            }
+        }
+
+        protected void cityDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cityDropDownList.SelectedIndex == 0)
+            {
+                ViewOrganDoners();
+            }
+            else
+            {
+                SqlCommand cmdaa = new SqlCommand("[citySearch]", conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmdaa);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                da.SelectCommand.Parameters.AddWithValue("@cityName", cityDropDownList.SelectedItem.Text);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                ViewOrganDonersGridView.DataSource = ds;
+                ViewOrganDonersGridView.DataBind();
             }
         }
     }
