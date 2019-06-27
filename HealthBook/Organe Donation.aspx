@@ -6,12 +6,15 @@
         <div class="container">
             <div class="row fullscreen d-flex justify-content-center align-items-center">
                 <div class="banner-content col-lg-10 col-md-12 justify-content-center">
+                    <div class="test">
+
+                    
                     <h6 class="text-uppercase">Whenever we bake, bake with our heart</h6>
                     <h1>How Organ Donation Works</h1>
                     <p class="text-white mx-auto">
                        How does donation work? How are organs matched? This section explains the donation and transplant process. For more organ donation information, read the Frequently Asked Questions (FAQs) below.
                     </p>
-
+                        </div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Donate Organs.aspx.cs" Inherits="HealthBook.Donate_Organs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container mt-8">
+    <div class="container">
     <div class="col-12 col-lg-12">
         <div id="smartwizard-arrows-danger" class="wizard wizard-primary mb-4">
             <ul>

@@ -25,7 +25,7 @@ html {
 .form-content {
     height: 500px;
     background: #fff;
-    width: 850px;
+    width: 800px;
     border-radius: 10px;
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -43,33 +43,37 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-    .form-content .form-left1 {
-        background: #319db5 !important;
-        border-top-left-radius: 10px !important;
-        border-bottom-left-radius: 10px !important;
-        padding: 50px 0px !important;
-        position: relative !important;
-        width: 80% !important;
-        color: #fff !important;
-    }
+.form-content .form-left1 {
+    background: #319db5 !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    padding: 50px 0px !important;
+    position: relative !important;
+    width: 80% !important;
+    color: #fff !important;
+}
 
-        .form-content .form-left1 .headertext {
+.form-content .form-left1 .headertext {
             text-align: center !important;
             font-size: 1.6rem !important;
             padding: 10px 0px !important;
         }
 
-        .form-content .form-left1 .text {
+.form-content .form-left1 .text {
             color: rgba(255,255,255,0.9) !important;
             padding: 1.6rem 0 0 2.8rem !important;
             display: block !important;
             display: flex !important;
         }
 
-            .form-content .form-left1 .text svg {
+.form-content .form-left1 .text svg {
                 padding-right: 5px !important;
                 display: inline-block !important;
             }
+
+.form-content .form-left1 .la{
+    font-size:24px;
+}
 
     .form-content .form-right {
         padding: 20px 40px !important;
@@ -86,22 +90,22 @@ html {
 }
 
 
-    .input-group1 input {
-        position: relative !important;
-        width: 100% !important;
-        padding: 1rem 0 !important;
-        margin-top: 1rem !important;
-        border: none !important;
-        outline: none !important;
-        font-size: 1.6rem !important;
-        color: #fc6767 !important;
-    }
+.input-group1 input {
+    position: relative !important;
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    margin-top: 1rem !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 1.2rem !important;
+    color: #000 !important;
+}
 
-    .input-group1 > svg {
-        font-size: 2rem !important;
-        margin-right: 1rem !important;
-        color: #31ADB5 !important;
-    }
+.input-group1 > svg {
+    font-size: 1rem !important;
+    margin-right: 1rem !important;
+    color: #31ADB5 !important;
+}
 
 .form-right .form {
     margin-top: 2rem !important;
@@ -116,6 +120,7 @@ html {
     font-weight: 400 !important;
     color: #C3C3C3 !important;
     font-weight: bold !important;
+    
 }
 
     .form-right .header span {
@@ -134,7 +139,7 @@ html {
     .input-group1 .bar::before {
         content: '';
         position: absolute !important;
-        background-color: #fc6767 !important;
+        background-color: rgba(49, 157, 181,.6) !important;
         width: 0 !important;
         height: 2px !important;
         transition: width 650ms !important;
@@ -145,7 +150,7 @@ html {
 }
 
 .btnlogin {
-    margin-top: 3rem !important;
+    margin-top: 2rem !important;
     margin-left: 1.4rem !important;
     /* display: inline-block; */
 }
@@ -267,27 +272,40 @@ html {
 @media screen and (max-width: 992px) {
     .form-content {
         width: 480px;
-        height: 400px;
+        height: 450px;
+    }
+    .form-content .form-right{
+        padding: 20px 26px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .form-content {
         width: 400px;
-        height: 380px;
+        height: 460px;
+    }
+    .form-content .form-right {
+        padding: 20px 20px !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .form-content {
         width: 380px;
-        
+        height: 470px;
+    }
+    .form-content .form-right {
+        padding: 20px 18px !important;
     }
 }
 
 @media screen and (max-width: 400px) {
     .form-content {
         width: 360px;
+        height: 480px;
+    }
+    .form-content .form-right {
+        padding: 20px 16px !important;
     }
 }
 
