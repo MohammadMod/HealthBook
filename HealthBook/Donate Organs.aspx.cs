@@ -86,7 +86,7 @@ namespace HealthBook
                     cmd.Parameters.Add("@usedOrgansFor", SqlDbType.VarChar).Value = UseOrgansForDropDownList0.SelectedItem.Text;
                     cmd.Parameters.Add("@date", SqlDbType.Date).Value = DateTime.Now;
 
-                    cmd.Parameters.Add("@donationTime", SqlDbType.Date).Value = DBNull.Value;
+                    cmd.Parameters.Add("@donated", SqlDbType.BigInt).Value = 0;
 
 
 

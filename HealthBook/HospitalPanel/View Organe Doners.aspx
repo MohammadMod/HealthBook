@@ -85,6 +85,9 @@
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
+
+<%--                            <asp:ButtonField Text="View Profile" />--%>
+
                         </Columns>
                     </asp:GridView>
             </div>

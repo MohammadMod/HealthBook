@@ -192,6 +192,7 @@
     <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
+    <Content Include="HospitalPanel\View Profile.aspx" />
     <Content Include="img\8-organ-donation-facts.jpg" />
     <Content Include="img\Donate_img.jpg" />
     <Content Include="img\D_organe.jpg" />
@@ -330,6 +331,13 @@
     </Compile>
     <Compile Include="HospitalPanel\View Organe Doners.aspx.designer.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\View Profile.aspx.cs">
+      <DependentUpon>View Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\View Profile.aspx.designer.cs">
+      <DependentUpon>View Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log out.aspx.cs">
       <DependentUpon>Log out.aspx</DependentUpon>
