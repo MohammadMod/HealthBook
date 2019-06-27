@@ -76,7 +76,7 @@
                     <h5 class="card-title text-center">&nbsp;</h5>
                     <h5 class="card-title text-center">&nbsp;</h5>
 
-                    <asp:DropDownList ID="cityDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cityDropDownList_SelectedIndexChanged"></asp:DropDownList>
+                  City:  <asp:DropDownList ID="cityDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cityDropDownList_SelectedIndexChanged"></asp:DropDownList>
                     <h5 class="card-title text-center">View Organe Donate</h5>
                     
                 </div>
@@ -85,6 +85,9 @@
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
+
+<%--                            <asp:ButtonField Text="View Profile" />--%>
+
                         </Columns>
                     </asp:GridView>
             </div>

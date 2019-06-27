@@ -194,6 +194,7 @@
     <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
+    <Content Include="HospitalPanel\View Profile.aspx" />
     <Content Include="img\8-organ-donation-facts.jpg" />
     <Content Include="img\Donate_img.jpg" />
     <Content Include="img\D_organe.jpg" />
@@ -201,14 +202,12 @@
     <Content Include="img\flags.png" />
     <Content Include="img\heal.jpg" />
     <Content Include="img\healthbook-10.png" />
-    <Content Include="img\organimage.jpg" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\forms.js" />
     <Content Include="js\intlTelInput.js" />
     <Content Include="js\main.js" />
     <Content Include="js\utils.js" />
-    <Content Include="Living Donation.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Matching Donors.aspx" />
     <Content Include="Money Doners.aspx" />
@@ -342,12 +341,12 @@
     <Compile Include="HospitalPanel\View Organe Doners.aspx.designer.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Living Donation.aspx.cs">
-      <DependentUpon>Living Donation.aspx</DependentUpon>
+    <Compile Include="HospitalPanel\View Profile.aspx.cs">
+      <DependentUpon>View Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Living Donation.aspx.designer.cs">
-      <DependentUpon>Living Donation.aspx</DependentUpon>
+    <Compile Include="HospitalPanel\View Profile.aspx.designer.cs">
+      <DependentUpon>View Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log out.aspx.cs">
       <DependentUpon>Log out.aspx</DependentUpon>

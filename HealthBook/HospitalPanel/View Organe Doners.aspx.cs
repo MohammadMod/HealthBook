@@ -161,16 +161,36 @@ namespace HealthBook.HospitalPanel
 
         protected void ViewOrganDonersGridView_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-          
-            if (e.CommandName == "Sendmessage")
-            {
-
-               
-            }
 
             if (e.CommandName == "ViewProfile")
             {
-                Response.Write("Apply.aspx");
+                //Determine the RowIndex of the Row whose Button was clicked.
+                int rowIndex = Convert.ToInt32(e.CommandArgument);
+
+                //Reference the GridView Row.
+                GridViewRow row = ViewOrganDonersGridView.Rows[rowIndex];
+                Application["id"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[2].Text;
+                Application["fname"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[3].Text;
+                Application["lname"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[4].Text;
+                Application["phonenumber"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[5].Text;
+                Application["emailtxt"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[6].Text;
+                Application["gender"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[7].Text;
+                Application["address"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[8].Text;
+                Application["dob"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[9].Text;
+                Application["bloodgroup"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[10].Text;
+                Application["city"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[11].Text;
+                Application["organ"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[12].Text;
+                Application["signature"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[13].Text;
+                Application["blooddooner"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[14].Text;
+                Application["useorganfor"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[15].Text;
+                Application["date"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[16].Text;
+
+                //Fetch value of Country
+                //string country = ViewOrganDonersGridView.Rows[rowIndex].Cells[3].Text;
+
+                //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Name: " +id+ "" + "\\nCountry: " + country + "');", true);
+
+                Response.Redirect("View Profile.aspx");
             }
         }
 
