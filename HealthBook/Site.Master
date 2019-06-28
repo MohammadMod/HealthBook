@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%: Page.Title %>HealthBook</title>
+    <title><%: Page.Title %></title>
     <script src="js/myScripts.js"></script>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -21,42 +21,11 @@
     <link href="css/intlTelInput.css" rel="stylesheet" />
     <%-- Fond Owsald --%>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-
-    <style>
-        .Shea {
-            display: block;
-            background-color:whitesmoke;
-            padding-bottom:40px;
-        }
-
-        .bg-custome{
-            background-color:#F5F5F5;
-            color:#656565;
-        }
-        @media (max-width: 768px) {
-            .navbar-toggleable-sm .navedit {
-                display:none !important;
-            }
-        }
-        .dawd tbody{
-            display: flex !important;
-        }
-        .dawd tbody tr{
-            margin-right:10px;
-        }
-        .dawd tbody tr input[type=checkbox], input[type=radio] {
-            width: 16px !important;
-            height: 16px !important;
-        }
-
-        .dawd tbody tr label {
-            margin-left: 10px;
-        }
-    </style>
+    
 </head>
 <body onload="ChangeHeader();">
     <form runat="server">
+
         <section class="Shea">
             <nav class="navbar navbaredit navbar-toggleable-sm navbar-light bg-custome justify-content-between">
                 <div class="container">
@@ -80,58 +49,32 @@
             </nav>
         </section>
         
-<%--        <header id="header">
-            <div class="header-top">
-	  			<div class="container">
-			  		<div class="row align-items-center">
-			  			<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
-				      	    <div class="menu-social-icons">
-							
-                                  <a href="#" class="navbar-brand mr-auto">HealthBook</a>
-							
-						    </div>
-			  			</div>
-			  		</div>
-	  			</div>
-				</div>
-            <div class="container main-menu">
-                <div class="row align-items-center justify-content-between d-flex">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="d" title="" /></a>
-                    <nav id="nav-menu-container">
-                        <ul class="nav-menu">
-                            <li class="menu-active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li class="menu-has-children"><a href="">Blog</a>
-                                <ul>
-                                    <li><a href="blog-home.html">Blog Home</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                    <li class="menu-has-children"><a href="">Level 2</a>
-                                        <ul>
-                                            <li><a href="#">Item One</a></li>
-                                            <li><a href="#">Item Two</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="elements.html">Elements</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <!-- #nav-menu-container -->
+        <%--<div class="navbar navbar-inverse ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </header><!-- #header -->--%>
-
+        </div>--%>
 
         <nav class="navbar navbar-toggleable-sm  navbar-inverse mb--5" style="background-color: #319db5;">
             <div class="container">
-                <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNav">
+                <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active">
                             <a href="Organe Donation.aspx" class="nav-link">Organe Donation</a>
@@ -155,127 +98,127 @@
             </div>
         </nav>
         <div class=" mt-5"></div>
+
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
 
+
+    </form>
+
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-
     <script src="js/forms.js"></script>
-        <script>
+    <script>
 
-            $(document).ready(function () {
-                $('#Donate').change(function () {
-                    if (this.value == 'YES') {
-                        $("#DAS").show();
-                    }
-                    else {
-                        $("#DAS").hide();
-                    }
-                });
-
-                $('#Donatestate').change(function () {
-                    console.log(this.value);
-
-                    if (this.value == 'Some') {
-                        $("#viewOrgansForm").show();
-                    }
-                    else {
-                        $("#viewOrgansForm").hide();
-                    }
-                });
+        $(document).ready(function () {
+            $('#Donate').change(function () {
+                if (this.value == 'YES') {
+                    $("#DAS").show();
+                }
+                else {
+                    $("#DAS").hide();
+                }
             });
 
+            $('#Donatestate').change(function () {
+                console.log(this.value);
+
+                if (this.value == 'Some') {
+                    $("#viewOrgansForm").show();
+                }
+                else {
+                    $("#viewOrgansForm").hide();
+                }
+            });
+        });
+
+    </script>
+    <script src="js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            autoHideDialCode: false,
+            formatOnDisplay: false,
+            initialCountry: "iq",
+            nationalMode: false,
+            utilsScript: "js/utils.js",
+        });
         </script>
-        <script src="js/intlTelInput.js"></script>
-        <script>
-            var input = document.querySelector("#phone");
-            window.intlTelInput(input, {
-              autoHideDialCode: false,
-              formatOnDisplay: false,
-              initialCountry: "iq",
-              nationalMode: false,
-                utilsScript: "js/utils.js",
-            });
-          </script>
-        
-                
-                
-        <script>
+    <script>
             
-            document.addEventListener("DOMContentLoaded", function (event) {
+        document.addEventListener("DOMContentLoaded", function (event) {
                 
                 
-                $('#smartwizard-arrows-success').smartWizard({
-                    theme: 'arrows',
-                    showStepURLhash: false
-                });
-
-                $('#smartwizard-arrows-danger').smartWizard({
-                    theme: 'arrows',
-                    showStepURLhash: false
-                });
-
-                // Data Single
-
-                $('input[name="datesingle"]').daterangepicker({
-                    singleDatePicker: true,
-                    showDropdowns: true
-                });
-
-                $('input[name="DateOfBirthTextBox"]').daterangepicker({
-                    singleDatePicker: true,
-                    showDropdowns: true
-                });
-
-
-
-                // Validation
-                var $validationForm = $('#smartwizard-validation');
-                $validationForm.validate({
-                    errorPlacement: function errorPlacement(error, element) {
-                        $(element).parents('.form-group').append(
-                            error.addClass('invalid-feedback small d-block')
-                        )
-                    },
-                    highlight: function (element) {
-                        $(element).addClass('is-invalid');
-                    },
-                    unhighlight: function (element) {
-                        $(element).removeClass('is-invalid');
-                    },
-                    rules: {
-                        'wizard-confirm': {
-                            equalTo: 'input[name="wizard-password"]'
-                        }
-                    }
-                });
-                $validationForm
-                    .smartWizard({
-                        autoAdjustHeight: false,
-                        backButtonSupport: false,
-                        useURLhash: false,
-                        showStepURLhash: false,
-                        toolbarSettings: {
-                            toolbarExtraButtons: [$('<button class="btn btn-submit btn-primary" type="button">Finish</button>')]
-                        }
-                    })
-                    .on('leaveStep', function (e, anchorObject, stepNumber, stepDirection) {
-                        if (stepDirection === 'forward') {
-                            return $validationForm.valid();
-                        }
-                        return true;
-                    });
-                $validationForm.find('.btn-submit').on('click', function () {
-                    if (!$validationForm.valid()) {
-                        return;
-                    }
-                    alert("Great! The form is valid and ready to submit.");
-                    return false;
-                });
+            $('#smartwizard-arrows-success').smartWizard({
+                theme: 'arrows',
+                showStepURLhash: false
             });
-        </script>
-        <script src="js/main.js"></script>
-    </form>
+
+            $('#smartwizard-arrows-danger').smartWizard({
+                theme: 'arrows',
+                showStepURLhash: false
+            });
+
+            // Data Single
+
+            $('input[name="datesingle"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            });
+
+            $('input[name="DateOfBirthTextBox"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            });
+
+
+
+            // Validation
+            var $validationForm = $('#smartwizard-validation');
+            $validationForm.validate({
+                errorPlacement: function errorPlacement(error, element) {
+                    $(element).parents('.form-group').append(
+                        error.addClass('invalid-feedback small d-block')
+                    )
+                },
+                highlight: function (element) {
+                    $(element).addClass('is-invalid');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('is-invalid');
+                },
+                rules: {
+                    'wizard-confirm': {
+                        equalTo: 'input[name="wizard-password"]'
+                    }
+                }
+            });
+            $validationForm
+                .smartWizard({
+                    autoAdjustHeight: false,
+                    backButtonSupport: false,
+                    useURLhash: false,
+                    showStepURLhash: false,
+                    toolbarSettings: {
+                        toolbarExtraButtons: [$('<button class="btn btn-submit btn-primary" type="button">Finish</button>')]
+                    }
+                })
+                .on('leaveStep', function (e, anchorObject, stepNumber, stepDirection) {
+                    if (stepDirection === 'forward') {
+                        return $validationForm.valid();
+                    }
+                    return true;
+                });
+            $validationForm.find('.btn-submit').on('click', function () {
+                if (!$validationForm.valid()) {
+                    return;
+                }
+                alert("Great! The form is valid and ready to submit.");
+                return false;
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
     </body>
 </html>

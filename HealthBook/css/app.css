@@ -18253,11 +18253,11 @@ svg {
     }
 
 .wizard-primary.sw-theme-default > ul.step-anchor > li.active > a {
-    color: #0cc2aa !important
+    color: rgba(49, 157, 181,.8) !important
 }
 
     .wizard-primary.sw-theme-default > ul.step-anchor > li.active > a:after {
-        background: #0cc2aa
+        background: rgba(49, 157, 181,.8)
     }
 
 .wizard-primary.sw-theme-default > ul.step-anchor > li.done > a {
@@ -18269,12 +18269,12 @@ svg {
     }
 
 .wizard-primary.sw-theme-arrows > ul.step-anchor > li.active > a {
-    border-color: #0cc2aa !important;
-    background: #0cc2aa !important
+    border-color: rgba(49, 157, 181,.8) !important;
+    background: rgba(49, 157, 181,.8) !important
 }
 
     .wizard-primary.sw-theme-arrows > ul.step-anchor > li.active > a:after {
-        border-left-color: #0cc2aa !important
+        border-left-color: rgba(49, 157, 181,.8) !important
     }
 
 .wizard-primary.sw-theme-arrows > ul.step-anchor > li.done > a {

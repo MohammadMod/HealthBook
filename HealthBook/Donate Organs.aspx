@@ -5,7 +5,7 @@
     <div class="col-12 col-lg-12">
         <div id="smartwizard-arrows-danger" class="wizard wizard-primary mb-4">
             <ul>
-                <li><a href="#arrows-success-step-1">Step One<br>
+                <li ><a href="#arrows-success-step-1" style="color:#319DB5;">Step One<br>
                         <small>Info</small></a>
                 </li>
                 <li><a href="#arrows-success-step-2">Step two<br>
