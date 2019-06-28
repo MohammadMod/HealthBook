@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MessageBird;
+using MessageBird.Exceptions;
+using MessageBird.Net;
 
 namespace HealthBook
 {
@@ -123,11 +125,20 @@ namespace HealthBook
 
             long PhoneNumber = long.Parse(phone);
 
+
+
             const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
             Client client = Client.CreateDefault(YourAccessKey);
             long Msisdn = PhoneNumber; // your phone number here
             MessageBird.Objects.Message message =
             client.SendMessage("HealthBook", myCode, new[] { Msisdn });
+
+            //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+            //const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+            //Client client = Client.CreateDefault(YourAccessKey);
+            //long Msisdn = PhoneNumber; // your phone number here
+            //MessageBird.Objects.Message message =
+            //client.SendMessage("HealthBook", myCode, new[] { Msisdn });
 
             SendCodeButton1.Attributes.Add("onclick", "return false;");
 

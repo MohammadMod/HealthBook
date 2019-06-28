@@ -17,6 +17,10 @@ namespace HealthBook.HospitalPanel
                 try
                 {
                     User_namelabel.Text = "Welcome: " + Session["username"].ToString();
+                    if (Session["username"].ToString() == "")
+                    {
+                        Response.Redirect("..\\default.aspx");
+                    }
 
                 }
                 catch (Exception)

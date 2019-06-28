@@ -38,11 +38,11 @@
                             
                             
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="documentation.html">
-                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">Documentation</span>
+                                <a class="sidebar-link" href="View Hospitals.aspx">
+                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">View Hospitals</span>
                                 </a>
                             </li>
-                            <li class="sidebar-header">Components
+                           <%-- <li class="sidebar-header">Components
                             </li>
                             
                             
@@ -55,7 +55,7 @@
                                     <li class="sidebar-item"><a class="sidebar-link" href="tables-bootstrap.html">Bootstrap</a></li>
                                     <li class="sidebar-item"><a class="sidebar-link" href="tables-datatables.html">DataTables</a></li>
                                 </ul>
-                            </li>
+                            </li>--%>
                             
                         </ul>
 
