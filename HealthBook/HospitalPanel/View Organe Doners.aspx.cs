@@ -153,7 +153,7 @@ namespace HealthBook.HospitalPanel
             Client client = Client.CreateDefault(YourAccessKey);
             long Msisdn = PhoneNumber; // your phone number here
             MessageBird.Objects.Message message =
-            client.SendMessage("HealthBook", "We Need Your Help", new[] { Msisdn });
+            client.SendMessage("HealthBook","Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
 
             System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
 
