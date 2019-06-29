@@ -21,6 +21,7 @@
     <link href="css/intlTelInput.css" rel="stylesheet" />
     <%-- Fond Owsald --%>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
     
 </head>
 <body onload="ChangeHeader();">
@@ -36,9 +37,8 @@
                         <div class="navbar-collapse">
                             <ul class="navbar-nav navedit">
                                 <li class="nav-item">
-                                    <a href="Organe Donation.aspx" class="nav-link">Organe Donation</a>
+                                    <a href="Login.aspx" class="nav-link"><i class="la la-user"></i>Login </a>
                                 </li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -46,14 +46,14 @@
             </nav>
         </section>
         
-        <nav class="navbar navbar-toggleable-sm  navbar-inverse mb--5" style="background-color: #319db5;">
-                <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dd" >
+
+        <nav class="navbar navbar-toggleable-lg  navbar-inverse mb--5" style="background-color: #319db5;">
+            <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dd">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="dd">
-                    <ul class="navbar-nav m-auto" style="background-color:#319db5 !important">
-                    <div class="container">
-
+                    <ul class="navbar-nav  m-auto" style="background-color: #319db5 !important">
                         <li class="nav-item active">
                             <a href="Organe Donation.aspx" class="nav-link">Organe Donation</a>
                         </li>
@@ -77,14 +77,9 @@
                         <li class="nav-item">
                             <a href="Donate%20Money.aspx" class="nav-link">Donate Money</a>
                         </li>
-                        
-                        <li class="nav-item" runat="server" id="logindiv">
-                            <a href="Login.aspx" class="nav-link"><i class="la la-user"></i>Login </a>
-                        </li>
-                        </div>
                     </ul>
                 </div>
-            
+            </div>
         </nav>
         <div class=" mt-5"></div>
 
@@ -94,7 +89,6 @@
 
     </form>
 
-    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/forms.js"></script>

@@ -359,11 +359,11 @@
     color: #656565;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .navbar-toggleable-sm .navedit {
         display: none !important;
     }
-}
+}*/
 
 .dawd tbody {
     display: flex !important;

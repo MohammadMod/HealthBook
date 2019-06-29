@@ -202,6 +202,9 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\jquery-2.1.1.min.js" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="Living_Donation.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />

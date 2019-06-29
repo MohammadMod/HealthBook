@@ -25,7 +25,7 @@
                         </a>
 
                         <ul class="sidebar-nav">
-                            <li class="sidebar-header">test
+                            <li class="sidebar-header"><a href="">View Money Donars.aspx</a>
                             </li>
                             <li class="sidebar-item active">
                                 <a href="AddHospital.aspx" class="sidebar-link">
@@ -35,7 +35,7 @@
 
 
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="documentation.html">
+                                <a class="sidebar-link" href="View%20Money%20Donars.aspx">
                                     <i class="align-middle" data-feather="book-open"></i><span class="align-middle">test</span>
                                 </a>
                             </li>
