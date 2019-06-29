@@ -47,12 +47,12 @@
         </section>
         
         <nav class="navbar navbar-toggleable-sm  navbar-inverse mb--5" style="background-color: #319db5;">
-            <div class="container">
-                <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse">
+                <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dd" >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse dawd">
-                    <ul class="navbar-nav m-auto">
+                <div class="collapse navbar-collapse" id="dd">
+                    <ul class="navbar-nav m-auto" style="background-color:#319db5 !important">
+                    <div class="container">
 
                         <li class="nav-item active">
                             <a href="Organe Donation.aspx" class="nav-link">Organe Donation</a>
@@ -81,9 +81,10 @@
                         <li class="nav-item" runat="server" id="logindiv">
                             <a href="Login.aspx" class="nav-link"><i class="la la-user"></i>Login </a>
                         </li>
+                        </div>
                     </ul>
                 </div>
-            </div>
+            
         </nav>
         <div class=" mt-5"></div>
 
