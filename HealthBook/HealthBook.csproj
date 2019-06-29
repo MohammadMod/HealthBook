@@ -202,6 +202,7 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="Living_Donation.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -388,6 +389,13 @@
     </Compile>
     <Compile Include="HospitalPanel\View Profile.aspx.designer.cs">
       <DependentUpon>View Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Living_Donation.aspx.cs">
+      <DependentUpon>Living_Donation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Living_Donation.aspx.designer.cs">
+      <DependentUpon>Living_Donation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log out.aspx.cs">
       <DependentUpon>Log out.aspx</DependentUpon>

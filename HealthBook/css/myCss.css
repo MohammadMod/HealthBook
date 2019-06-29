@@ -347,3 +347,37 @@
     color: #646464;
     font-size:26px;
 }
+
+.Shea {
+    display: block;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+.bg-custome {
+    background-color: #F5F5F5;
+    color: #656565;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggleable-sm .navedit {
+        display: none !important;
+    }
+}
+
+.dawd tbody {
+    display: flex !important;
+}
+
+    .dawd tbody tr {
+        margin-right: 10px;
+    }
+
+        .dawd tbody tr input[type=checkbox], input[type=radio] {
+            width: 16px !important;
+            height: 16px !important;
+        }
+
+        .dawd tbody tr label {
+            margin-left: 10px;
+        }
