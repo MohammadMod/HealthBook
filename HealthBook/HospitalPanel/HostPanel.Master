@@ -25,26 +25,26 @@
                         </a>
 
                         <ul class="sidebar-nav">
-                            <li class="sidebar-header">test
+                            <li class="sidebar-header">
                             </li>
                             <li class="sidebar-item active">
-                                <a href="AddHospital.aspx" class="sidebar-link">
-                                    <i class="align-middle" data-feather="sliders"></i><span class="align-middle">test</span>
+                                <a href="View Organe Doners.aspx" class="sidebar-link">
+                                    <i class="align-middle" data-feather="sliders"></i><span class="align-middle">View Organ Donors</span>
                                 </a>
                             </li>
 
 
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" href="documentation.html">
-                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">test</span>
+                            <%--<li class="sidebar-item">
+                                <a class="sidebar-link" href="">
+                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">View Last Profile</span>
                                 </a>
                             </li>
                             <li class="sidebar-header">test
-                            </li>
+                            </li>--%>
 
 
 
-                            <li class="sidebar-item">
+                           <%-- <li class="sidebar-item">
                                 <a href="#tables" data-toggle="collapse" class="sidebar-link collapsed">
                                     <i class="align-middle" data-feather="list"></i><span class="align-middle">test</span>
                                 </a>
@@ -52,7 +52,7 @@
                                     <li class="sidebar-item"><a class="sidebar-link" href="tables-bootstrap.html">test</a></li>
                                     <li class="sidebar-item"><a class="sidebar-link" href="tables-datatables.html">test</a></li>
                                 </ul>
-                            </li>
+                            </li>--%>
 
                         </ul>
 
