@@ -169,17 +169,26 @@
         .container2 {
             max-width: 680px
         }
+        .content {
+            padding: 0.5rem !important;
+        }
     }
 
     @media (min-width:768px) {
         .container2 {
             max-width: 860px
         }
+        .content {
+            padding: 1.2rem !important;
+        }
     }
 
     @media (min-width:992px) {
         .container2 {
             max-width: 1080px
+        }
+        .content {
+            padding: 1.2rem  !important;
         }
     }
 
@@ -364,6 +373,7 @@
         display: none !important;
     }
 }*/
+
 
 .dawd tbody {
     display: flex !important;
