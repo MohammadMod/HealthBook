@@ -9,8 +9,9 @@ using System.Web.UI.WebControls;
 
 namespace HealthBook
 {
-    public partial class Login_healthbook : System.Web.UI.Page
+    public partial class login : System.Web.UI.Page
     {
+
         public static string emaila = "";
         public static string username = "";
         public static string password = "";
@@ -65,6 +66,7 @@ namespace HealthBook
 
             dr.Close();
             con.Close();
+
         }
         private void SaveCookie()
         {
