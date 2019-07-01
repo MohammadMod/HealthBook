@@ -13,9 +13,7 @@
     <link href="../css/AdminCss.css" rel="stylesheet" />
     <link href="../css/intlTelInput.css" rel="stylesheet" />
     <style>
-    .checkmark{
-        left:110px;
-    }
+    
    @media (min-width:320px) {
         .content {
             padding:1rem .2rem 0 .2rem !important;
@@ -144,15 +142,32 @@
                             <li class="sidebar-header">
                             </li>
                             <li class="sidebar-item active">
-                                <a href="View%20Organe%20Doners.aspx" class="sidebar-link">
-                                    <i class="align-middle" data-feather="star"></i><span class="align-middle">View Organe Doners</span>
+                                <a href="AddHospital.aspx" class="sidebar-link">
+                                    <i class="align-middle" data-feather="sliders"></i><span class="align-middle">test</span>
                                 </a>
                             </li>
+
+
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="View%20Money%20Donars.aspx">
-                                    <i class="align-middle" data-feather="heart"></i><span class="align-middle">View Money Donars</span>
+                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">test</span>
                                 </a>
                             </li>
+                            <li class="sidebar-header">test
+                            </li>
+
+
+
+                            <li class="sidebar-item">
+                                <a href="#tables" data-toggle="collapse" class="sidebar-link collapsed">
+                                    <i class="align-middle" data-feather="list"></i><span class="align-middle">test</span>
+                                </a>
+                                <ul id="tables" class="sidebar-dropdown list-unstyled collapse ">
+                                    <li class="sidebar-item"><a class="sidebar-link" href="tables-bootstrap.html">test</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link" href="tables-datatables.html">test</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
 
 
