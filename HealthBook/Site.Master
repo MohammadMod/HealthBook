@@ -30,7 +30,7 @@
         <section class="Shea">
             <nav class="navbar navbaredit navbar-toggleable-sm navbar-light bg-custome justify-content-between">
                 <div class="container">
-                    <a class="navbar-brand ">HealthBook
+                    <a class="navbar-brand " href="http://healthbook.me/" target="_blank">HealthBook
                     </a>
                     <div class="form-inline">
 
