@@ -64,7 +64,6 @@
 
                         <div class="form-group ml-35 mt-4">
                             <label class="checkb">
-                                <input type="checkbox">
                                 <asp:CheckBox ID="Reminder" runat="server" Text="Remember me!" />
                                 <span class="checkmark"></span>
                             </label>

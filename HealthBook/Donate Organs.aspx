@@ -135,84 +135,7 @@
                             </asp:CheckBoxList>
                         </div>
 
-                               <%--  <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_2" runat="server" Text="Heart" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_1" runat="server" Text="Lungs" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_3" runat="server" Text="Kidneys" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_4" runat="server" Text="Liver"/>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_5" runat="server" Text="Corneas" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_6" runat="server" Text="Pancreas" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_7" runat="server" Text="l bowel" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_8" runat="server" Text="Smal"/>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="form-group d-inline pr-3">
-                                <label class="checkb">
-                                    
-                                <input type="checkbox">
-                                    <asp:CheckBox ID="CheckBox_9" runat="server" Text="Eyes"/>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>--%>
+                              
 
 
                         <div class="form-group ">
@@ -282,9 +205,10 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            A code sent to your phone number Please verify:
-                            <br />
-                            <asp:TextBox ID="CodeTextBox" runat="server"></asp:TextBox>
+
+                            <label for="exampleInputEmail1">A code sent to your phone number Please verify:</label>
+                            
+                            <asp:TextBox ID="CodeTextBox" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="modal-footer">
