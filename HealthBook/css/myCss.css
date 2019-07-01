@@ -398,3 +398,70 @@
         .dawd tbody tr label {
             margin-left: 10px;
         }
+
+/* Design Footer Star*/
+
+#info {
+    background-color: #343A40;
+}
+
+#info text-infor {
+    color: gray;
+}
+
+
+#main-footer {
+    border-top: solid 0.5px white;
+    background-color: #000;
+}
+
+#main-footer a {
+    color: gray;
+}
+
+
+#main-footer {
+    border-top: solid 0.5px white;
+    background-color: #000;
+}
+
+#main-footer a {
+color: gray;
+}
+
+#main-footer a.email:hover {
+color: #999999;
+}
+
+#main-footer a.twitter:hover {
+color: #10C0EE;
+}
+
+#main-footer a.facebook:hover {
+color: #3B5998;
+}
+
+#main-footer a.linkedin:hover {
+color: #006E99;
+}
+
+#main-footer a.google_plus:hover {
+color: #E3614A;
+}
+
+#main-footer a.skype:hover {
+color: #00B0E1;
+}
+
+#main-footer a.youtube:hover {
+color: #F3554F;
+}
+
+
+#main-footer .fas,
+#main-footer .fab {
+    font-size: 20px;
+    padding: 0px 5px 0px 5px;
+}
+
+/* Design Footer End */
