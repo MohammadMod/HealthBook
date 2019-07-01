@@ -1,17 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View Hospitals.aspx.cs" Inherits="HealthBook.View_Hospitals" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin Panel/admin.Master" AutoEventWireup="true" CodeBehind="View_Hospital.aspx.cs" Inherits="HealthBook.Admin_Panel.View_Hospital1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
 
-    <div class="container text-center mt-7">
-        <div>
-            <h4 class="text-center my-3 THDM">View Hospitals</h4>
+    
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="text-center my-3 THDM">View Hospitals</h4>
 
-        </div>
-        <div class="border p-3">
+            </div>
+
             <asp:GridView ID="ViewHospitalsGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-md text-center" runat="server"></asp:GridView>
         </div>
     </div>
-
-
 
      <script>
 

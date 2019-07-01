@@ -8,12 +8,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HealthBook
+namespace HealthBook.Admin_Panel
 {
-    public partial class View_Hospitals : System.Web.UI.Page
+    public partial class View_Hospital1 : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
-
         protected void Page_Load(object sender, EventArgs e)
         {
             //try
@@ -67,6 +66,7 @@ namespace HealthBook
                 }
 
             }
+
         }
     }
 }

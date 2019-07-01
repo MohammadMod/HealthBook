@@ -32,31 +32,21 @@
                             </li>
                             <li class="sidebar-item active">
                                 <a href="AddHospital.aspx" class="sidebar-link">
-                                    <i class="align-middle" data-feather="sliders"></i><span class="align-middle">Add Hospital</span>
+                                    <i class="align-middle" data-feather="plus-square"></i><span class="align-middle">Add Hospital</span>
                                 </a>
                             </li>
-                            
                             
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="View Hospitals.aspx">
-                                    <i class="align-middle" data-feather="book-open"></i><span class="align-middle">View Hospitals</span>
+                                <a class="sidebar-link" href="View_Hospital.aspx">
+                                    <i class="align-middle" data-feather="heart"></i><span class="align-middle">View Hospitals</span>
                                 </a>
                             </li>
-                           <%-- <li class="sidebar-header">Components
-                            </li>
-                            
-                            
-                            
+                            <a href="View%20Money%20Donars.aspx"></a>
                             <li class="sidebar-item">
-                                <a href="#tables" data-toggle="collapse" class="sidebar-link collapsed">
-                                    <i class="align-middle" data-feather="list"></i><span class="align-middle">Tables</span>
+                                <a class="sidebar-link" href="View%20Money%20Donars.aspx">
+                                    <i class="align-middle" data-feather="eye"></i><span class="align-middle">View Money Donars</span>
                                 </a>
-                                <ul id="tables" class="sidebar-dropdown list-unstyled collapse ">
-                                    <li class="sidebar-item"><a class="sidebar-link" href="tables-bootstrap.html">Bootstrap</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link" href="tables-datatables.html">DataTables</a></li>
-                                </ul>
-                            </li>--%>
-                            
+                            </li>
                         </ul>
 
 

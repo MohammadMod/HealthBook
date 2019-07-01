@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HealthBook {
+namespace HealthBook.Admin_Panel {
     
     
-    public partial class View_Hospitals {
+    public partial class View_Hospital1 {
         
         /// <summary>
         /// ViewHospitalsGridView control.
