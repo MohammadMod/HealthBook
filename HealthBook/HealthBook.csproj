@@ -203,6 +203,8 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="img\Donate_1.jpg" />
+    <Content Include="img\Donate_2.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\jquery.min.js" />
