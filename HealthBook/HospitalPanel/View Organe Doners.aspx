@@ -5,7 +5,7 @@
     <div class=" container-fluid mt-7">
 
         <div class="form-row">
-            <div class="col-4">
+            <div class="col-3">
                 <div class="form-group">
                     <label for="SelectOrganDropDownList">Select Organ</label>
 
@@ -23,7 +23,7 @@
                     </asp:DropDownList>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
 
                 <div class="form-group">
                     <label for="SelectOrganDropDownList">Blood Group</label>
@@ -47,7 +47,7 @@
                 </div>
 
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="form-group">
                     <label for="SelectOrganDropDownList">Organ For</label>
 
@@ -57,6 +57,14 @@
                         <asp:ListItem>Transplant</asp:ListItem>
                         <asp:ListItem>Research &amp; Transplant</asp:ListItem>
                     </asp:DropDownList>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="SelectOrganDropDownList">City</label>
+
+                    <asp:DropDownList ID="cityDropDownList" runat="server" AutoPostBack="True" CssClass="form-control" OnSelectedIndexChanged="cityDropDownList_SelectedIndexChanged"></asp:DropDownList>
                 </div>
             </div>
         </div>
@@ -73,10 +81,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="card-title text-center">&nbsp;</h5>
-                    <h5 class="card-title text-center">&nbsp;</h5>
 
-                  City:  <asp:DropDownList ID="cityDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cityDropDownList_SelectedIndexChanged"></asp:DropDownList>
                     <h5 class="card-title text-center">View Organe Donate</h5>
                     
                 </div>

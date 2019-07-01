@@ -245,7 +245,6 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Who Can Donate.aspx" />
     <Content Include="HospitalPanel\searchingrids.js" />
-    <Content Include="HospitalPanel\View Money Donars.aspx" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
     <Content Include="HospitalPanel\View Profile.aspx" />
     <Content Include="img\8-organ-donation-facts.jpg" />
@@ -380,13 +379,6 @@
     </Compile>
     <Compile Include="HospitalPanel\HostPanel.Master.designer.cs">
       <DependentUpon>HostPanel.Master</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalPanel\View Money Donars.aspx.cs">
-      <DependentUpon>View Money Donars.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HospitalPanel\View Money Donars.aspx.designer.cs">
-      <DependentUpon>View Money Donars.aspx</DependentUpon>
     </Compile>
     <Compile Include="HospitalPanel\View Organe Doners.aspx.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
