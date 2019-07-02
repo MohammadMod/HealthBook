@@ -93,39 +93,43 @@
       <div class="row">
 
         <div class="col-md-4 border-left text-left">
-          <h4 class="text-white">Contact info</h4>
+          <h4 class="text-white"> What is Healthbook </h4>
 
           <div class="text-muted">
-            <span class="la la-user"> اربيل شارع الاطباء</span>
+            <span class="la la-user">  It is a modern application to control, develop and systemize the health sector using a special system through which the relevant authority of health affairs and health followup committee of the Ministry of Health will be aware of any abuse case such as (physicians’ abuse, pharmaceutical expiry and trading them).               </span>
             <br>
             
 
           </div>
         </div>
           <div class="col-md-4 border-left text-left">
-              <h4 class="text-white">Our Products</h4>
+              <h4 class="text-white">What does Healthbook do</h4>
               <div class="text-muted">
                   <ul>
-                      <li>BLOOD GLUCOSE METER</li>
-                      <li>Lp-PLA2 Activity Assay</li>
-                      <li><a href="#">View more</a></li>
+                      <li>In order to eliminate such trading with people’s life and make reforms in health sector and develop it, we need to regulate this sector through modern control systems and evade any attempt that might aim at weakening it.</li>
+                      
                   </ul>
               </div>
               <hr>
           </div>
         <div class="col-md-4 border-left text-left">
 
-          <h4 class="text-white">About us</h4>
+          <h4 class="text-white">Healthbook systmize</h4>
 
           <div class="text-muted">
             <ul>
               <li>
-                     AEON established in Taiwan since May 2015.
-                    </li>
-                    <li>
-                      We are dedicated to become a leading IVD company and a total solution provider in healthcare.
+                  
+1. Doctors can determine the required medications.
+
+
 
                     </li>
+                <li>
+    2. During registering the names of the medications in the data section of the 
+application, no name of any company will be registered which means the 
+prescriptions should be written by the doctors in a scientific manner.     
+                </li>
             </ul>
 
           </div>
@@ -142,36 +146,36 @@
                 <div class="row">
                     <div class="col-md-3 text-info">
                         <p>
-                            Copyright 2019 &copy; HealthBook
+                            Copyright 2018 &copy; <a href="http://healthbook.me/">HealthBook</a>
                         </p>
                     </div>
 
                     <div class="offset-md-4 col-md-5 text-center">
-                        <a href="http://info@visionary-biomedicine.com" class="email" data-toggle="tooltip"
+                        <a href="#" class="email" data-toggle="tooltip"
                             data-placement="top" title="Email">
                             <i class="fas fa-envelope-square"></i>
                         </a>
 
-                        <a href="https://twitter.com/VBiomedicine" class="twitter" data-toggle="tooltip"
+                        <a href="#" class="twitter" data-toggle="tooltip"
                             data-placement="top" title="twetter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.facebook.com/Visionary-Biomedicine-210292992981559/" class="facebook" data-toggle="tooltip"
+                        <a href="#" class="facebook" data-toggle="tooltip"
                             data-placement="top" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://plus.google.com/u/0/10936994082060269728" class="google_plus" data-toggle="tooltip"
+                        <a href="#" class="google_plus" data-toggle="tooltip"
                             data-placement="top" title="Google+">
                             <i class="fab fa-google-plus-g"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/visionary-biomedicine-7a4846169/" class="linkedin" data-toggle="tooltip"
+                        <a href="#" class="linkedin" data-toggle="tooltip"
                             data-placement="top" title="Linkedin">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
 
 
-                        <a href="https://www.instagram.com/visionary.biomedicine/" class="instagram" data-toggle="tooltip"
+                        <a href="#" class="instagram" data-toggle="tooltip"
                             data-placement="top" title="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
