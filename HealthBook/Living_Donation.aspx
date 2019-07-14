@@ -3,7 +3,7 @@
     <section id="info" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-sm-10 col-10 align-self-center">
+                <div class="col-md-10 col-sm-12 col-12 col-sm-10 col-10 align-self-center">
                     <h3 class="text_header mb-3">The Living Donation Process</h3>
                     <p class="text-muted">
                         Most organ and tissue donations occur after the donor has died. But some organs and tissues can be donated while the donor is alive.
