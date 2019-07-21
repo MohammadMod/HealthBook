@@ -23,30 +23,7 @@
                     </asp:DropDownList>
                 </div>
             </div>
-            <div class="col-3">
-
-                <div class="form-group">
-                    <label for="SelectOrganDropDownList">Blood Group</label>
-
-                    <asp:DropDownList ID="BloodGroupDropDownList0" CssClass="form-control"
-                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="BloodGroupDropDownList0_SelectedIndexChanged">
-
-                        <asp:ListItem>All</asp:ListItem>
-                        <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
-                        <asp:ListItem Text="A-" Value="A-">A-</asp:ListItem>
-
-                        <asp:ListItem Text="B+" Value="B+">B+</asp:ListItem>
-                        <asp:ListItem Text="B-" Value="B-">B-</asp:ListItem>
-
-                        <asp:ListItem Text="AB+" Value="AB+">AB+</asp:ListItem>
-                        <asp:ListItem Text="AB-" Value="5">AB-</asp:ListItem>
-
-                        <asp:ListItem Text="O+" Value="O-">O+</asp:ListItem>
-                        <asp:ListItem Text="O-" Value="O-">O-</asp:ListItem>
-                    </asp:DropDownList>
-                </div>
-
-            </div>
+           
             <div class="col-3">
                 <div class="form-group">
                     <label for="SelectOrganDropDownList">Organ For</label>
@@ -94,7 +71,9 @@
 <%--                            <asp:ButtonField Text="View Profile" />--%>
 
                         </Columns>
+
                     </asp:GridView>
+
             </div>
         </div>
 

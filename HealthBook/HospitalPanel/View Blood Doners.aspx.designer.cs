@@ -10,25 +10,16 @@
 namespace HealthBook.HospitalPanel {
     
     
-    public partial class View_Organe_Doners {
+    public partial class View_Blood_Doners {
         
         /// <summary>
-        /// SelectOrganDropDownList control.
+        /// BloodGroupDropDownList0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList SelectOrganDropDownList;
-        
-        /// <summary>
-        /// OrganForDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList OrganForDropDownList;
+        protected global::System.Web.UI.WebControls.DropDownList BloodGroupDropDownList0;
         
         /// <summary>
         /// cityDropDownList control.

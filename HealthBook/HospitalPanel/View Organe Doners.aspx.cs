@@ -64,22 +64,22 @@ namespace HealthBook.HospitalPanel
         protected void BloodGroupDropDownList0_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (BloodGroupDropDownList0.SelectedIndex == 0)
-            {
-                ViewOrganDoners();
-            }
-            else
-            {
-                SqlCommand cmdaa = new SqlCommand("View_Organ_Doners_by_Blood_Group", conn);
-                SqlDataAdapter da = new SqlDataAdapter(cmdaa);
-                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            //if (BloodGroupDropDownList0.SelectedIndex == 0)
+            //{
+            //    ViewOrganDoners();
+            //}
+            //else
+            //{
+            //    SqlCommand cmdaa = new SqlCommand("View_Organ_Doners_by_Blood_Group", conn);
+            //    SqlDataAdapter da = new SqlDataAdapter(cmdaa);
+            //    da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-                da.SelectCommand.Parameters.AddWithValue("@selectedBlood", BloodGroupDropDownList0.SelectedItem.Text);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                ViewOrganDonersGridView.DataSource = ds;
-                ViewOrganDonersGridView.DataBind();
-            }
+            //    da.SelectCommand.Parameters.AddWithValue("@selectedBlood", BloodGroupDropDownList0.SelectedItem.Text);
+            //    DataSet ds = new DataSet();
+            //    da.Fill(ds);
+            //    ViewOrganDonersGridView.DataSource = ds;
+            //    ViewOrganDonersGridView.DataBind();
+            //}
 
         }
         protected void OrganForDropDownList_SelectedIndexChanged(object sender, EventArgs e)
