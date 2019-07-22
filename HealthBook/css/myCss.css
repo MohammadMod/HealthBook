@@ -127,7 +127,12 @@
     border-bottom: none !important;
     box-shadow: none !important;
 }
-
+.navedit_C{
+    color:yellow !important;
+}
+.imghe {
+    background-image: url('../img/D_organe.jpg') !important;
+}
 /*Design matching Donars start*/
 #page-header {
     height: 300px;
@@ -367,7 +372,6 @@
 .Shea {
     display: block;
     background-color: whitesmoke;
-    padding-bottom: 50px;
 }
 
 .bg-custome {

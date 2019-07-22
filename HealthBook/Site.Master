@@ -44,7 +44,10 @@
                     </div>
                 </div>
             </nav>
-            <div class="container">
+            
+        </section>
+        <section class="imghe p-5">
+            <div class="container ">
                 <div class="text-left mt-5">
                     <h4 class="text-muted">
                        Organ donation is apart of healthbook
@@ -52,7 +55,6 @@
                 </div>
             </div>
         </section>
-        
 
         <nav class="navbar navbar-toggleable-lg  navbar-inverse mb--5" style="background-color: #319db5;">
             <div class="container">
@@ -79,10 +81,10 @@
                             <a href="Who Can Donate.aspx" class="nav-link">Who Can Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a href="Donate%20Organs.aspx" class="nav-link">Donate Organe  </a>
+                            <a href="Donate%20Organs.aspx" class="nav-link navedit_C">Register Organe  </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Donate%20Money.aspx" class="nav-link">Donate Money</a>
+                        <li class="nav-item ">
+                            <a href="Donate%20Money.aspx" class="nav-link navedit_C">Donate Money</a>
                         </li>
                     </ul>
                 </div>

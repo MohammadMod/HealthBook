@@ -2721,7 +2721,10 @@ tbody.collapse.show {
       align-items: center; }
     .navbar-toggleable .navbar-collapse {
       display: flex !important;
-      width: 100%; }
+      width: 100%;
+      z-index:100;
+      backface-visibility: visible;
+    }
     .navbar-toggleable .navbar-toggler {
       display: none; } }
 
