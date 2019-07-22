@@ -47,6 +47,12 @@
                                     <i class="align-middle" data-feather="eye"></i><span class="align-middle">View Money Donars</span>
                                 </a>
                             </li>
+
+                              <li class="sidebar-item active">
+                                <a href="Add City.aspx" class="sidebar-link">
+                                    <i class="align-middle" data-feather="plus-square"></i><span class="align-middle">Add City</span>
+                                </a>
+                            </li>
                         </ul>
 
 

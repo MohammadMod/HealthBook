@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add Hospital.aspx" />
+    <Content Include="Admin Panel\Add City.aspx" />
     <Content Include="Admin Panel\AddHospital.aspx" />
     <Content Include="Admin Panel\View Money Donars.aspx" />
     <Content Include="Admin Panel\View_Hospital.aspx" />
@@ -203,6 +204,7 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="HospitalPanel\View Blood Doners.aspx" />
     <Content Include="img\Donate_1.jpg" />
     <Content Include="img\Donate_2.jpg" />
     <Content Include="js\bootstrap.js" />
@@ -304,6 +306,13 @@
     <Compile Include="Add Hospital.aspx.designer.cs">
       <DependentUpon>Add Hospital.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin Panel\Add City.aspx.cs">
+      <DependentUpon>Add City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Panel\Add City.aspx.designer.cs">
+      <DependentUpon>Add City.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin Panel\admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -381,6 +390,13 @@
     </Compile>
     <Compile Include="HospitalPanel\HostPanel.Master.designer.cs">
       <DependentUpon>HostPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\View Blood Doners.aspx.cs">
+      <DependentUpon>View Blood Doners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\View Blood Doners.aspx.designer.cs">
+      <DependentUpon>View Blood Doners.aspx</DependentUpon>
     </Compile>
     <Compile Include="HospitalPanel\View Organe Doners.aspx.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
