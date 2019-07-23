@@ -134,11 +134,11 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
 
-        <section class="py-5 text-center text-white" id="information">
+        <section class="py-5 text-center" id="information">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 border-left text-left">
-                        <h4 class="text-white">Contact info</h4>
+                        <h4 class="text-black">Contact info</h4>
 
                         <div class="text-muted">
                             <span class="la la-user">اربيل شارع الاطباء</span>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 border-left text-left">
-                        <h4 class="text-white">Our Products</h4>
+                        <h4 class="text-black">Our Products</h4>
                         <div class="text-muted">
                             <ul>
                                 <li>BLOOD GLUCOSE METER</li>
@@ -158,7 +158,7 @@
                     </div>
                     <div class="col-md-4 border-left text-left">
 
-                        <h4 class="text-white">About us</h4>
+                        <h4 class="text-black">About us</h4>
 
                         <div class="text-muted">
                             <ul>
@@ -181,7 +181,7 @@
         <footer id="main-footer" class="pt-4 pb-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 text-info">
+                    <div class="col-md-3 text-info text-standard">
                         <p>
                             Copyright 2019 &copy; HealthBook
                         </p>

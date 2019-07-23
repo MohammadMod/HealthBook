@@ -388,6 +388,12 @@
     }
 }*/
 
+.text-black{
+    color:black !important;
+}
+.text-standard {
+    color: #319DB5 !important;
+}
 
 .dawd tbody {
     display: flex !important;
