@@ -14,21 +14,20 @@
     </asp:PlaceHolder>
     <link href="~/img/healthbook-10.png" rel="shortcut icon" type="image/x-icon" />
     <link href="css/app.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/line-awesome.min.css" rel="stylesheet" />
     <link href="css/myCss.css" rel="stylesheet" />
     <link href="css/intlTelInput.css" rel="stylesheet" />
     <%-- Fond Owsald --%>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
     
 </head>
 <body onload="ChangeHeader();">
     <form runat="server">
 
         <section class="Shea">
-            <nav class="navbar navbaredit navbar-toggleable-sm navbar-inverse bg-custome justify-content-between" style="background-color:#319DB5 !important;margin-bottom:10px;">
+            <nav class="navbar navbaredit px-0 navbar-toggleable-sm navbar-inverse navbar-dark justify-content-between" style="background-color:#319DB5 !important;">
                 <div class="container">
                     <a class="navbar-brand " href="http://healthbook.me/" target="_blank">HealthBook
                     </a>
@@ -37,22 +36,26 @@
                         <div class="navbar-collapse">
                             <ul class="navbar-nav navedit">
                                 <li class="nav-item">
-                                    <a href="Login.aspx" class="nav-link"><i class="la la-user"></i>Login </a>
+                                    <a href="Login.aspx"  style="color:white !important;" class="nav-link"><i class="la la-user"></i>Login </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="text-center">
-                <h4 class="text-muted">
-                   Organ donation is apart of healthbook
-                </h4>
+            
+        </section>
+        <section class="imghe p-5">
+            <div class="container ">
+                <div class="text-left mt-5">
+                    <h4 class="text-muted ">
+                       Organ donation is apart of healthbook
+                    </h4>
+                </div>
             </div>
         </section>
-        
 
-        <nav class="navbar navbar-toggleable-lg  navbar-inverse mb--5" style="background-color: #319db5;">
+        <%--<nav class="navbar navbar-toggleable-lg  navbar-inverse mb--5" style="background-color: #319db5;">
             <div class="container">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dd">
                     <span class="navbar-toggler-icon"></span>
@@ -77,25 +80,62 @@
                             <a href="Who Can Donate.aspx" class="nav-link">Who Can Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a href="Donate%20Organs.aspx" class="nav-link">Donate Organe  </a>
+                            <a href="Donate%20Organs.aspx" class="nav-link navedit_C">Register Organe  </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Donate%20Money.aspx" class="nav-link navedit_C">Donate Money</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>--%>
+
+        <nav class="navbar navbar-expand-lg  navbar-dark " style="background-color:#319DB5" >
+            <div class="container">
+               <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="Organe Donation.aspx" class="nav-link">Organe Donation</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Matching%20Donors.aspx" class="nav-link">Matching Donors</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Living_Donation.aspx" class="nav-link">Living Donation</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Can_donated.aspx" class="nav-link">what can be Donate</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Who Can Donate.aspx" class="nav-link">Who Can Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a href="Donate%20Money.aspx" class="nav-link">Donate Money</a>
+                            <a href="Donate%20Organs.aspx" class="nav-link navedit_C">Register Organe  </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Donate%20Money.aspx" class="nav-link navedit_C">Donate Money</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class=" mt-5"></div>
+        
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
 
-        <section class="py-5 text-center text-white" id="information">
+        <section class="py-5 text-center" id="information">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 border-left text-left">
-                        <h4 class="text-white">Contact info</h4>
+                        <h4 class="text-black">Contact info</h4>
 
                         <div class="text-muted">
                             <span class="la la-user">اربيل شارع الاطباء</span>
@@ -103,7 +143,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 border-left text-left">
-                        <h4 class="text-white">Our Products</h4>
+                        <h4 class="text-black">Our Products</h4>
                         <div class="text-muted">
                             <ul>
                                 <li>BLOOD GLUCOSE METER</li>
@@ -115,7 +155,7 @@
                     </div>
                     <div class="col-md-4 border-left text-left">
 
-                        <h4 class="text-white">About us</h4>
+                        <h4 class="text-black">About us</h4>
 
                         <div class="text-muted">
                             <ul>
@@ -138,7 +178,7 @@
         <footer id="main-footer" class="pt-4 pb-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 text-info">
+                    <div class="col-md-3 text-info text-standard">
                         <p>
                             Copyright 2019 &copy; HealthBook
                         </p>
@@ -175,8 +215,7 @@
         </footer>
     </form>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <%--<script src="js/app.js"></script>--%>
     <script src="js/forms.js"></script>
     <script>
 
@@ -288,6 +327,14 @@
             });
         });
     </script>
-    <script src="js/main.js"></script>
+    <%--<script src="js/main.js"></script>--%>
+    <%--<script src="js/bootstrap.min.js"></script>--%>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
 </html>

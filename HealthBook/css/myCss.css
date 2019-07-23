@@ -127,7 +127,12 @@
     border-bottom: none !important;
     box-shadow: none !important;
 }
-
+.navedit_C{
+    color:yellow !important;
+}
+.imghe {
+    background-image: url('../img/D_organe.jpg') !important;
+}
 /*Design matching Donars start*/
 #page-header {
     height: 300px;
@@ -367,9 +372,11 @@
 .Shea {
     display: block;
     background-color: whitesmoke;
-    padding-bottom: 20px;
 }
-
+.px-0{
+    padding-top:4px !important;
+    padding-bottom:4px !important;
+}
 .bg-custome {
     background-color: #F5F5F5;
     color: #656565;
@@ -381,6 +388,12 @@
     }
 }*/
 
+.text-black{
+    color:black !important;
+}
+.text-standard {
+    color: #319DB5 !important;
+}
 
 .dawd tbody {
     display: flex !important;

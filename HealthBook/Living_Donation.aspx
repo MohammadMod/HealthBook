@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Living_Donation.aspx.cs" Inherits="HealthBook.Living_Donation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <section id="info" class="py-5">
+    <section id="info" class="py-5" style="z-index:10;">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-sm-12 col-12 col-sm-10 col-10 align-self-center">
