@@ -66,11 +66,23 @@
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
 
+                             <asp:TemplateField>
+                            <HeaderTemplate>
+                                <asp:CheckBox ID="cbDeleteHeader" runat="server" AutoPostBack="True" />
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:CheckBox ID="CheckBox1" runat="server" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
 
                         </Columns>
                     </asp:GridView>
+                <asp:Button ID="Button1" runat="server" Text="Button"  OnClick="Button1_Click"/>
             </div>
         </div>  
+
+
+        
 
 
 </asp:Content>

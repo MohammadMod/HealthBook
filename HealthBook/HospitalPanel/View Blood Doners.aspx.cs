@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessageBird;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,6 +14,10 @@ namespace HealthBook.HospitalPanel
     public partial class View_Blood_Doners : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
+        
+
+        static string[] myIDs = new string[10];
+        static long[] phoneNums = new long[10];
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -134,6 +139,53 @@ namespace HealthBook.HospitalPanel
             }
         }
 
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            string str = string.Empty;
+            long phone = 0;
+            int i = 0;
+            foreach (GridViewRow gvrow in ViewOrganDonersGridView.Rows)
+            {
+                CheckBox chk = (CheckBox)gvrow.FindControl("CheckBox1");
+                if (chk != null & chk.Checked)
+                {
+
+                    str = gvrow.Cells[3].Text;
+                    phone =Convert.ToInt64(gvrow.Cells[6].Text);
+
+                }
+
+                phoneNums[i] = phone;
+                myIDs[i] = str;
+                i++;
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //GridViewRow row = ViewOrganDonersGridView.SelectedRow;
+            //string PhoneNumberIngrid = row.Cells[5].Text;
+            //long PhoneNumber = long.Parse(PhoneNumberIngrid);
+
+            for (int i = 0; i < 10; i++)
+            {
+                Response.Write(myIDs[i]);
+
+
+
+                //const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+                //Client client = Client.CreateDefault(YourAccessKey);
+                //long Msisdn = PhoneNumber; // your phone number here
+                //MessageBird.Objects.Message message =
+                //client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
+
+                //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
+            }
+
+
+
+        }
     }
 
 
