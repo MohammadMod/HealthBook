@@ -1,4 +1,7 @@
-﻿/* Banner Area start Organe Donation*/
+﻿<style >
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+</style >
+/* Banner Area start Organe Donation*/
 .banner-area {
     background-image: url('../img/Donate_1.jpg');
     background-size: cover;
@@ -211,6 +214,7 @@
             max-width: 1300px
         }
     }
+
     /*Container 2 end*/
 
 .p-10{
@@ -386,12 +390,6 @@
     color: #656565;
 }
 
-/*@media (max-width: 768px) {
-    .navbar-toggleable-sm .navedit {
-        display: none !important;
-    }
-}*/
-
 .text-black{
     color:black !important;
 }
@@ -416,8 +414,13 @@
             margin-left: 10px;
         }
 
+.text_hE {
+    color: #002626 !important;
+    font-family: 'Vollkorn', serif;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px #000000;
+}
 /* Design Footer Star*/
-
 #information {
     background-color: #eee;
 }

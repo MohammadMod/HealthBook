@@ -77,7 +77,14 @@
 
                         </Columns>
                     </asp:GridView>
-                <asp:Button ID="Button1" runat="server" Text="Button"  OnClick="Button1_Click"/>
+                    <hr />
+                    <div class="form-row ml-5 mb-3">
+                        <div class="col-6">
+                            <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Button"  OnClick="Button1_Click"/>
+                        </div>
+                    </div>
+
+
             </div>
         </div>  
 

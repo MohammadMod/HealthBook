@@ -17,7 +17,6 @@
             <div>
                 <%-- Add Item on step one --%>
                 <div id="arrows-success-step-1" >
-
                     <div id="validation-step-1" class="col-10 offset-1">
                         <div class="form-group">
                             <label class="form-label">First Name<span class="text-danger">*</span></label>
@@ -28,7 +27,6 @@
                             <label class="form-label">Last Name<span class="text-danger">*</span></label>
                             <asp:TextBox ID="LastNameTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                         </div>
-
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Gender</label>
 
@@ -38,13 +36,10 @@
                                 <asp:ListItem>Female</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-
-                        
 						<div class="form-group mb-xl-0">
 							<label class="form-label">Date of Birth<span class="text-danger">*</span></label>
 							<input class="form-control" type="text" name="DateOfBirthTextBox">
 						</div>
-
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Blood Group</label>
 
@@ -62,35 +57,22 @@
                                 <asp:ListItem Text="O-" Value="O-">O-</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-
-                        City:
-                        <asp:DropDownList ID="CityDropDownList" CssClass="custom-select" runat="server"></asp:DropDownList>
-
-                        <br />
+                        <div class="form-group">
+                            <label class="form-label">City:<span class="text-danger">*</span></label>
+                            <asp:DropDownList ID="CityDropDownList" CssClass="custom-select" runat="server"></asp:DropDownList>
+                        </div>
                         <div class="form-group">
                             <label class="form-label">Address<span class="text-danger">*</span></label>
-                            
                             <asp:TextBox ID="AddressTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                         </div>
-
-                        
-
-
                         <div class="form-group">
                             <label class="form-label">Email<span class="text-danger">*</span></label>
                             <asp:TextBox ID="EmailTextBox" CssClass="form-control" runat="server" required="true" type="email"></asp:TextBox>
                         </div>
-
                         <div class="form-group">
                             <label class="form-label">Phone Number<span class="text-danger">*</span></label>
-                            
                             <input id="phone" class="form-control" name="phone" type="tel">
-
                         </div>
-
-
-                        
-					    
                     </div>
                 </div>
 
