@@ -63,16 +63,18 @@
                             </asp:DropDownList>
                         </div>
 
+                        City:
+                        <asp:DropDownList ID="CityDropDownList" CssClass="custom-select" runat="server"></asp:DropDownList>
+
+                        <br />
                         <div class="form-group">
                             <label class="form-label">Address<span class="text-danger">*</span></label>
                             
                             <asp:TextBox ID="AddressTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
                         </div>
 
-                        <div class="form-group">
-                            <label class="form-label">City<span class="text-danger">*</span></label>
-                            <asp:TextBox ID="CityTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
-                        </div>
+                        
+
 
                         <div class="form-group">
                             <label class="form-label">Email<span class="text-danger">*</span></label>

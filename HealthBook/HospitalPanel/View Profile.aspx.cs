@@ -29,10 +29,10 @@ namespace HealthBook.HospitalPanel
                 Label9.Text = Application["bloodgroup"].ToString();
                 Label10.Text = Application["city"].ToString();
                 Label11.Text = Application["organ"].ToString();
-                Label12.Text = Application["signature"].ToString();
-                Label13.Text = Application["blooddooner"].ToString();
-                Label14.Text = Application["useorganfor"].ToString();
-                Label15.Text = Application["date"].ToString();
+                //Label12.Text = Application["signature"].ToString();
+                //Label13.Text = Application["blooddooner"].ToString();
+                //Label14.Text = Application["useorganfor"].ToString();
+                //Label15.Text = Application["date"].ToString();
             }
         }
 
