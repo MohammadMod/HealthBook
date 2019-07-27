@@ -131,7 +131,9 @@
     color:yellow !important;
 }
 .imghe {
-    background-image: url('../img/D_organe.jpg') !important;
+    background-image: url('../img/organdonate.jpg') !important;
+    background-attachment:fixed;
+    background-position: 50% 60%; 
 }
 /*Design matching Donars start*/
 #page-header {
@@ -211,7 +213,9 @@
     }
     /*Container 2 end*/
 
-
+.p-10{
+    padding:5rem !important;
+}
     .mt-6 {
         margin-top: 4rem !important;
     }
