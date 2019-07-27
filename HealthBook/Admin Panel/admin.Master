@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title>Admin Panel</title>
+    <link href="~/img/healthbook-10.png" rel="shortcut icon" type="image/x-icon" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../css/app.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
             <div class="d-flex">
                 <nav class="sidebar">
                     <div class="sidebar-content">
-                        <a class="sidebar-brand" href="index-1.html">
-                            <i class="align-middle" data-feather="box"></i>
+                        <a class="sidebar-brand" href="#">
+                            <i class="align-middle"></i>
                             <span class="align-middle">HealthBook</span>
                         </a>
 
