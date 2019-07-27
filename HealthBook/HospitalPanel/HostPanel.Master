@@ -149,6 +149,13 @@
                                     <i class="align-middle" data-feather="star"></i><span class="align-middle">View Organe Doners</span>
                                 </a>
                             </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="view%20blood%20doners.aspx">
+                                    <i class="align-middle" data-feather="star"></i><span class="align-middle">View Blood Doners</span>
+                                </a>
+                            </li>
+
                         </ul>
 
 

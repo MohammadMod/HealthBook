@@ -24,6 +24,20 @@ namespace HealthBook
             if (!IsPostBack)
             {
                 //viewOrgansForm.Visible = false;
+
+                DataTable subjects = new DataTable();
+
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT DISTINCT [Cityname] FROM Cities ", con);
+                adapter.Fill(subjects);
+
+                con.Open();
+                CityDropDownList.DataSource = subjects;
+                CityDropDownList.DataTextField = "Cityname";
+                CityDropDownList.DataValueField = "Cityname";
+                CityDropDownList.DataBind();
+                CityDropDownList.Items.Insert(0, new ListItem("Select", "NA"));
+
+                con.Close();
             }
         }
 
@@ -79,7 +93,7 @@ namespace HealthBook
                     cmd.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar).Value = Convert.ToDateTime(n);
                     cmd.Parameters.Add("@bloodGroup", SqlDbType.VarChar).Value = BloodTypeDropDownList.SelectedItem.Text;
 
-                    cmd.Parameters.Add("@city", SqlDbType.VarChar).Value = CityTextBox.Text;
+                    cmd.Parameters.Add("@city", SqlDbType.VarChar).Value = CityDropDownList.SelectedItem.Text;
                     cmd.Parameters.Add("@organs", SqlDbType.NVarChar).Value = selectedOrgan;
 
                     cmd.Parameters.Add("@signature", SqlDbType.VarChar).Value = SignatureTextBox.Text;

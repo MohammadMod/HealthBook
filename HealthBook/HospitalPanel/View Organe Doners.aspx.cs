@@ -180,10 +180,10 @@ namespace HealthBook.HospitalPanel
                 Application["bloodgroup"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[10].Text;
                 Application["city"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[11].Text;
                 Application["organ"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[12].Text;
-                Application["signature"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[13].Text;
-                Application["blooddooner"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[14].Text;
-                Application["useorganfor"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[15].Text;
-                Application["date"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[16].Text;
+                //Application["signature"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[13].Text;
+                //Application["blooddooner"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[14].Text;
+                //Application["useorganfor"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[15].Text;
+                //Application["date"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[16].Text;
 
                 //Fetch value of Country
                 //string country = ViewOrganDonersGridView.Rows[rowIndex].Cells[3].Text;
