@@ -136,7 +136,7 @@
                 <nav class="sidebar">
                     <div class="sidebar-content">
                         <a class="sidebar-brand" href="#">
-                            <i class="align-middle" data-feather="box"></i>
+                            <i class="align-middle"></i>
                             <span class="align-middle">HealthBook</span>
                         </a>
 
@@ -146,13 +146,13 @@
                             
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="View%20Organe%20Doners.aspx">
-                                    <i class="align-middle" data-feather="star"></i><span class="align-middle">View Organe Doners</span>
+                                    <i class="align-middle" ></i><span class="align-middle">View Organe Doners</span>
                                 </a>
                             </li>
 
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="view%20blood%20doners.aspx">
-                                    <i class="align-middle" data-feather="star"></i><span class="align-middle">View Blood Doners</span>
+                                    <i class="align-middle" ></i><span class="align-middle">View Blood Doners</span>
                                 </a>
                             </li>
 
