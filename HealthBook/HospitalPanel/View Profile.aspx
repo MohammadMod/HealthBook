@@ -132,17 +132,17 @@
             <div class="card-footer text-muted">
                 <div class="row">
                     <div class="col-12">
-                        <div class="d-inline-block">
-                            <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-success" Text="Submit" OnClick="SubmitButton_Click" />
-                        </div>
+                        
                         <div class="form-group">
                             <label class="checkb">
                                 <asp:CheckBox ID="CheckBox1" runat="server" />
 
-                                <span class="checkmark"></span>
+                                <span class="checkmark ml-1"></span>
                             </label>
                         </div>
-                        
+                        <div class="d-inline-block">
+                            <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-success" Text="Submit" OnClick="SubmitButton_Click" />
+                        </div>
                     </div>
                     
                 </div>

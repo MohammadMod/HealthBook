@@ -1,22 +1,22 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Organe Donation.aspx.cs" Inherits="HealthBook.Organe_Donation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <section class="banner-area relative" id="home">
+    <%--<section class="banner-area relative" id="home">
         <div class="overlay overlay-bg"></div>
         <div class="container">
             <div class="row fullscreen d-flex justify-content-center align-items-center">
                 <div class="banner-content col-lg-10 col-md-12 justify-content-center">
-                    <%--<div class="test">
+                    <div class="test">
 
 
                         
                         
                         
-                    </div>--%>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>--%>
 
     	<!-- Start home-about Area -->
     <section class="home-about-area section-gap">
