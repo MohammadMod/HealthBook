@@ -11,7 +11,7 @@
                     <label for="SelectOrganDropDownList">Blood Group</label>
 
                     <asp:DropDownList ID="BloodGroupDropDownList0" CssClass="form-control"
-                        runat="server" AutoPostBack="True">
+                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="BloodGroupDropDownList0_SelectedIndexChanged">
 
                         <asp:ListItem>All</asp:ListItem>
                         <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>

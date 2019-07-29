@@ -204,6 +204,7 @@
     <Content Include="fonts\line-awesome.woff2" />
     <Content Include="Admin Panel\admin.Master" />
     <Content Include="HospitalPanel\HostPanel.Master" />
+    <Content Include="HospitalPanel\Settings.aspx" />
     <Content Include="HospitalPanel\View Blood Doners.aspx" />
     <Content Include="img\Donate_1.jpg" />
     <Content Include="img\Donate_2.jpg" />
@@ -390,6 +391,13 @@
     </Compile>
     <Compile Include="HospitalPanel\HostPanel.Master.designer.cs">
       <DependentUpon>HostPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="HospitalPanel\View Blood Doners.aspx.cs">
       <DependentUpon>View Blood Doners.aspx</DependentUpon>

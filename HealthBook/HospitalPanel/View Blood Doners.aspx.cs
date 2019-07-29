@@ -14,10 +14,11 @@ namespace HealthBook.HospitalPanel
     public partial class View_Blood_Doners : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
-        
 
-        static string[] myIDs = new string[10];
+
+        static string[] myIDs;
         static long[] phoneNums = new long[10];
+        static int numofselectednumbers = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -141,6 +142,7 @@ namespace HealthBook.HospitalPanel
 
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+            myIDs = new string[ViewOrganDonersGridView.Rows.Count];
             string str = string.Empty;
             long phone = 0;
             int i = 0;
@@ -158,33 +160,57 @@ namespace HealthBook.HospitalPanel
                 phoneNums[i] = phone;
                 myIDs[i] = str;
                 i++;
+
             }
+            numofselectednumbers = numofselectednumbers + 1;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //GridViewRow row = ViewOrganDonersGridView.SelectedRow;
-            //string PhoneNumberIngrid = row.Cells[5].Text;
-            //long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
-            for (int i = 0; i < 10; i++)
+
+            //for (int i = 0; i < numofselectednumbers; i++)
+            //{
+            //    const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
+            //    Client client = Client.CreateDefault(YourAccessKey);
+            //    long Msisdn = +9647503202798; // your phone number here
+            //    MessageBird.Objects.Message message =
+            //    client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " /*+ Session["username"].ToString()*/, new[] { Msisdn });
+
+            //    System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+            //}
+
+            Response.Write(numofselectednumbers.ToString());
+            Response.Write("  ");
+            Response.Write(phoneNums[numofselectednumbers].ToString());
+
+
+
+
+
+
+
+
+        }
+
+        protected void BloodGroupDropDownList0_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (BloodGroupDropDownList0.SelectedIndex == 0)
             {
-                Response.Write(myIDs[i]);
-
-
-
-                //const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
-                //Client client = Client.CreateDefault(YourAccessKey);
-                //long Msisdn = PhoneNumber; // your phone number here
-                //MessageBird.Objects.Message message =
-                //client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
-
-                //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
-
+                ViewOrganDoners();
             }
+            else
+            {
+                SqlCommand cmdaa = new SqlCommand("View_Organ_Doners_by_Blood_Group", conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmdaa);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-
-
+                da.SelectCommand.Parameters.AddWithValue("@selectedBlood", BloodGroupDropDownList0.SelectedItem.Text);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                ViewOrganDonersGridView.DataSource = ds;
+                ViewOrganDonersGridView.DataBind();
+            }
         }
     }
 

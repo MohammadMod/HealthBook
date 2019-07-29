@@ -102,8 +102,7 @@
 
                         <div class="text-muted">
                             <span class="la la-user"> is a modern application to control, develop and systemize the health sector using a
-special system through which the relevant authority of health affairs and health followup committee of the Ministry of Health will be aware of any abuse case such as
-(physicians’ abuse, pharmaceutical expiry and trading them). </span>
+special system through which the relevant authority of health affairs and health followup committee of the Ministry of Health. </span>
                             <br>
                         </div>
                     </div>
@@ -127,15 +126,13 @@ systemizing the entire health sector.
                                 <li>Observing detailed information on the physicians by the patients.
 
                                 </li>
-                                <li>Doctors can regulate their interviews.
-
+                                <li>
+                                    Doctors can regulate their interviews.
                                 </li>
-                                <li>Taking the interview schedule from the physicians’ files.
-
+                                <li>
+                                   Taking the interview schedule from the physicians’ files.
                                 </li>
-                                <li>The doctors can ask for help through this application on any unknown medical
-condition on patients through other doctors.
-                                </li>
+                                
 
                             </ul>
 
@@ -153,7 +150,7 @@ condition on patients through other doctors.
                 <div class="row">
                     <div class="col-md-3 text-info text-standard">
                         <p>
-                            Copyright 2019 &copy; HealthBook
+                            Copyright 2018 &copy; HealthBook
                         </p>
                     </div>
                     <div class="offset-md-4 col-md-5 text-center">
