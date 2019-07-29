@@ -14,10 +14,10 @@ namespace HealthBook.HospitalPanel
     public partial class View_Blood_Doners : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
-        
 
-        static string[] myIDs = new string[10];
-        static long[] phoneNums = new long[10];
+
+        static long[] phoneNums;
+        static int numofselectednumbers = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -139,52 +139,93 @@ namespace HealthBook.HospitalPanel
             }
         }
 
-        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        //protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    phoneNums = new long[numofselectednumbers+1];
+        //    string str = string.Empty;
+        //    long phone = 0;
+        //    foreach (GridViewRow gvrow in ViewOrganDonersGridView.Rows)
+        //    {
+        //        CheckBox chk = (CheckBox)gvrow.FindControl("CheckBox1");
+        //        if (chk != null & chk.Checked)
+        //        {
+        //            phoneNums[0]=Convert.ToInt64(gvrow.Cells[6].Text);
+        //        }
+
+                
+
+        //    }
+
+        //    numofselectednumbers = numofselectednumbers + 1;
+        //}
+
+        //protected void Button1_Click(object sender, EventArgs e)
+        //{
+
+
+        //    //for (int i = 1; i < numofselectednumbers; i++)
+        //    //{
+        //    //    const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
+        //    //    Client client = Client.CreateDefault(YourAccessKey);
+        //    //    long Msisdn = phoneNums[i]; // your phone number here
+        //    //    MessageBird.Objects.Message message = 
+        //    //    client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " /*+ Session["username"].ToString()*/, new[] { Msisdn });
+
+        //    //    System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
+        //    //}
+
+        //    Response.Write(numofselectednumbers.ToString());
+        //    Response.Write("  ");
+        //    Response.Write(phoneNums[numofselectednumbers].ToString());
+
+
+
+
+
+
+
+
+        //}
+
+
+
+
+
+        protected void BloodGroupDropDownList0_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string str = string.Empty;
-            long phone = 0;
-            int i = 0;
-            foreach (GridViewRow gvrow in ViewOrganDonersGridView.Rows)
+            if (BloodGroupDropDownList0.SelectedIndex == 0)
             {
-                CheckBox chk = (CheckBox)gvrow.FindControl("CheckBox1");
-                if (chk != null & chk.Checked)
-                {
+                ViewOrganDoners();
+            }
+            else
+            {
+                SqlCommand cmdaa = new SqlCommand("View_Organ_Doners_by_Blood_Group", conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmdaa);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-                    str = gvrow.Cells[3].Text;
-                    phone =Convert.ToInt64(gvrow.Cells[6].Text);
-
-                }
-
-                phoneNums[i] = phone;
-                myIDs[i] = str;
-                i++;
+                da.SelectCommand.Parameters.AddWithValue("@selectedBlood", BloodGroupDropDownList0.SelectedItem.Text);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                ViewOrganDonersGridView.DataSource = ds;
+                ViewOrganDonersGridView.DataBind();
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void ViewOrganDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //GridViewRow row = ViewOrganDonersGridView.SelectedRow;
-            //string PhoneNumberIngrid = row.Cells[5].Text;
-            //long PhoneNumber = long.Parse(PhoneNumberIngrid);
-
-            for (int i = 0; i < 10; i++)
-            {
-                Response.Write(myIDs[i]);
+            GridViewRow row = ViewOrganDonersGridView.SelectedRow;
+            string PhoneNumberIngrid = row.Cells[5].Text;
+            long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
 
+            const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
+            Client client = Client.CreateDefault(YourAccessKey);
+            long Msisdn = PhoneNumber; // your phone number here
+            MessageBird.Objects.Message message =
+            client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
 
-                //const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
-                //Client client = Client.CreateDefault(YourAccessKey);
-                //long Msisdn = PhoneNumber; // your phone number here
-                //MessageBird.Objects.Message message =
-                //client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
-
-                //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
-
-            }
-
-
-
+            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
         }
     }
 

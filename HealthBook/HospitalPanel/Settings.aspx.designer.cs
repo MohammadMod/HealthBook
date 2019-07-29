@@ -10,25 +10,16 @@
 namespace HealthBook.HospitalPanel {
     
     
-    public partial class View_Blood_Doners {
+    public partial class Settings {
         
         /// <summary>
-        /// BloodGroupDropDownList0 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList BloodGroupDropDownList0;
-        
-        /// <summary>
-        /// cityDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cityDropDownList;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// TextBox1 control.
@@ -40,12 +31,12 @@ namespace HealthBook.HospitalPanel {
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// ViewOrganDonersGridView control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ViewOrganDonersGridView;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -11,7 +11,7 @@
                     <label for="SelectOrganDropDownList">Blood Group</label>
 
                     <asp:DropDownList ID="BloodGroupDropDownList0" CssClass="form-control"
-                        runat="server" AutoPostBack="True">
+                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="BloodGroupDropDownList0_SelectedIndexChanged">
 
                         <asp:ListItem>All</asp:ListItem>
                         <asp:ListItem Text="A+" Value="A+">A+</asp:ListItem>
@@ -61,28 +61,19 @@
                     
                 </div>
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
-                        runat="server">
+                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged">
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
 
-                             <asp:TemplateField>
-                            <HeaderTemplate>
-                                <asp:CheckBox ID="cbDeleteHeader" runat="server" AutoPostBack="True" />
-                            </HeaderTemplate>
-                            <ItemTemplate>
-                                <asp:CheckBox ID="CheckBox1" runat="server" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
-
                         </Columns>
                     </asp:GridView>
                     <hr />
-                    <div class="form-row ml-5 mb-3">
+                    <%--<div class="form-row ml-5 mb-3">
                         <div class="col-6">
                             <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Button"  OnClick="Button1_Click"/>
                         </div>
-                    </div>
+                    </div>--%>
 
 
             </div>

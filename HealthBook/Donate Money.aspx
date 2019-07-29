@@ -200,10 +200,12 @@
                     </div>
                 </div>
 
-                <div class="form-group row">
-                    <label for="CityTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">City</label>
-                    <div class="col-md-7 col-sm-12">
-                        <asp:TextBox ID="CityTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+              <div class="form-group row">
+                    <label for="FirstNameTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Select city: </label>
+                    <div class="col-sm-12 col-md-7">
+                        <asp:DropDownList ID="CityDropDownList" CssClass="custom-select" runat="server">
+                           
+                        </asp:DropDownList>
                     </div>
                 </div>
 

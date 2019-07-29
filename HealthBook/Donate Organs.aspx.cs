@@ -103,6 +103,8 @@ namespace HealthBook
                     cmd.Parameters.Add("@date", SqlDbType.Date).Value = DateTime.Now;
 
                     cmd.Parameters.Add("@donated", SqlDbType.BigInt).Value = 0;
+                    cmd.Parameters.Add("@BOA", SqlDbType.NVarChar).Value = BOADropDownList.SelectedItem.Text;
+
 
 
 
@@ -127,7 +129,7 @@ namespace HealthBook
                 System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Invalid code the code is: ');" + myCode, true);
             }
 
-
+            Response.Redirect("Thank you.aspx");
         }
 
         protected void SendCodeButton1_Click(object sender, EventArgs e)
@@ -141,7 +143,7 @@ namespace HealthBook
 
 
 
-            const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+            const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
             Client client = Client.CreateDefault(YourAccessKey);
             long Msisdn = PhoneNumber; // your phone number here
             MessageBird.Objects.Message message =
