@@ -19,7 +19,22 @@ namespace HealthBook
         static string myCode = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                DataTable subjects = new DataTable();
 
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT DISTINCT [Cityname] FROM Cities ", con);
+                adapter.Fill(subjects);
+
+                con.Open();
+                CityDropDownList.DataSource = subjects;
+                CityDropDownList.DataTextField = "Cityname";
+                CityDropDownList.DataValueField = "Cityname";
+                CityDropDownList.DataBind();
+                CityDropDownList.Items.Insert(0, new ListItem("Select", "NA"));
+
+                con.Close();
+            }
         }
 
 
@@ -34,7 +49,7 @@ namespace HealthBook
 
                 long PhoneNumber = long.Parse(phone);
 
-            const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
+            const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
             Client client = Client.CreateDefault(YourAccessKey);
             long Msisdn = PhoneNumber; // your phone number here
             MessageBird.Objects.Message message =
@@ -78,7 +93,7 @@ namespace HealthBook
                 cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = CountryTextBox.Text;
 
                 cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = AddressTextBox.Text;
-                cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = CityTextBox.Text;
+                cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = CityDropDownList.SelectedItem.Text;
 
                 cmd.Parameters.Add("@dateOfBirth", SqlDbType.Date).Value = Convert.ToDateTime(n);
                 cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = GenderDropDownList.SelectedItem.Text;
@@ -92,17 +107,9 @@ namespace HealthBook
 
 
 
-                //string phoneNum = PhoneNumberTextBox.Text;
-                //Response.Write("before: " + phoneNum);
-                //string FirstDigit = phoneNum.Substring(0, 1);
-
-                //if (FirstDigit == "0")
-                //{
-                //    phoneNum = phoneNum.Remove(0, 1);
-                //}
-
-                //Response.Write("After: " + phoneNum);
                 #endregion
+                Response.Redirect("Thank you.aspx");
+
             }
 
             else

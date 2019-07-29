@@ -16,8 +16,7 @@ namespace HealthBook.HospitalPanel
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
 
 
-        static string[] myIDs;
-        static long[] phoneNums = new long[10];
+        static long[] phoneNums;
         static int numofselectednumbers = 0;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -142,26 +141,21 @@ namespace HealthBook.HospitalPanel
 
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            myIDs = new string[ViewOrganDonersGridView.Rows.Count];
+            phoneNums = new long[numofselectednumbers+1];
             string str = string.Empty;
             long phone = 0;
-            int i = 0;
             foreach (GridViewRow gvrow in ViewOrganDonersGridView.Rows)
             {
                 CheckBox chk = (CheckBox)gvrow.FindControl("CheckBox1");
                 if (chk != null & chk.Checked)
                 {
-
-                    str = gvrow.Cells[3].Text;
-                    phone =Convert.ToInt64(gvrow.Cells[6].Text);
-
+                    phoneNums[0]=Convert.ToInt64(gvrow.Cells[6].Text);
                 }
 
-                phoneNums[i] = phone;
-                myIDs[i] = str;
-                i++;
+                
 
             }
+
             numofselectednumbers = numofselectednumbers + 1;
         }
 
@@ -169,15 +163,16 @@ namespace HealthBook.HospitalPanel
         {
 
 
-            //for (int i = 0; i < numofselectednumbers; i++)
+            //for (int i = 1; i < numofselectednumbers; i++)
             //{
             //    const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
             //    Client client = Client.CreateDefault(YourAccessKey);
-            //    long Msisdn = +9647503202798; // your phone number here
-            //    MessageBird.Objects.Message message =
+            //    long Msisdn = phoneNums[i]; // your phone number here
+            //    MessageBird.Objects.Message message = 
             //    client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " /*+ Session["username"].ToString()*/, new[] { Msisdn });
 
             //    System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
             //}
 
             Response.Write(numofselectednumbers.ToString());
@@ -192,6 +187,10 @@ namespace HealthBook.HospitalPanel
 
 
         }
+
+
+
+
 
         protected void BloodGroupDropDownList0_SelectedIndexChanged(object sender, EventArgs e)
         {

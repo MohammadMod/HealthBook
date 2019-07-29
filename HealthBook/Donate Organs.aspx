@@ -132,6 +132,14 @@
 
 
                         <div class="form-group ">
+                            <h4 class="font_oswald">Do you want to donate before or after death:</h4>
+                            <asp:DropDownList CssClass="custom-select" ID="BOADropDownList" runat="server">
+                                <asp:ListItem>Before Death</asp:ListItem>
+                                <asp:ListItem>After Death</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+
+                        <div class="form-group ">
                             <p class="font_oswald">I authorize you to use my organs/tissues for:</p>
                             <asp:DropDownList CssClass="custom-select" ID="UseOrgansForDropDownList0" runat="server">
                                 <asp:ListItem>Research</asp:ListItem>

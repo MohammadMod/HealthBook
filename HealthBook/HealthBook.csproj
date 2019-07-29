@@ -248,6 +248,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Thank you.aspx" />
     <Content Include="Who Can Donate.aspx" />
     <Content Include="HospitalPanel\searchingrids.js" />
     <Content Include="HospitalPanel\View Organe Doners.aspx" />
@@ -494,6 +495,13 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thank you.aspx.cs">
+      <DependentUpon>Thank you.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thank you.aspx.designer.cs">
+      <DependentUpon>Thank you.aspx</DependentUpon>
     </Compile>
     <Compile Include="View Organ Doners.aspx.cs">
       <DependentUpon>View Organ Doners.aspx</DependentUpon>

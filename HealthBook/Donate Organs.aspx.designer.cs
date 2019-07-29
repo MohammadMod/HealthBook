@@ -94,6 +94,15 @@ namespace HealthBook {
         protected global::System.Web.UI.WebControls.DropDownList BloodAnswerDropDownList;
         
         /// <summary>
+        /// BOADropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList BOADropDownList;
+        
+        /// <summary>
         /// UseOrgansForDropDownList0 control.
         /// </summary>
         /// <remarks>
