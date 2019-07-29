@@ -138,40 +138,6 @@
     background-attachment:fixed;
     background-position: 50% 60%; 
 }
-/*Design matching Donars start*/
-#page-header {
-    height: 300px;
-    background: url("../img/Donate_2.jpg") no-repeat;
-    background-size: cover;
-    background-position: 0 -270px;
-    background-attachment: fixed;
-    border-bottom: 1px #eee solid;
-    padding-top: 50px;
-}
-@media (min-width:576px) {
-    #page-header {
-        background-position: -180px -270px;
-    }
-}
-
-@media (min-width:768px) {
-    #page-header {
-        background-position: 0 -270px;
-    }
-}
-
-@media (min-width:992px) {
-    #page-header {
-        background-position: 0 -270px;
-    }
-}
-
-#page-header h1{
-    color:#3a3a3a;
-}
-/*Design matching Donars end*/
-
-
 
 /* Container 2 start*/
 .container2 {
@@ -218,7 +184,7 @@
     /*Container 2 end*/
 
 .p-10{
-    padding:5rem !important;
+    padding:5rem 2rem !important;
 }
     .mt-6 {
         margin-top: 4rem !important;
@@ -420,6 +386,33 @@
     font-size: 40px;
     text-shadow: 5px 5px 10px #000000;
 }
+@media (max-width:768px) {
+    .text_hE {
+        font-size: 32px !important;
+    }
+    .p-10 {
+        padding: 4rem 2rem !important;
+    }
+}
+@media (max-width:576px) {
+    .text_hE {
+        font-size: 18px !important;
+    }
+    .p-10 {
+        padding: 3rem 2rem !important;
+    }
+}
+
+@media (max-width:300px) {
+    .text_hE {
+        font-size: 12px !important;
+    }
+    .p-10 {
+        padding: 3rem 2rem !important;
+    }
+}
+
+
 /* Design Footer Star*/
 #information {
     background-color: #eee;
