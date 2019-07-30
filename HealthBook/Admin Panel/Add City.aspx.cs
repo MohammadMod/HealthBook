@@ -28,6 +28,7 @@ namespace HealthBook.Admin_Panel
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.ExecuteNonQuery();
             con.Close();
+            Label1.Text =  TextBox1.Text + "City added";
             TextBox1.Text = "";
         }
     }

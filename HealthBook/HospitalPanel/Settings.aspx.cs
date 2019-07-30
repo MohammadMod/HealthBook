@@ -1,6 +1,7 @@
 ﻿using MessageBird;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace HealthBook.HospitalPanel
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 try
@@ -35,7 +37,7 @@ namespace HealthBook.HospitalPanel
                     result.Read();
                     if (result.HasRows)
                     {
-                        Label1.Text = result.GetString(0) + " " + result.GetString(0);
+                        Label1.Text = result.GetString(0);
 
                     }
                 }
@@ -50,14 +52,18 @@ namespace HealthBook.HospitalPanel
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
 
-            const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
-            Client client = Client.CreateDefault(YourAccessKey);
-            long Msisdn = +9647503202798; // your phone number here
-            MessageBird.Objects.Message message =
-            client.SendMessage("HealthBook", "We Need Your Help", new[] { Msisdn });
+            SqlCommand cmd = new SqlCommand("Update_Default_Message", conn);
+            conn.Open();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@hospital_Name", Session["username"].ToString());
+            cmd.Parameters.AddWithValue("@default_Message", TextBox1.Text);
+            
+            cmd.ExecuteNonQuery();
+            conn.Close();
 
-            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+            Response.Redirect("Settings.aspx");
         }
     }
 }

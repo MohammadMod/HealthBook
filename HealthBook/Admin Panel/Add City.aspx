@@ -16,6 +16,7 @@
                         <asp:TextBox ID="TextBox1" runat="server" required="true" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
                 <div class="form-group row ">
                     <div class="offset-lg-3 col-6">
