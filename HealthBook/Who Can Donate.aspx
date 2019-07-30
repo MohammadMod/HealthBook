@@ -3,7 +3,7 @@
     <section id="info" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-sm-10 col-10 align-self-center">
+                <div class="col-md-10 col-sm-12 col-12 col-sm-10 col-10 align-self-center">
                     <h3 class="text_header mb-3">What Can Be Donated</h3>
                     <p class="text-muted mb-2">
                         All people should consider themselves potential organ and tissue donors—regardless of age, health, race, or ethnicity.

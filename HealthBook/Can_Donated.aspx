@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Can_Donated.aspx.cs" Inherits="HealthBook.Can_Donated" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section id="info" class="py-5">
-        <div class="container">
+        <div class="container2">
             <div class="row">
-                <div class="col-md-10 col-sm-10 col-10 align-self-center">
+                <div class="col-md-10 col-sm-12 col-12 col-sm-10 col-10 align-self-center">
                     <h3 class="text_header mb-3">What Can Be Donated</h3>
                     <p class="text-muted pb-4">
                         The list of organs and tissues that can be successfully transplanted continues to grow.

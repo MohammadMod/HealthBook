@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Living_Donation.aspx.cs" Inherits="HealthBook.Living_Donation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section id="info" class="py-5" style="z-index:10;">
-        <div class="container">
+        <div class="container2">
             <div class="row">
                 <div class="col-md-10 col-sm-12 col-12 col-sm-10 col-10 align-self-center">
                     <h3 class="text_header mb-3">The Living Donation Process</h3>
@@ -24,10 +24,10 @@
                                 </h5>
                             </div>
 
-                            <div id="collapseOne" class="collapse show pl-3" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseOne" class="collapse show pl-2" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body  text-muted">
                                     <h6>Living donors potentially can donate:</h6>
-                                    <ul>
+                                    <ul class=" pl-4">
                                         <li>
                                             <strong class="d-block">One of two kidneys.
                                             </strong>
@@ -68,7 +68,7 @@
                             <div id="collapseTwo" class="collapse pl-3" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body text-muted">
                                     <h6>Some of the tissues donated by living donors are:</h6>
-                                    <ul>
+                                    <ul class=" pl-4">
                                         <li>
                                             <div class="">
                                                 Skin, after certain surgeries such as an abdominoplasty
