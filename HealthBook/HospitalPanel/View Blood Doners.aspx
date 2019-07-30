@@ -61,7 +61,7 @@
                     
                 </div>
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
-                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged">
+                        runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged" OnRowCommand="ViewOrganDonersGridView_RowCommand">
                         <Columns>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />

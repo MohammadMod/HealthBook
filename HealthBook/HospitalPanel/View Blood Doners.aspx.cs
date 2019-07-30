@@ -265,6 +265,26 @@ namespace HealthBook.HospitalPanel
             }
            
         }
+
+        protected void ViewOrganDonersGridView_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "ViewProfile")
+            {
+                //Determine the RowIndex of the Row whose Button was clicked.
+                int rowIndex = Convert.ToInt32(e.CommandArgument);
+
+                //Reference the GridView Row.
+                GridViewRow row = ViewOrganDonersGridView.Rows[rowIndex];
+                Application["id"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[2].Text;
+                Application["fname"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[3].Text;
+                Application["lname"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[4].Text;
+                Application["phoneNum"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[5].Text;
+                Application["bloodgroup"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[6].Text;
+                Application["city"] = ViewOrganDonersGridView.Rows[rowIndex].Cells[7].Text;
+
+                Response.Redirect("View Profile BD.aspx");
+            }
+        }
     }
 
 

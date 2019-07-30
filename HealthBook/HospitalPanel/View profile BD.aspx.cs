@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace HealthBook.HospitalPanel
 {
-    public partial class View_Profile : System.Web.UI.Page
+    public partial class View_profile_BD : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ToString());
 
@@ -21,15 +21,8 @@ namespace HealthBook.HospitalPanel
                 IDLabel.Text = Application["id"].ToString();
                 FnameLabel.Text = Application["fname"].ToString();
                 LnameLabel.Text = Application["lname"].ToString();
-                Label4.Text = Application["phonenumber"].ToString();
-                Label5.Text = Application["emailtxt"].ToString();
-                Label6.Text = Application["gender"].ToString();
-                Label7.Text = Application["address"].ToString();
-                Label8.Text = Application["dob"].ToString();
-                Label9.Text = Application["bloodgroup"].ToString();
+                Label9.Text = Application["phoneNum"].ToString();
                 Label10.Text = Application["city"].ToString();
-                Label11.Text = Application["organ"].ToString();
-               
             }
         }
 
@@ -48,9 +41,8 @@ namespace HealthBook.HospitalPanel
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                Response.Redirect("View Organe Doners.aspx");
+                Response.Redirect("View Blood Doners.aspx");
             }
-
         }
     }
 }

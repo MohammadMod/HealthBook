@@ -206,6 +206,7 @@
     <Content Include="HospitalPanel\HostPanel.Master" />
     <Content Include="HospitalPanel\Settings.aspx" />
     <Content Include="HospitalPanel\View Blood Doners.aspx" />
+    <Content Include="HospitalPanel\View profile BD.aspx" />
     <Content Include="img\Donate_1.jpg" />
     <Content Include="img\Donate_2.jpg" />
     <Content Include="js\bootstrap.js" />
@@ -413,6 +414,13 @@
     </Compile>
     <Compile Include="HospitalPanel\View Organe Doners.aspx.designer.cs">
       <DependentUpon>View Organe Doners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPanel\View profile BD.aspx.cs">
+      <DependentUpon>View profile BD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalPanel\View profile BD.aspx.designer.cs">
+      <DependentUpon>View profile BD.aspx</DependentUpon>
     </Compile>
     <Compile Include="HospitalPanel\View Profile.aspx.cs">
       <DependentUpon>View Profile.aspx</DependentUpon>

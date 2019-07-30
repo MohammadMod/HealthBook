@@ -1,14 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HospitalPanel/HostPanel.Master" AutoEventWireup="true" CodeBehind="View Profile.aspx.cs" Inherits="HealthBook.HospitalPanel.View_Profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HospitalPanel/HostPanel.Master" AutoEventWireup="true" CodeBehind="View profile BD.aspx.cs" Inherits="HealthBook.HospitalPanel.View_profile_BD" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class=" offset-lg-2 offset-md-2 offset-sm-1 col-12 col-sm-10 col-md-8 col-lg-8">
+        <div class=" offset-lg-2 offset-md-2 offset-sm-1 col-12 col-sm-10 col-md-8 col-lg-8">
         <div class="card">
             <div class="card-header text-center">
                 <h5 class="card-title mb-0">View Profile Donare</h5>
             </div>
-            <div class="card-body">
                 <div class="row border-bottom">
                     <div class="col-4">ID:</div>
     
@@ -40,38 +39,9 @@
                         <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
                     </div>
                 </div>
-                <div class="row border-bottom">
-                    <div class="col-4">
-                        Email:
-                    </div>
-                    <div class="col-8">
-                        <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-4">
-                        Gender:
-                    </div>
-                    <div class="col-8">
-                        <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-4">
-                        Address:
-                    </div>
-                    <div class="col-8">
-                        <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-4">
-                        Date of birth:
-                    </div>
-                    <div class="col-8">
-                        <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
-                    </div>
-                </div>
+                
+                 
+                
                 <div class="row border-bottom">
                     <div class="col-4">
                         Blood group:
@@ -88,14 +58,7 @@
                         <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
                     </div>
                 </div>
-                <div class="row border-bottom">
-                    <div class="col-4">
-                        Organ:
-                    </div>
-                    <div class="col-8">
-                        <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
-                    </div>
-                </div>
+         
                
             <div class="card-footer text-muted">
                 <div class="row">
@@ -117,4 +80,7 @@
             </div>
         </div>
     </div>
+
+
+
 </asp:Content>
