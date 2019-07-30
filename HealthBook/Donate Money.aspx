@@ -255,7 +255,7 @@
                 <div class="form-group row">
                     <label for="CompanyTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Company</label>
                     <div class="col-md-7 col-sm-12">
-                        <asp:TextBox ID="CompanyTextBox" CssClass="form-control" runat="server" required="true" type="text"></asp:TextBox>
+                        <asp:TextBox ID="CompanyTextBox" AutoPostBack="true" CssClass="form-control" runat="server" required="true" type="text" OnTextChanged="CompanyTextBox_TextChanged"></asp:TextBox>
                     </div>
                 </div>
 

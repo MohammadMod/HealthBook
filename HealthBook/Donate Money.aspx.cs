@@ -35,6 +35,7 @@ namespace HealthBook
 
                 con.Close();
             }
+            SubmitButton.Enabled = false;
         }
 
 
@@ -121,6 +122,11 @@ namespace HealthBook
         protected void Button1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        protected void CompanyTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SubmitButton.Enabled = true;
         }
     }
 }

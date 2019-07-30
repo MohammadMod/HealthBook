@@ -152,7 +152,7 @@
 
                             <p class="d-inline col-3">Your name & Signature</p>
                             <div class=" col-9">
-                                <asp:TextBox ID="SignatureTextBox" CssClass="form-control2" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="SignatureTextBox" CssClass="form-control2" runat="server" AutoPostBack="true" OnTextChanged="SignatureTextBox_TextChanged"></asp:TextBox>
                             </div>
                         </div>
 

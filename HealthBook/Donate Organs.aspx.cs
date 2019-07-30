@@ -39,6 +39,7 @@ namespace HealthBook
 
                 con.Close();
             }
+            SendCodeButton1.Enabled = false;
         }
 
 
@@ -158,6 +159,11 @@ namespace HealthBook
 
             SendCodeButton1.Attributes.Add("onclick", "return false;");
 
+        }
+
+        protected void SignatureTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SendCodeButton1.Enabled = true;
         }
     }
 }
