@@ -101,17 +101,18 @@
                         <h4 class="text-black">Healthbook</h4>
 
                         <div class="text-muted">
-                            <span class="la la-user"> is a modern application to control, develop and systemize the health sector using a
-special system through which the relevant authority of health affairs and health followup committee of the Ministry of Health. </span>
+                             is a modern application to control, develop and systemize the health sector using a
+                            special system through which the relevant authority of health affairs and health followup committee of the Ministry of Health.
                             <br>
                         </div>
+                        <hr>
                     </div>
                     <div class="col-md-4 border-left text-left">
                         <h4 class="text-black">What dos Healthbook do?</h4>
                         <div class="text-muted">
                             Healthbook is an application through which the entire health sector including the data
-and statistics can be monitored and controlled, aiming towards developing and
-systemizing the entire health sector.
+                            and statistics can be monitored and controlled, aiming towards developing and
+                            systemizing the entire health sector.
                         </div>
                         <hr>
                     </div>
@@ -120,11 +121,12 @@ systemizing the entire health sector.
                         <h4 class="text-black">Healthbook Social media</h4>
 
                         <div class="text-muted">
-                            <ul>
-                                <li>Finding a certain doctor through map or search for a doctor.
+                            <ul class="pl-4">
+                                <li>
+                                    Finding a certain doctor through map or search for a doctor.
                                 </li>
-                                <li>Observing detailed information on the physicians by the patients.
-
+                                <li>
+                                    Observing detailed information on the physicians by the patients.
                                 </li>
                                 <li>
                                     Doctors can regulate their interviews.
@@ -132,10 +134,7 @@ systemizing the entire health sector.
                                 <li>
                                    Taking the interview schedule from the physicians’ files.
                                 </li>
-                                
-
                             </ul>
-
                         </div>
                         <hr>
                     </div>
@@ -146,14 +145,14 @@ systemizing the entire health sector.
 
 
         <footer id="main-footer" class="pt-4 pb-2">
-            <div class="container">
+            <div class="container2">
                 <div class="row">
-                    <div class="col-md-3 text-info text-standard">
-                        <p>
+                    <div class="col-8 col-md-6 col-sm-6 text-info pr-0 text-standard">
+                        <p class="p-0">
                             Copyright 2018 &copy; HealthBook
                         </p>
                     </div>
-                    <div class="offset-md-4 col-md-5 text-center">
+                    <div class="col-4 col-md-6 col-sm-6 pr-0 text-center">
                         <a href="#" class="email" data-toggle="tooltip"
                             data-placement="top" title="Email">
                             <i class="fas fa-envelope-square"></i>
