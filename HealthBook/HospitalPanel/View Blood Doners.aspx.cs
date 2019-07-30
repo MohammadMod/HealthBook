@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -18,7 +19,7 @@ namespace HealthBook.HospitalPanel
 
         static long[] phoneNums;
         static int numofselectednumbers = 0;
-
+        static string default_message = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -78,7 +79,35 @@ namespace HealthBook.HospitalPanel
 
                     throw;
                 }
-              
+
+                try
+                {
+                    String connectionString = WebConfigurationManager.ConnectionStrings["con"].ConnectionString;
+                    SqlConnection con = new SqlConnection(connectionString);
+                    SqlCommand cmd = new SqlCommand("Default_message_view", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+
+                    // Add parameters
+                    cmd.Parameters.AddWithValue("@hospitalname", Session["username"].ToString());
+
+
+
+                    con.Open();
+                    SqlDataReader result = cmd.ExecuteReader();
+                    result.Read();
+                    if (result.HasRows)
+                    {
+                        default_message = result.GetString(0);
+
+                    }
+                }
+                catch (Exception)
+                {
+
+                    Response.Redirect("..//Login.aspx");
+                }
+
             }
         }
 
@@ -214,18 +243,27 @@ namespace HealthBook.HospitalPanel
 
         protected void ViewOrganDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GridViewRow row = ViewOrganDonersGridView.SelectedRow;
-            string PhoneNumberIngrid = row.Cells[5].Text;
-            long PhoneNumber = long.Parse(PhoneNumberIngrid);
+            try
+            {
+                GridViewRow row = ViewOrganDonersGridView.SelectedRow;
+                string PhoneNumberIngrid = row.Cells[5].Text;
+                long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
 
-            const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
-            Client client = Client.CreateDefault(YourAccessKey);
-            long Msisdn = PhoneNumber; // your phone number here
-            MessageBird.Objects.Message message =
-            client.SendMessage("HealthBook", "Aw katak bash bariz piwistman ba yarmati janabta paiwandit piwa dakain la naxoshxanai " + Session["username"].ToString(), new[] { Msisdn });
+                const string YourAccessKey = "tZOnx4JOynYBbpbtFjj7ktJQx"; // your access key here
+                Client client = Client.CreateDefault(YourAccessKey);
+                long Msisdn = PhoneNumber; // your phone number here
+                MessageBird.Objects.Message message =
+                client.SendMessage("Healthbok", default_message + " Hospital name: " + Session["username"].ToString(), new[] { Msisdn });
 
-            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+            }
+            catch (Exception)
+            {
+
+                Response.Redirect("..//login.aspx");
+            }
+           
         }
     }
 
