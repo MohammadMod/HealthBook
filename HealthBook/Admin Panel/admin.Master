@@ -54,6 +54,12 @@
                                     <i class="align-middle" data-feather="plus-square"></i><span class="align-middle">Add City</span>
                                 </a>
                             </li>
+
+                             <li class="sidebar-item active">
+                                <a href="Add Donation Program.aspx" class="sidebar-link">
+                                    <i class="align-middle" data-feather="plus-square"></i><span class="align-middle">Add Donation Program</span>
+                                </a>
+                            </li>
                         </ul>
 
 

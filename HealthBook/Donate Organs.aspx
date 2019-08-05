@@ -71,7 +71,7 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Phone Number<span class="text-danger">*</span></label>
-                            <input id="phone" class="form-control" name="phone" type="tel">
+                            <input id="phone" class="form-control" name="phone" type="tel" required>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
 
                             <p class="d-inline col-3">Your name & Signature</p>
                             <div class=" col-9">
-                                <asp:TextBox ID="SignatureTextBox" CssClass="form-control2" runat="server" AutoPostBack="true" OnTextChanged="SignatureTextBox_TextChanged"></asp:TextBox>
+                                <asp:TextBox ID="SignatureTextBox" CssClass="form-control2" runat="server" required="true"></asp:TextBox>
                             </div>
                         </div>
 

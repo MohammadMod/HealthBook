@@ -161,12 +161,12 @@
                     <label for="FirstNameTextBox" class="col-sm-6 col-md-3 col-form-label text-sm-left text-md-right">Donation Program</label>
                     <div class="col-sm-12 col-md-7">
                         <asp:DropDownList ID="DonationProgramDropDownList" CssClass="custom-select" runat="server">
-                            <asp:ListItem>Select</asp:ListItem>
+                          <%--  <asp:ListItem>Select</asp:ListItem>
                             <asp:ListItem>Naming Opportunity </asp:ListItem>
                             <asp:ListItem>Sponsor a Child</asp:ListItem>
                             <asp:ListItem>Zakat Money</asp:ListItem>
                             <asp:ListItem>Monthly Dontion</asp:ListItem>
-                            <asp:ListItem>Patient Sponsor</asp:ListItem>
+                            <asp:ListItem>Patient Sponsor</asp:ListItem>--%>
 
                         </asp:DropDownList>
                     </div>

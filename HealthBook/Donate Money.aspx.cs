@@ -21,6 +21,9 @@ namespace HealthBook
         {
             if (!IsPostBack)
             {
+                #region citis
+                try
+                {
                 DataTable subjects = new DataTable();
 
                 SqlDataAdapter adapter = new SqlDataAdapter("SELECT DISTINCT [Cityname] FROM Cities ", con);
@@ -34,6 +37,42 @@ namespace HealthBook
                 CityDropDownList.Items.Insert(0, new ListItem("Select", "NA"));
 
                 con.Close();
+
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                #endregion
+
+                #region Donation_Program
+                try
+                {
+                    DataTable subjects = new DataTable();
+
+                    SqlDataAdapter adapter = new SqlDataAdapter("SELECT DISTINCT [D_Program] FROM Donation_Program ", con);
+                    adapter.Fill(subjects);
+
+                    con.Open();
+                    DonationProgramDropDownList.DataSource = subjects;
+                    DonationProgramDropDownList.DataTextField = "D_Program";
+                    DonationProgramDropDownList.DataValueField = "D_Program";
+                    DonationProgramDropDownList.DataBind();
+                    DonationProgramDropDownList.Items.Insert(0, new ListItem("Select", "NA"));
+
+                    con.Close();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+               
+
+
+
+                #endregion
             }
             SubmitButton.Enabled = false;
         }

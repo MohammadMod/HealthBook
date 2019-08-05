@@ -39,7 +39,6 @@ namespace HealthBook
 
                 con.Close();
             }
-            SendCodeButton1.Enabled = false;
         }
 
 
@@ -149,21 +148,12 @@ namespace HealthBook
             long Msisdn = PhoneNumber; // your phone number here
             MessageBird.Objects.Message message =
             client.SendMessage("HealthBook", myCode, new[] { Msisdn });
-
-            //System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
-            //const string YourAccessKey = "NrCjD40h6gaCws2A0t0VEFVXW"; // your access key here
-            //Client client = Client.CreateDefault(YourAccessKey);
-            //long Msisdn = PhoneNumber; // your phone number here
-            //MessageBird.Objects.Message message =
-            //client.SendMessage("HealthBook", myCode, new[] { Msisdn });
-
             SendCodeButton1.Attributes.Add("onclick", "return false;");
 
         }
 
         protected void SignatureTextBox_TextChanged(object sender, EventArgs e)
         {
-            SendCodeButton1.Enabled = true;
         }
     }
 }

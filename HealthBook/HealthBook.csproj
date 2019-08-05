@@ -165,6 +165,7 @@
   <ItemGroup>
     <Content Include="Add Hospital.aspx" />
     <Content Include="Admin Panel\Add City.aspx" />
+    <Content Include="Admin Panel\Add Donation Program.aspx" />
     <Content Include="Admin Panel\AddHospital.aspx" />
     <Content Include="Admin Panel\View Money Donars.aspx" />
     <Content Include="Admin Panel\View_Hospital.aspx" />
@@ -313,6 +314,13 @@
     </Compile>
     <Compile Include="Admin Panel\Add City.aspx.designer.cs">
       <DependentUpon>Add City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel\Add Donation Program.aspx.cs">
+      <DependentUpon>Add Donation Program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Panel\Add Donation Program.aspx.designer.cs">
+      <DependentUpon>Add Donation Program.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin Panel\admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
