@@ -63,24 +63,25 @@
                     <asp:GridView ID="ViewOrganDonersGridView" CssClass="table table-stripet table-bordered table-hover table-responsive-xl text-center"
                         runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged" OnRowCommand="ViewOrganDonersGridView_RowCommand">
                         <Columns>
+                            <asp:TemplateField>
+                                <ItemTemplate> 
+                                    <asp:CheckBox ID="CheckBox2" Text='<%# Eval("PhoneNumber") %>' runat="server" OnCheckedChanged="CheckBox2_CheckedChanged" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
 
                         </Columns>
                     </asp:GridView>
                     <hr />
-                    <%--<div class="form-row ml-5 mb-3">
+                    <div class="form-row ml-5 mb-3">
                         <div class="col-6">
-                            <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Button"  OnClick="Button1_Click"/>
+                            <asp:Button ID="UpDate" CssClass="btn btn-success" runat="server" Text="Button"  OnClick="UpDate_Click"/>
                         </div>
-                    </div>--%>
-
-
+                    </div>
             </div>
-        </div>  
+        </div>
 
-
-        
-
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
 </asp:Content>

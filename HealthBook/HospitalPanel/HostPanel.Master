@@ -155,6 +155,12 @@
                                     <i class="align-middle" ></i><span class="align-middle">View Blood Doners</span>
                                 </a>
                             </li>
+                            
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="List%20of%20sent%20messages.aspx">
+                                    <i class="align-middle" ></i><span class="align-middle">View sent messages</span>
+                                </a>
+                            </li>
 
                                <li class="sidebar-item">
                                 <a class="sidebar-link" href="Settings.aspx">
