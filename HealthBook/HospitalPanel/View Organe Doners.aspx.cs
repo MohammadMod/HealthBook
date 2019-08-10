@@ -173,8 +173,10 @@ namespace HealthBook.HospitalPanel
 
         protected void ViewOrganDonersGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-            GridViewRow row = ViewOrganDonersGridView.SelectedRow;
+
+            #region send_message
+
+             GridViewRow row = ViewOrganDonersGridView.SelectedRow;
             string PhoneNumberIngrid = row.Cells[5].Text;
             long PhoneNumber = long.Parse(PhoneNumberIngrid);
 
@@ -185,6 +187,9 @@ namespace HealthBook.HospitalPanel
             MessageBird.Objects.Message message =
             client.SendMessage("Healthbok", default_message + " Hospital name: "+ Session["username"].ToString(), new[] { Msisdn });
 
+
+            #endregion
+           
             #region  save_message
 
 
@@ -217,10 +222,6 @@ namespace HealthBook.HospitalPanel
 
 
             #endregion
-
-
-            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
-
 
         }
 
