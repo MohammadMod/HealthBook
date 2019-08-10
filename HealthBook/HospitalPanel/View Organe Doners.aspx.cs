@@ -185,6 +185,40 @@ namespace HealthBook.HospitalPanel
             MessageBird.Objects.Message message =
             client.SendMessage("Healthbok", default_message + " Hospital name: "+ Session["username"].ToString(), new[] { Msisdn });
 
+            #region  save_message
+
+
+            GridViewRow row1 = ViewOrganDonersGridView.SelectedRow;
+
+            string sent_to = row1.Cells[3].Text + " " + row1.Cells[4].Text;
+            string from_hospital = Session["username"].ToString();
+            string userid = row1.Cells[2].Text;
+
+
+
+            SqlCommand cmd = new SqlCommand("insert_sent_message", conn);
+
+            conn.Open();
+
+            cmd.Parameters.Add("@sent_to", SqlDbType.NVarChar).Value = sent_to;
+            cmd.Parameters.Add("@from_hospital", SqlDbType.VarChar).Value = from_hospital;
+
+            cmd.Parameters.Add("@message", SqlDbType.VarChar).Value = default_message;
+            cmd.Parameters.Add("@date", SqlDbType.NVarChar).Value = DateTime.Now.Date;
+
+            cmd.Parameters.Add("@user_id", SqlDbType.VarChar).Value = userid;
+
+
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
+
+
+            #endregion
+
+
             System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Message Sent successfully');", true);
 
 
