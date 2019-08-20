@@ -64,9 +64,9 @@
                         runat="server" OnSelectedIndexChanged="ViewOrganDonersGridView_SelectedIndexChanged" OnRowCommand="ViewOrganDonersGridView_RowCommand">
                         <Columns>
                             <asp:TemplateField>
-                                <ItemTemplate> 
+                               <%-- <ItemTemplate> 
                                     <asp:CheckBox ID="CheckBox2" Text='<%# Eval("PhoneNumber") %>' runat="server" OnCheckedChanged="CheckBox2_CheckedChanged" />
-                                </ItemTemplate>
+                                </ItemTemplate>--%>
                             </asp:TemplateField>
                             <asp:CommandField SelectText="Send Message" ShowSelectButton="True" />
                             <asp:ButtonField CommandName="ViewProfile" Text="View Profile" />
